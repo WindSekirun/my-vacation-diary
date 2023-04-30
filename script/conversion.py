@@ -2,16 +2,18 @@ import os
 import subprocess
 from pprint import pprint
 from pathlib import Path
+import json
 import humanize
 
-# date = input('Enter date to convert: ')
+date = input('Enter date to convert: ')
 
 date = '20230429'
 working_dir = os.path.abspath(f"../contents/{date}")
 path = Path(working_dir)
+thumbnail_path = Path(f'{working_dir}/thumbnail')
 pprint(f'working at {working_dir}')
 
-pprint('Compressing image/video to well-known format')
+pprint('Compressing image to well-known format')
 
 original_pictures = [str(p) for p in path.glob("./original/*.HEIC")]
 original_pictures_size = humanize.filesize.naturalsize(sum([os.stat(file).st_size for file in original_pictures]))
@@ -25,16 +27,49 @@ for original in original_pictures:
     compress_size = compress_size + os.stat(target).st_size
     os.remove(original)
 
-pprint(f'Convert result: {len(original_pictures)} items:  {original_pictures_size} to {humanize.filesize.naturalsize(compress_size)}')
+pprint(f'Convert result: {original_pictures_size} to {humanize.filesize.naturalsize(compress_size)}')
 
 pprint('Generating thumbnails')
 
-compressed_pictures = [str(p) for p in path.glob("./original/*.avif")]
-pprint(f'Generate image thumbnails for {len(compressed_pictures)} items')
+thumbnail_path.mkdir(exist_ok=True)
+thumbnail_command = ["mogrify", '-resize', '10%', '-quality', '60', '-path', str(thumbnail_path),
+                     f"{working_dir}/original/*.avif"]
+subprocess.run(thumbnail_command)
 
-# TODO: downsize
+compressed_pictures = sorted([str(p) for p in path.glob("./original/*.avif")])
+medias = []
+for compressed in compressed_pictures:
+    file_name = Path(compressed).name
+    data = {
+        "original": f"contents/{date}/original/{file_name}",
+        "thumbnail": f"contents/{date}/thumbnail/{file_name}",
+        "type": "image",
+        "desc": "",
+        "device": "iPhone 14 Pro Max"
+    }
+    medias.append(data)
 
-compressed_videos = [str(p) for p in path.glob("./original/*.mp4")]
-pprint(f'Generate video thumbnails for {len(compressed_videos)} items')
+data = {
+    "date": date,
+    "location": "",
+    "searchIndex": "",
+    "kml": "history.kml",
+    "thumbnail": "",
+    "original": "",
+    "movement": {
+        "walking": 0,
+        "bus": 0,
+        "train": 0,
+        "airplane": 0
+    },
+    "medias": medias
+}
 
-# TODO: downsize video (not supported)
+json_data = json.dumps(data, indent=4)
+json_file = os.path.abspath(f'../contents/{date}/index.json')
+
+if Path(json_file).exists() is not True:
+    with open(json_file, 'w') as f:
+        f.write(json_data)
+
+pprint('Done')
