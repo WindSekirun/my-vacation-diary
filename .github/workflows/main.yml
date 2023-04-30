@@ -2,6 +2,9 @@ name: Deploy nightly
 
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
   build-node-18:
     name: build with node-lts18
