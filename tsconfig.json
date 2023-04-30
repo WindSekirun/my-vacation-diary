@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "target": "esnext",
     "useDefineForClassFields": true,
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "composite": true,
     "module": "esnext",
