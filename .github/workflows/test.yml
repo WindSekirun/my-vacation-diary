@@ -24,6 +24,5 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          cat src/views/Home.vue
           yarn install
           yarn run build
