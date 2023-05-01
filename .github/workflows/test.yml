@@ -1,6 +1,9 @@
-name: Deploy nightly
+name: Test
 
-on: [push]
+on:
+  push:
+    branches:
+      - test/**
 
 permissions:
   contents: write
@@ -21,15 +24,6 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+          cat src/views/Home.vue
           yarn install
           yarn run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: dist
-          clean-exclude: |
-            contents/
-            *.json
-            CNAME
