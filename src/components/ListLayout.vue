@@ -5,11 +5,11 @@
                 <v-img :src="data.thumbnail" height="200" cover aspect-ratio="1.778"></v-img>
 
                 <v-overlay :model-value="isHovering" contained scrim="#222222" class="align-center justify-center">
-                    <span class="text-h5">{{ formattedDate }}</span>
+                    <span class="text-h5 text-white">{{ formattedDate }}</span>
                     <br />
-                    <span class="text-h6">in {{ location }}</span>
+                    <span class="text-h6 text-white">in {{ location }}</span>
                     <br />
-                    <v-btn variant="flat">자세히 보기</v-btn>
+                    <v-btn class="mt-2" variant="flat">자세히 보기</v-btn>
                 </v-overlay>
             </v-card>
         </v-hover>
