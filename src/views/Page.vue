@@ -7,20 +7,9 @@
       <span class="text-h4">in {{ page?.location }}</span>
       <div class="mt-2" />
       <div v-if="page?.movements != null">
-        <span v-if="page.movements.walking != 0" class="me-2">
-          <v-icon icon="mdi-walk" size="x-small"></v-icon> {{ page.movements.walking }} km
-        </span>
-        <span v-if="page.movements.bus != 0" class="me-2">
-          <v-icon icon="mdi-bus" size="x-small"></v-icon> {{ page.movements.bus }} km
-        </span>
-        <span v-if="page.movements.train != 0" class="me-2">
-          <v-icon icon="mdi-train-car-passenger" size="x-small"></v-icon> {{ page.movements.train }} km
-        </span>
-        <span v-if="page.movements.airplane != 0" class="me-2">
-          <v-icon icon="mdi-airplane-takeoff" size="x-small"></v-icon> {{ page.movements.airplane }} km
-        </span>
+        <movements :movement="page?.movements" />
       </div>
-      <leaflet-map class="mt-5" v-if="page != null" :geojson-url="page?.geojson" :title="page?.location" />
+      <leaflet-map class="mt-5" v-if="page != null" :page="page" />
     </v-sheet>
   </background>
 </template>
@@ -28,17 +17,17 @@
 <script lang="ts" setup>
 import Background from '@/components/Background.vue';
 import LeafletMap from '@/components/LeafletMap.vue';
+import Movements from '@/components/Movements.vue';
 import { useAppStore } from '@/store/app';
 import dayjs from 'dayjs';
 import { storeToRefs } from 'pinia';
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 const router = useRouter();
 const store = useAppStore();
 const route = useRoute();
 const { page } = storeToRefs(store);
-const zoom = ref(8);
 
 const routeDate = route.params.date as string;
 await store.loadPage(routeDate)

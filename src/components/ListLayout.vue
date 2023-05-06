@@ -7,7 +7,7 @@
                 <v-overlay :model-value="isHovering" contained scrim="#222222" class="align-center justify-center">
                     <span class="text-h5 text-white">{{ formattedDate }}</span>
                     <br />
-                    <span class="text-h6 text-white">in {{ location }}</span>
+                    <span class="text-h6 text-white">in {{ data.item?.location }}</span>
                     <br />
                     <v-btn class="mt-2" variant="flat">자세히 보기</v-btn>
                 </v-overlay>
@@ -17,16 +17,18 @@
 </template>
 
 <script lang="ts" setup>
+import { ListIndex } from '@/model/listindex';
 import { makeUrl } from '@/store/api';
 import dayjs from 'dayjs';
 import { computed } from 'vue';
+import { PropType } from 'vue'
 
-const data = defineProps<{
-    date: string,
-    location: string,
-    thumbnail: string
-}>()
+const data = defineProps({
+    item: {
+        type: Object as PropType<ListIndex>
+    }
+})
 
-const formattedDate = computed(() => dayjs(data.date, "YYYYMMDD").format('YYYY.MM.DD'))
-const thumbnailImage = computed(() => makeUrl(data.thumbnail))
+const formattedDate = computed(() => dayjs(data.item?.date, "YYYYMMDD").format('YYYY.MM.DD'))
+const thumbnailImage = computed(() => makeUrl(data.item!.thumbnail))
 </script>

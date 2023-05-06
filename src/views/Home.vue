@@ -20,8 +20,7 @@
     <div class="section">
       <v-row>
         <v-col v-for="(item, index) in list" :key="index" cols="12" sm="3">
-          <list-layout :date="item.date" :thumbnail="item.thumbnail" :location="item.location"
-            @click="onItemClicked(item)" />
+          <list-layout :item="item" @click="onItemClicked(item)" />
         </v-col>
       </v-row>
     </div>

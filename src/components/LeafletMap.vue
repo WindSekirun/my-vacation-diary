@@ -6,11 +6,11 @@
           name="OpenStreetMap"></l-tile-layer>
         <l-geo-json :geojson="geojson" :options="geoJsonLayerOptions"></l-geo-json>
         <l-control :position="'bottomleft'" class="map-watermark">
-          {{ title }}
+          {{ props.page?.location }}
         </l-control>
       </l-map>
     </v-responsive>
-    <v-row class="pa-2">
+    <v-row class="mt-2 ms-2 me-2">
       <v-col cols="2">
         <v-btn color="info" block @click="fitToCenter()">Fit to center</v-btn>
       </v-col>
@@ -39,11 +39,14 @@ import { GeoJSONOptions, LatLng, LatLngBounds, Map, MapOptions, marker } from "l
 import { GeoJsonRoot, Properties } from "@/model/geojson";
 import { distinctByReverse } from "@/utils/array";
 import { Ref, ref, watch } from "vue";
+import { PropType } from 'vue'
+import { Page } from "@/model/page";
 
-const data = defineProps<{
-  geojsonUrl: string,
-  title: string,
-}>()
+const props = defineProps({
+  page: {
+    type: Object as PropType<Page>
+  }
+})
 
 const leafletMapOptions: MapOptions = {
   scrollWheelZoom: false,
@@ -62,7 +65,7 @@ const geoJsonLayerOptions: GeoJSONOptions = {
 let map: Map | null = null;
 const selectPlace: Ref<Properties | undefined> = ref(undefined);
 
-const geojson = await getGeoJson(data.geojsonUrl);
+const geojson = await getGeoJson(props.page!.geojson);
 const originalGeoPointList = (geojson as GeoJsonRoot).features
   .filter((item) => item.geometry.type == "Point");
 
