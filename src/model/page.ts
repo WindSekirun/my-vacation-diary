@@ -2,17 +2,17 @@ export class Page {
     date: string;
     location: string;
     searchIndex: string;
-    kml: string;
+    geojson: string;
     thumbnail: string;
     original: string;
     movements: Movement;
     medias: Media[];
 
-    constructor(date: string, location: string, searchIndex: string, kml: string, thumbnail: string, original: string, movement: Movement, medias: Media[]) {
+    constructor(date: string, location: string, searchIndex: string, geojson: string, thumbnail: string, original: string, movement: Movement, medias: Media[]) {
         this.date = date;
         this.location = location;
         this.searchIndex = searchIndex;
-        this.kml = kml;
+        this.geojson = geojson;
         this.thumbnail = thumbnail;
         this.original = original;
         this.movements = movement;

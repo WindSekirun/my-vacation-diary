@@ -49,11 +49,15 @@ for compressed in compressed_pictures:
     }
     medias.append(data)
 
+if Path(f'{working_dir}/history.kml').exists() is True:
+    commands = ['togeojson', "history.kml", ">", "history.json"]
+    subprocess.run(commands)
+
 data = {
     "date": date,
     "location": "",
     "searchIndex": "",
-    "kml": "history.kml",
+    "geojson": f'contents/{date}/history.json',
     "thumbnail": "",
     "original": "",
     "movement": {

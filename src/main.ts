@@ -12,6 +12,7 @@ import { createApp } from 'vue'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+import "leaflet"
 
 import 'vue-fullpage.js/dist/style.css'
 

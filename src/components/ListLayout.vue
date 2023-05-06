@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-import { makeImageUrl } from '@/store/api';
+import { makeUrl } from '@/store/api';
 import dayjs from 'dayjs';
 import { computed } from 'vue';
 
@@ -28,6 +28,5 @@ const data = defineProps<{
 }>()
 
 const formattedDate = computed(() => dayjs(data.date, "YYYYMMDD").format('YYYY.MM.DD'))
-
-const thumbnailImage = computed(() => makeImageUrl(data.thumbnail))
+const thumbnailImage = computed(() => makeUrl(data.thumbnail))
 </script>

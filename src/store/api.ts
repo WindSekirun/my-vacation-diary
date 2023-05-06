@@ -13,11 +13,16 @@ export async function getListIndex(): Promise<ListIndex[]> {
     return response.data
 }
 
-export async function getPage(date: String): Promise<Page> {
+export async function getPage(date: string): Promise<Page> {
     const response = await api.get(`/contents/${date}/index.json`)
     return response.data
 }
 
-export function makeImageUrl(imageUrl: string) {
+export function makeUrl(imageUrl: string) {
     return `${baseUrl}/${imageUrl}`
+}
+
+export async function getGeoJson(geoJsonUrl: string) {
+    const response = await api.get(makeUrl(geoJsonUrl));
+    return response.data;
 }
