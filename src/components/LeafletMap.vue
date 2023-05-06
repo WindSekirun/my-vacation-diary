@@ -1,13 +1,15 @@
 <template>
   <v-card>
     <v-responsive :aspect-ratio="18 / 9" max-height="400">
-      <l-map ref="map" :zoom="14" :options="options" @ready="readyLeaflet">
+      <l-map ref="map" :zoom="14" :options="leafletMapOptions" @ready="readyLeaflet">
         <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"
           name="OpenStreetMap"></l-tile-layer>
-        <l-geo-json :geojson="geojson"></l-geo-json>
+        <l-geo-json :geojson="geojson" :options="geoJsonLayerOptions"></l-geo-json>
+        <l-control :position="'bottomleft'" class="map-watermark">
+          {{ title }}
+        </l-control>
       </l-map>
     </v-responsive>
-
     <v-row class="pa-2">
       <v-col cols="2">
         <v-btn color="info" block @click="fitToCenter()">Fit to center</v-btn>
@@ -30,10 +32,10 @@
 
 <script lang="ts" setup>
 import "leaflet/dist/leaflet.css";
-import { LGeoJson, LMap, LTileLayer } from "@vue-leaflet/vue-leaflet";
+import { LGeoJson, LMap, LTileLayer, LControl } from "@vue-leaflet/vue-leaflet";
 import { getGeoJson } from "@/store/api"
 import { bbox } from '@turf/turf';
-import { LatLng, LatLngBounds, Map } from "leaflet";
+import { GeoJSONOptions, LatLng, LatLngBounds, Map, MapOptions, marker } from "leaflet";
 import { GeoJsonRoot, Properties } from "@/model/geojson";
 import { distinctByReverse } from "@/utils/array";
 import { Ref, ref, watch } from "vue";
@@ -43,8 +45,18 @@ const data = defineProps<{
   title: string,
 }>()
 
-const options = {
+const leafletMapOptions: MapOptions = {
   scrollWheelZoom: false,
+}
+
+const geoJsonLayerOptions: GeoJSONOptions = {
+  pointToLayer: function (geoJsonPoint: any, latlng: LatLng) {
+    const target = marker(latlng, {
+      title: geoJsonPoint.properties.name,
+    });
+    target.bindPopup(`${geoJsonPoint.properties.name} - ${geoJsonPoint.properties.address}`)
+    return target
+  }
 }
 
 let map: Map | null = null;
@@ -70,6 +82,7 @@ function fitToCenter() {
   const northEast = new LatLng(box[3], box[2])
   const bounds = new LatLngBounds(southWest, northEast)
   map?.fitBounds(bounds)
+  selectPlace.value = undefined;
 }
 
 watch(selectPlace, (value) => {
@@ -90,3 +103,12 @@ watch(selectPlace, (value) => {
   })
 })
 </script>
+
+<style>
+.map-watermark {
+  font-size: 150%;
+  font-weight: bolder;
+  color: #2e3440;
+  text-shadow: #555;
+}
+</style>
