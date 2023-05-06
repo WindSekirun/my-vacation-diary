@@ -5,7 +5,7 @@ export class Page {
     kml: string;
     thumbnail: string;
     original: string;
-    movement: Movement;
+    movements: Movement;
     medias: Media[];
 
     constructor(date: string, location: string, searchIndex: string, kml: string, thumbnail: string, original: string, movement: Movement, medias: Media[]) {
@@ -15,7 +15,7 @@ export class Page {
         this.kml = kml;
         this.thumbnail = thumbnail;
         this.original = original;
-        this.movement = movement;
+        this.movements = movement;
         this.medias = medias;
     }
 }

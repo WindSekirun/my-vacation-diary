@@ -2,7 +2,7 @@
     <v-responsive class="d-flex align-center text-center fill-height">
         <v-hover v-slot="{ isHovering, props }">
             <v-card class="mx-auto" max-width="344" v-bind="props">
-                <v-img :src="data.thumbnail" height="200" cover aspect-ratio="1.778"></v-img>
+                <v-img :src="thumbnailImage" height="200" cover aspect-ratio="1.778"></v-img>
 
                 <v-overlay :model-value="isHovering" contained scrim="#222222" class="align-center justify-center">
                     <span class="text-h5 text-white">{{ formattedDate }}</span>
@@ -17,6 +17,7 @@
 </template>
 
 <script lang="ts" setup>
+import { makeImageUrl } from '@/store/api';
 import dayjs from 'dayjs';
 import { computed } from 'vue';
 
@@ -27,4 +28,6 @@ const data = defineProps<{
 }>()
 
 const formattedDate = computed(() => dayjs(data.date, "YYYYMMDD").format('YYYY.MM.DD'))
+
+const thumbnailImage = computed(() => makeImageUrl(data.thumbnail))
 </script>
