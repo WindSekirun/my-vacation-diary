@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-responsive :aspect-ratio="18 / 9" max-height="400">
+    <v-responsive :aspect-ratio="17 / 9" max-height="500">
       <l-map ref="map" :zoom="14" :options="leafletMapOptions" @ready="readyLeaflet">
         <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"
           name="OpenStreetMap"></l-tile-layer>
@@ -11,10 +11,10 @@
       </l-map>
     </v-responsive>
     <v-row class="mt-2 ms-2 me-2">
-      <v-col cols="2">
+      <v-col xs="6" sm="6"  md="2">
         <v-btn color="info" block @click="fitToCenter()">Fit to center</v-btn>
       </v-col>
-      <v-col cols="10">
+      <v-col xs="6" sm="6" md="10">
         <v-select v-model='selectPlace' :items='placeList' item-title="name" solo flat density="compact"
           placeholder="Select place" clearable return-object item-value="name">
           <template #item="{ item, props }">
