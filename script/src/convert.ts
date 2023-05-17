@@ -27,11 +27,11 @@ const __dirname = path.dirname(filename);
 
 const date = await getDate()
 const workingDir = path.join(__dirname, `../../contents/${date}`);
+const thumbnailDir = path.join(workingDir, "./thumbnail")
 console.log(`working on ${workingDir}`);
 
-const originalPictures = (await glob([path.join(workingDir, './original/*.HEIC')])).sort();
-const medias: Media[] = [];
-const promises = originalPictures.map(async (item) => {
+const originalPictures = await glob([path.join(workingDir, './original/*.HEIC')]);
+const promises = originalPictures.sort().map(async (item) => {
     const targetOriginalFile = item.replace(".HEIC", ".avif");
     const fileName = path.basename(targetOriginalFile);
 
@@ -42,8 +42,8 @@ const promises = originalPictures.map(async (item) => {
     const gpsOutput = await exifr.gps(item);
     const info = await exifr.parse(item, ["LensModel", "LensMake", "DateTimeOriginal", "OffsetTimeOriginal"]);
     const day = dayjs(info.DateTimeOriginal).add(9, 'h');
-  
-    medias.push({
+
+    return {
         original: `contents/${date}/original/${fileName}`,
         thumbnail: `contents/${date}/thumbnail/${fileName}`,
         type: "image",
@@ -53,12 +53,14 @@ const promises = originalPictures.map(async (item) => {
         model: info.LensModel,
         make: info.LensMake,
         time: day.toISOString()
-    })
+    }
 })
 
-await Promise.all(promises)
+const medias = await Promise.all(promises)
 
-// shell.exec(`mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${workingDir}/original/*.avif`)
+const thumbnailCommand = `mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${workingDir}/original/*.avif`;
+console.log(thumbnailCommand);
+shell.exec(thumbnailCommand);
 
 const kmlFiles = await glob([path.join(workingDir, './*.kml')])
 kmlFiles.forEach(async (item) => {
@@ -73,7 +75,7 @@ kmlFiles.forEach(async (item) => {
 })
 
 const data: Data = {
-    date: date,
+    date: date.toString(),
     location: "",
     searchIndex: "",
     geojson: `contents/${date}/history.json`,
