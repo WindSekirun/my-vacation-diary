@@ -13,17 +13,17 @@ const { replaceInFile } = pkg;
 
 type SortByFunc<T> = (s1: T, s2: T) => number;
 enum SortByOrder {
-  ASC = 1,
-  DESC = -1,
+    ASC = 1,
+    DESC = -1,
 }
 const sortBy = <T = any>(
-  arr: T[],
-  $fn: SortByFunc<T> = (s1: any, s2: any) =>
-    order * String(s1).localeCompare(String(s2)),
-  order: SortByOrder = SortByOrder.ASC
+    arr: T[],
+    $fn: SortByFunc<T> = (s1: any, s2: any) =>
+        order * String(s1).localeCompare(String(s2)),
+    order: SortByOrder = SortByOrder.ASC
 ) => {
-  let fn = $fn;
-  return [...arr].sort(fn);
+    let fn = $fn;
+    return [...arr].sort(fn);
 };
 
 async function getDate() {
@@ -41,7 +41,7 @@ const filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(filename);
 
 const date = await getDate()
-// const date = "20230501"
+// const date = "20230503"
 const workingDir = path.join(__dirname, `../../contents/${date}`);
 const thumbnailDir = path.join(workingDir, "./thumbnail")
 console.log(`working on ${workingDir}`);
@@ -55,22 +55,40 @@ const picturesPromises = originalPictures.sort().map(async (item) => {
         await asyncExec(`convert ${item} ${targetOriginalFile}`);
     }
 
-    const gpsOutput = await exifr.gps(item);
-    const info = await exifr.parse(item, ["LensModel", "LensMake", "DateTimeOriginal", "OffsetTimeOriginal"]);
-    const day = dayjs(info.DateTimeOriginal).add(9, 'h');
+    let gpsOutput = null;
+    let info = null;
 
-    return {
+    try {
+        gpsOutput = await exifr.gps(item);
+    } catch (e) {
+    }
+
+    try {
+        info = await exifr.parse(item, ["LensModel", "LensMake", "DateTimeOriginal", "OffsetTimeOriginal"]);
+    } catch (e) {
+    }
+
+    const data = {
         original: `contents/${date}/original/${fileName}`,
         thumbnail: `contents/${date}/thumbnail/${fileName}`,
         type: "image",
         desc: "",
-        latitude: gpsOutput.latitude,
-        longitude: gpsOutput.longitude,
-        model: info.LensModel,
-        make: info.LensMake,
-        time: day.toISOString()
+        latitude: 0,
+        longitude: 0,
+        model: "",
+        make: "",
+        time: ""
     }
+
+    if (gpsOutput && gpsOutput.latitude) data.latitude = gpsOutput.latitude
+    if (gpsOutput && gpsOutput.longitude) data.longitude = gpsOutput.longitude
+    if (info && info.LensMake) data.make = info.LensMake
+    if (info && info.LensModel) data.model = info.LensModel
+    if (info && info.DateTimeOriginal) data.time = dayjs(info.DateTimeOriginal).add(9, 'h').toISOString()
+    return data
 })
+
+const images = await Promise.all(picturesPromises);
 
 // 이미지용 썸네일은 여기에서 한번 압축
 const thumbnailCommand = `mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${workingDir}/original/*.avif`;
@@ -85,20 +103,18 @@ const videoPromises = originalVideos.sort().map(async (item) => {
     const name = path.parse(targetOriginalFile).name;
 
     if (!fs.existsSync(targetOriginalFile)) {
-        await asyncExec(`ffmpeg -i ${item} ${targetOriginalFile}`)
+        await asyncExec(`ffmpeg -i ${item} ${targetOriginalFile}`);
     }
 
-    console.log(targetThumbnailFile1)
-    console.log(targetThumbnailFile2)
     // 비디오를 위한 썸네일 이미지 저장
     if (!fs.existsSync(targetThumbnailFile1)) {
         await asyncExec(`ffmpeg -i ${item} -vf "select=eq(n\\,0)" -q:v 1 "${targetThumbnailFile1}"`);
-        await asyncExec(`convert ${targetThumbnailFile1} ${targetThumbnailFile2}`)
-        await asyncExec(`mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${targetThumbnailFile2}`)
+        await asyncExec(`convert ${targetThumbnailFile1} ${targetThumbnailFile2}`);
+        await asyncExec(`mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${targetThumbnailFile2}`);
     }
 
-    await fs.promises.unlink(targetThumbnailFile1)
-    await fs.promises.unlink(targetThumbnailFile2)
+    await fs.promises.unlink(targetThumbnailFile1);
+    await fs.promises.unlink(targetThumbnailFile2);
 
     return {
         original: `contents/${date}/original/${name}.mp4`,
@@ -113,31 +129,31 @@ const videoPromises = originalVideos.sort().map(async (item) => {
     }
 })
 
-const images = await Promise.all(picturesPromises)
-const videos = await Promise.all(videoPromises)
+const videos = await Promise.all(videoPromises);
+const medias = sortBy([...images, ...videos], (a, b) => a.original.localeCompare(b.original));
+console.log(medias);
 
-const medias = sortBy([...images, ...videos], (a, b) => a.original.localeCompare(b.original))
-console.log(medias)
-
-const kmlFiles = await glob([path.join(workingDir, './*.kml')])
-kmlFiles.forEach(async (item) => {
+const kmlFiles = await glob([path.join(workingDir, './*.kml')]);
+const kmlPromises = kmlFiles.map(async (item) => {
     const targetFile = path.join(workingDir, 'history.json');
     shell.exec(`togeojson ${item} > ${targetFile}`);
     const options = {
         files: targetFile,
         from: /(\\n)+(\\t)+/g,
         to: ""
-    }
-    await replaceInFile(options)
+    };
+    await replaceInFile(options);
 })
+
+await Promise.all(kmlPromises);
 
 const data: Data = {
     date: date.toString(),
     location: "",
     searchIndex: "",
     geojson: `contents/${date}/history.json`,
-    thumbnail: "",
     original: "",
+    thumbnail: "",
     movement: {
         walking: 0,
         bus: 0,
