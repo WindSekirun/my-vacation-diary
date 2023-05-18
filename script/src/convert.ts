@@ -4,12 +4,27 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { glob } from 'glob';
 import exifr from 'exifr'
-import { Media } from './media';
 import shell from 'shelljs';
+import { asyncExec } from 'async-shelljs'
 import pkg from 'replace-in-file';
 import { Data } from './data';
 import dayjs from 'dayjs';
 const { replaceInFile } = pkg;
+
+type SortByFunc<T> = (s1: T, s2: T) => number;
+enum SortByOrder {
+  ASC = 1,
+  DESC = -1,
+}
+const sortBy = <T = any>(
+  arr: T[],
+  $fn: SortByFunc<T> = (s1: any, s2: any) =>
+    order * String(s1).localeCompare(String(s2)),
+  order: SortByOrder = SortByOrder.ASC
+) => {
+  let fn = $fn;
+  return [...arr].sort(fn);
+};
 
 async function getDate() {
     const response = await prompts({
@@ -26,17 +41,18 @@ const filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(filename);
 
 const date = await getDate()
+// const date = "20230501"
 const workingDir = path.join(__dirname, `../../contents/${date}`);
 const thumbnailDir = path.join(workingDir, "./thumbnail")
 console.log(`working on ${workingDir}`);
 
 const originalPictures = await glob([path.join(workingDir, './original/*.HEIC')]);
-const promises = originalPictures.sort().map(async (item) => {
+const picturesPromises = originalPictures.sort().map(async (item) => {
     const targetOriginalFile = item.replace(".HEIC", ".avif");
     const fileName = path.basename(targetOriginalFile);
 
     if (!fs.existsSync(targetOriginalFile)) {
-        shell.exec(`convert ${item} ${targetOriginalFile}`);
+        await asyncExec(`convert ${item} ${targetOriginalFile}`);
     }
 
     const gpsOutput = await exifr.gps(item);
@@ -56,11 +72,52 @@ const promises = originalPictures.sort().map(async (item) => {
     }
 })
 
-const medias = await Promise.all(promises)
-
+// 이미지용 썸네일은 여기에서 한번 압축
 const thumbnailCommand = `mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${workingDir}/original/*.avif`;
 console.log(thumbnailCommand);
-shell.exec(thumbnailCommand);
+await asyncExec(thumbnailCommand);
+
+const originalVideos = await glob([path.join(workingDir, './original/*.MOV')]);
+const videoPromises = originalVideos.sort().map(async (item) => {
+    const targetOriginalFile = item.replace(".MOV", ".mp4");
+    const targetThumbnailFile1 = targetOriginalFile.replace(".mp4", ".jpg")
+    const targetThumbnailFile2 = targetThumbnailFile1.replace(".jpg", ".avif")
+    const name = path.parse(targetOriginalFile).name;
+
+    if (!fs.existsSync(targetOriginalFile)) {
+        await asyncExec(`ffmpeg -i ${item} ${targetOriginalFile}`)
+    }
+
+    console.log(targetThumbnailFile1)
+    console.log(targetThumbnailFile2)
+    // 비디오를 위한 썸네일 이미지 저장
+    if (!fs.existsSync(targetThumbnailFile1)) {
+        await asyncExec(`ffmpeg -i ${item} -vf "select=eq(n\\,0)" -q:v 1 "${targetThumbnailFile1}"`);
+        await asyncExec(`convert ${targetThumbnailFile1} ${targetThumbnailFile2}`)
+        await asyncExec(`mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${targetThumbnailFile2}`)
+    }
+
+    await fs.promises.unlink(targetThumbnailFile1)
+    await fs.promises.unlink(targetThumbnailFile2)
+
+    return {
+        original: `contents/${date}/original/${name}.mp4`,
+        thumbnail: `contents/${date}/thumbnail/${name}.avif`,
+        type: "video",
+        desc: "",
+        latitude: 0,
+        longitude: 0,
+        model: "",
+        make: "",
+        time: ""
+    }
+})
+
+const images = await Promise.all(picturesPromises)
+const videos = await Promise.all(videoPromises)
+
+const medias = sortBy([...images, ...videos], (a, b) => a.original.localeCompare(b.original))
+console.log(medias)
 
 const kmlFiles = await glob([path.join(workingDir, './*.kml')])
 kmlFiles.forEach(async (item) => {
