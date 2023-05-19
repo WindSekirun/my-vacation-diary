@@ -3332,9 +3332,9 @@ vue@^3.2.0, vue@^3.2.25:
     "@vue/shared" "3.2.47"
 
 vuetify@^3.2.0:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.2.2.tgz#a4a39bec15e96b4f9f9be6353e19f156abd91c35"
-  integrity sha512-syFfeZVH6dycltqVCx4tDn68fR3r697+Jt7vJW1l3i9a5ClnwpdRBWtE6dt2bjClS2K/VpWYt+rAsLiG7sGU/g==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.3.0.tgz#9d85e528cc6829f0a005b60c5636484370df034a"
+  integrity sha512-4jQRZ6O4vUDlu3+/NZbbrv8dyVtvB5BnLc+NEusYjdj7+27GJSRJoDkkzJMmuM9XkZYFiTgq1vizK/vMSkB+2Q==
 
 webfontloader@^1.0.0:
   version "1.6.28"
