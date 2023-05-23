@@ -1,0 +1,13 @@
+{
+    "movement": {
+        "walking": 125.1,
+        "bus": 186.4,
+        "train": 982.8,
+        "airplane": 2285,
+        "subway": 36,
+        "taxi": 1.5,
+        "drive": 17.8
+    },
+    "sum": 145,
+    "average": 6.04
+}
