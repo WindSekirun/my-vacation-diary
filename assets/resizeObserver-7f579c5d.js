@@ -1,1 +1,0 @@
-import{r as f,c1 as u,aG as i,bu as R,aU as v}from"./index-403dceea.js";function d(t){const o=f(),s=f();if(u){const n=new ResizeObserver(e=>{t==null||t(e,n),e.length&&(s.value=e[0].contentRect)});i(()=>{n.disconnect()}),R(o,(e,r)=>{r&&(n.unobserve(r),s.value=void 0),e&&n.observe(e)},{flush:"post"})}return{resizeRef:o,contentRect:v(s)}}export{d as u};
