@@ -1,8 +1,7 @@
 export class Page {
     date?: string;
-    location?: string;
     geojson?: string;
-    movements?: Movement;
+    movement?: Movement;
     medias?: Media[];
 }
 
