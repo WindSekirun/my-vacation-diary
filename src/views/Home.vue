@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="primary fill-height pa-0">
-    <map-container ref="container" :center="getCenterOfIndexList(indexList)" />
+    <map-container ref="container" :center="getCenterOfIndexList(indexList)" @click-index="onClickIndex" />
     <div class="floated">
       <v-card class="pa-5 rounded-shaped" min-width="500">
         <span class="text-h5 font-weight-bold">My Vacation Diary</span>
@@ -17,7 +17,8 @@
             {{ formatDate(item.value.date) }} :: {{ item.value.title }}
           </template>
         </v-select>
-        <v-btn class="text-h6 pa-0" variant="text" @click="expandStat = !expandStat" :append-icon="expandStat ? 'mdi-menu-up' : 'mdi-menu-down'">
+        <v-btn class="text-h6 pa-0" variant="text" @click="expandStat = !expandStat"
+          :append-icon="expandStat ? 'mdi-menu-up' : 'mdi-menu-down'">
           통계
         </v-btn>
 
@@ -43,6 +44,7 @@ import { getCenterOfIndexList } from '@/utils/geo';
 import { onMounted } from 'vue';
 import { formatDate } from "@/utils/date";
 import Movements from '@/components/Movements.vue';
+import { watch } from 'vue';
 
 const router = useRouter();
 const route = useRoute();
@@ -51,8 +53,19 @@ const { indexList, stat } = storeToRefs(store);
 const container: Ref<typeof MapContainer | undefined> = ref(undefined);
 const selectedIndex: Ref<ListIndex | undefined> = ref(undefined);
 const expandStat = ref(true);
+const onClickIndex = (date?: string) => selectedIndex.value = indexList.value.find(item => item.date == date);
+watch(selectedIndex, (value) => loadPage(value?.date ?? ""));
 
 await store.getListIndex();
+
+async function loadPage(date: string) {
+  if (!date) {
+    store.removePage();
+    container.value?.fitToInitial()
+    return;
+  }
+  await store.loadPage(date);
+}
 </script>
 
 <style>

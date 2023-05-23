@@ -2,7 +2,7 @@
 import { ListIndex } from '@/model/listindex'
 import { Page } from '@/model/page'
 import { defineStore } from 'pinia'
-import { getListIndex, getPage, getStat } from './api'
+import { getGeoJson, getListIndex, getPage, getStat } from './api'
 import { Stat } from '@/model/stat'
 
 interface State {
@@ -10,6 +10,7 @@ interface State {
   indexList: ListIndex[]
   page: Page | undefined,
   stat: Stat | undefined,
+  geojson: any
 }
 
 export const useAppStore = defineStore('app', {
@@ -18,6 +19,7 @@ export const useAppStore = defineStore('app', {
     indexList: [],
     page: undefined,
     stat: undefined,
+    geojson: undefined
   }),
 
   actions: {
@@ -29,6 +31,13 @@ export const useAppStore = defineStore('app', {
     async loadPage(date: string) {
       this.date = date;
       this.page = await getPage(date);
+      this.geojson = await getGeoJson(this.page!.geojson || "")
+    },
+
+    removePage() {
+      this.date = "";
+      this.page = undefined;
+      this.geojson = undefined;
     }
   }
 })
