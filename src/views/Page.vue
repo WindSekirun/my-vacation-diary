@@ -10,14 +10,13 @@
         <movements :movement="page.movements" />
       </div>
       <leaflet-map class="mt-5" v-if="page != null" :page="page" />
-      <gallery v-if="page != null" :page="page" />
+      <!-- <gallery v-if="page != null" :page="page" /> -->
     </v-sheet>
   </background>
 </template>
  
 <script lang="ts" setup>
 import Background from '@/components/Background.vue';
-import Gallery from '@/components/Gallery.vue';
 import LeafletMap from '@/components/LeafletMap.vue';
 import Movements from '@/components/Movements.vue';
 import { useAppStore } from '@/store/app';
