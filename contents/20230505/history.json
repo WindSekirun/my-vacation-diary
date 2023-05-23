@@ -1,0 +1,757 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.43640299999998,
+                    43.0489469,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "12-chōme-2-26 Kitagō 2 Jō",
+                "address": "12-chōme-2-26 Kitagō 2 Jō, Shiroishi Ward, Sapporo, Hokkaido 003-0832",
+                "description": " 건축물 from 2023-05-04T11:24:57.000Z to 2023-05-05T01:56:55.610Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-04T11:24:57.000Z",
+                    "end": "2023-05-05T01:56:55.610Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "건축물",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        141.43640299999998,
+                        43.0489469,
+                        0
+                    ],
+                    [
+                        141.43640299999998,
+                        43.0489469,
+                        0
+                    ],
+                    [
+                        141.4366301,
+                        43.048185,
+                        0
+                    ],
+                    [
+                        141.4383351,
+                        43.0470557,
+                        0
+                    ],
+                    [
+                        141.43864432497537,
+                        43.04682464892889,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-05T01:56:55.610Z to 2023-05-05T01:57:59.335Z. Distance 309m ",
+                "timespan": {
+                    "begin": "2023-05-05T01:56:55.610Z",
+                    "end": "2023-05-05T01:57:59.335Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "309"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.43864,
+                    43.0468662,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "헤이와 역",
+                "address": "16 Kita-10 Heiwadōri, Shiroishi Ward, Sapporo, Hokkaido 003-0029",
+                "description": " 기차역 from 2023-05-05T01:57:59.335Z to 2023-05-05T02:08:37.903Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T01:57:59.335Z",
+                    "end": "2023-05-05T02:08:37.903Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "기차역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        141.43864432497537,
+                        43.04682464892889,
+                        0
+                    ],
+                    [
+                        141.4383351,
+                        43.0470557,
+                        0
+                    ],
+                    [
+                        141.4264041,
+                        43.0483873,
+                        0
+                    ],
+                    [
+                        141.410158,
+                        43.0571055,
+                        0
+                    ],
+                    [
+                        141.387929,
+                        43.0694871,
+                        0
+                    ],
+                    [
+                        141.3662333,
+                        43.0687005,
+                        0
+                    ],
+                    [
+                        141.3526459,
+                        43.0689132,
+                        0
+                    ],
+                    [
+                        141.35162931363175,
+                        43.068099497577286,
+                        0
+                    ],
+                    [
+                        141.35162931363175,
+                        43.068099497577286,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-05T02:08:37.903Z to 2023-05-05T02:23:53.999Z. Distance 7916m ",
+                "timespan": {
+                    "begin": "2023-05-05T02:08:37.903Z",
+                    "end": "2023-05-05T02:23:53.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "7916"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.3507553,
+                    43.0686606,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "삿포로역",
+                "address": "4 Chome Kita 6 Jonishi, Kita Ward, Sapporo, Hokkaido 060-0806",
+                "description": " 기차역 from 2023-05-05T02:23:53.999Z to 2023-05-05T02:39:00.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T02:23:53.999Z",
+                    "end": "2023-05-05T02:39:00.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "기차역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        141.35162931363175,
+                        43.068099497577286,
+                        0
+                    ],
+                    [
+                        141.35162931363175,
+                        43.068099497577286,
+                        0
+                    ],
+                    [
+                        141.3517323,
+                        43.0679585,
+                        0
+                    ],
+                    [
+                        141.3518314,
+                        43.0693753,
+                        0
+                    ],
+                    [
+                        141.3529197,
+                        43.0695498,
+                        0
+                    ],
+                    [
+                        141.3544043,
+                        43.0697537,
+                        0
+                    ],
+                    [
+                        141.3526459,
+                        43.0689132,
+                        0
+                    ],
+                    [
+                        141.3558669,
+                        43.0699378,
+                        0
+                    ],
+                    [
+                        141.3579143,
+                        43.0702244,
+                        0
+                    ],
+                    [
+                        141.3591415,
+                        43.0707656,
+                        0
+                    ],
+                    [
+                        141.3608464,
+                        43.0715681,
+                        0
+                    ],
+                    [
+                        141.3606594,
+                        43.0730802,
+                        0
+                    ],
+                    [
+                        141.3603331,
+                        43.0742999,
+                        0
+                    ],
+                    [
+                        141.3599238,
+                        43.0759416,
+                        0
+                    ],
+                    [
+                        141.3597012,
+                        43.0773196,
+                        0
+                    ],
+                    [
+                        141.3610711,
+                        43.0776387,
+                        0
+                    ],
+                    [
+                        141.3629463,
+                        43.0800225,
+                        0
+                    ],
+                    [
+                        141.3614218,
+                        43.0788304,
+                        0
+                    ],
+                    [
+                        141.3634902,
+                        43.0791627,
+                        0
+                    ],
+                    [
+                        141.3632024,
+                        43.079981,
+                        0
+                    ],
+                    [
+                        141.3632024,
+                        43.079981,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-05T02:39:00.000Z to 2023-05-05T03:09:59.999Z. Distance 2812m ",
+                "timespan": {
+                    "begin": "2023-05-05T02:39:00.000Z",
+                    "end": "2023-05-05T03:09:59.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "2812"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.3632024,
+                    43.079981,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "かつてん北１４条光星店",
+                "address": "7 Chome-1-21 Kita 14 Johigashi, Higashi Ward, Sapporo, Hokkaido 065-0014",
+                "description": " 돈까스 전문식당 from 2023-05-05T03:09:59.999Z to 2023-05-05T03:57:36.230Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T03:09:59.999Z",
+                    "end": "2023-05-05T03:57:36.230Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "돈까스 전문식당",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        141.3632024,
+                        43.079981,
+                        0
+                    ],
+                    [
+                        141.3632024,
+                        43.079981,
+                        0
+                    ],
+                    [
+                        141.3629427,
+                        43.0801855,
+                        0
+                    ],
+                    [
+                        141.3580206,
+                        43.0645959,
+                        0
+                    ],
+                    [
+                        141.3565333,
+                        43.0548797,
+                        0
+                    ],
+                    [
+                        141.35654320908557,
+                        43.05491444744224,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On the subway",
+                "description": " On the subway from 2023-05-05T03:57:36.230Z to 2023-05-05T04:14:44.386Z. Distance 2901m ",
+                "timespan": {
+                    "begin": "2023-05-05T03:57:36.230Z",
+                    "end": "2023-05-05T04:14:44.386Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On the subway",
+                "Distance": "2901"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.356787,
+                    43.0547877,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "호스이스스키노 역",
+                "address": "〒064-0806 北海道札幌市中央区南６条西２丁目5",
+                "description": " 지하철역 from 2023-05-05T04:14:44.386Z to 2023-05-05T04:22:40.129Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T04:14:44.386Z",
+                    "end": "2023-05-05T04:22:40.129Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "지하철역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.3540003,
+                    43.0541789,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "라운드원 스스키노점",
+                "address": "3 Chome-6-1 Minami 5 Jonishi, Chuo Ward, Sapporo, Hokkaido 064-0805",
+                "description": " 오락실 from 2023-05-05T04:22:40.129Z to 2023-05-05T05:53:48.164Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T04:22:40.129Z",
+                    "end": "2023-05-05T05:53:48.164Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "오락실",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        141.3540003,
+                        43.0541789,
+                        0
+                    ],
+                    [
+                        141.3540003,
+                        43.0541789,
+                        0
+                    ],
+                    [
+                        141.353568,
+                        43.0555476,
+                        0
+                    ],
+                    [
+                        141.353504,
+                        43.0579522,
+                        0
+                    ],
+                    [
+                        141.3527738,
+                        43.0567934,
+                        0
+                    ],
+                    [
+                        141.3528181,
+                        43.0584721,
+                        0
+                    ],
+                    [
+                        141.3526766,
+                        43.0589594,
+                        0
+                    ],
+                    [
+                        141.3524519,
+                        43.0604383,
+                        0
+                    ],
+                    [
+                        141.35241575093735,
+                        43.06048637782668,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-05T05:53:48.164Z to 2023-05-05T06:02:43.077Z. Distance 979m ",
+                "timespan": {
+                    "begin": "2023-05-05T05:53:48.164Z",
+                    "end": "2023-05-05T06:02:43.077Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "979"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.35372289999998,
+                    43.060347199999995,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "오도리 역",
+                "address": "〒060-0042 北海道札幌市中央区大通西２−2",
+                "description": " 지하철역 from 2023-05-05T06:02:43.077Z to 2023-05-05T06:10:20.832Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T06:02:43.077Z",
+                    "end": "2023-05-05T06:10:20.832Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "지하철역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        141.35241575093735,
+                        43.06048637782668,
+                        0
+                    ],
+                    [
+                        141.3511025,
+                        43.0602348,
+                        0
+                    ],
+                    [
+                        141.3732422,
+                        43.056973,
+                        0
+                    ],
+                    [
+                        141.3915089,
+                        43.0486145,
+                        0
+                    ],
+                    [
+                        141.4106028,
+                        43.0410394,
+                        0
+                    ],
+                    [
+                        141.4108651,
+                        43.040260499999995,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On the subway",
+                "description": " On the subway from 2023-05-05T06:10:20.832Z to 2023-05-05T06:26:19.467Z. Distance 5551m ",
+                "timespan": {
+                    "begin": "2023-05-05T06:10:20.832Z",
+                    "end": "2023-05-05T06:26:19.467Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On the subway",
+                "Distance": "5551"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.4108651,
+                    43.040260499999995,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "난고나나초메",
+                "address": "7 Minami-5 Nangōdōri, Shiroishi Ward, Sapporo, Hokkaido 003-0022",
+                "description": " 지하철역 from 2023-05-05T06:26:19.467Z to 2023-05-05T06:35:06.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T06:26:19.467Z",
+                    "end": "2023-05-05T06:35:06.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "지하철역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        141.4108651,
+                        43.040260499999995,
+                        0
+                    ],
+                    [
+                        141.4106035,
+                        43.0413393,
+                        0
+                    ],
+                    [
+                        141.4122016,
+                        43.0404858,
+                        0
+                    ],
+                    [
+                        141.410776,
+                        43.0409485,
+                        0
+                    ],
+                    [
+                        141.4160327,
+                        43.0447867,
+                        0
+                    ],
+                    [
+                        141.4234109,
+                        43.0518592,
+                        0
+                    ],
+                    [
+                        141.4242637,
+                        43.0527252,
+                        0
+                    ],
+                    [
+                        141.4347736,
+                        43.050336,
+                        0
+                    ],
+                    [
+                        141.4356573,
+                        43.050334,
+                        0
+                    ],
+                    [
+                        141.43473699999998,
+                        43.0506305,
+                        0
+                    ],
+                    [
+                        141.43473699999998,
+                        43.0506305,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a bus",
+                "description": " On a bus from 2023-05-05T06:35:06.000Z to 2023-05-05T06:45:18.325Z. Distance 3168m ",
+                "timespan": {
+                    "begin": "2023-05-05T06:35:06.000Z",
+                    "end": "2023-05-05T06:45:18.325Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a bus",
+                "Distance": "3168"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.43473699999998,
+                    43.0506305,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "7-Eleven Sapporo Kitagō 3-Jō Shop",
+                "address": "11 Chome-8-27 Kitago 3 Jo, Shiroishi Ward, Sapporo, Hokkaido 003-0833",
+                "description": " 편의점 from 2023-05-05T06:45:18.325Z to 2023-05-05T06:55:44.141Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T06:45:18.325Z",
+                    "end": "2023-05-05T06:55:44.141Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "편의점",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        141.43473699999998,
+                        43.0506305,
+                        0
+                    ],
+                    [
+                        141.43473699999998,
+                        43.0506305,
+                        0
+                    ],
+                    [
+                        141.4347733,
+                        43.0497434,
+                        0
+                    ],
+                    [
+                        141.4345839,
+                        43.0491112,
+                        0
+                    ],
+                    [
+                        141.4360086,
+                        43.0489092,
+                        0
+                    ],
+                    [
+                        141.43640299999998,
+                        43.0489469,
+                        0
+                    ],
+                    [
+                        141.43640299999998,
+                        43.0489469,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-05T06:55:44.141Z to 2023-05-05T06:58:49.250Z. Distance 320m ",
+                "timespan": {
+                    "begin": "2023-05-05T06:55:44.141Z",
+                    "end": "2023-05-05T06:58:49.250Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "320"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.43640299999998,
+                    43.0489469,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "12-chōme-2-26 Kitagō 2 Jō",
+                "address": "12-chōme-2-26 Kitagō 2 Jō, Shiroishi Ward, Sapporo, Hokkaido 003-0832",
+                "description": " 건축물 from 2023-05-05T06:58:49.250Z to 2023-05-06T02:45:38.982Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-05T06:58:49.250Z",
+                    "end": "2023-05-06T02:45:38.982Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "건축물",
+                "Distance": "0"
+            }
+        }
+    ]
+}

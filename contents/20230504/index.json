@@ -1,0 +1,64 @@
+{
+    "date": "20230504",
+    "geojson": "contents/20230504/history.json",
+    "movement": {
+        "walking": 5.6,
+        "bus": 2.1,
+        "train": 41.2,
+        "airplane": 0,
+        "subway": 0,
+        "taxi": 0
+    },
+    "medias": [
+        {
+            "original": "contents/20230504/original/IMG_2028.avif",
+            "thumbnail": "contents/20230504/thumbnail/IMG_2028.avif",
+            "desc": "다음 숙소로 이동하는 중..",
+            "latitude": 43.048652777777775,
+            "longitude": 141.43719444444446,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-04T10:42:43.000Z"
+        },
+        {
+            "original": "contents/20230504/original/IMG_2030.avif",
+            "thumbnail": "contents/20230504/thumbnail/IMG_2030.avif",
+            "desc": "",
+            "latitude": 43.03845277777778,
+            "longitude": 141.43557777777778,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-04T12:47:29.000Z"
+        },
+        {
+            "original": "contents/20230504/original/IMG_2032.avif",
+            "thumbnail": "contents/20230504/thumbnail/IMG_2032.avif",
+            "desc": "인터넷 글로만 보다가 실제로 보는건 처음인데.. 저거 하는 사람이 있나?",
+            "latitude": 43.03651111111111,
+            "longitude": 141.43275555555556,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-04T13:04:47.000Z"
+        },
+        {
+            "original": "contents/20230504/original/IMG_2033.avif",
+            "thumbnail": "contents/20230504/thumbnail/IMG_2033.avif",
+            "desc": "처음으로 츄니즘 체험",
+            "latitude": 43.03635833333333,
+            "longitude": 141.43261666666666,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-04T13:52:38.000Z"
+        },
+        {
+            "original": "contents/20230504/original/IMG_2034.avif",
+            "thumbnail": "contents/20230504/thumbnail/IMG_2034.avif",
+            "desc": "이거 할만한데..?",
+            "latitude": 43.036338888888885,
+            "longitude": 141.4325861111111,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-04T14:57:01.000Z"
+        }
+    ]
+}

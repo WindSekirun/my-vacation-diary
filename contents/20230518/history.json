@@ -1,0 +1,1293 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7313739,
+                    36.3792967,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Kuranomachi Kitchen",
+                "address": "12-20-1 Minatocho, Tochigi, 328-0045",
+                "description": " 게스트 하우스 from 2023-05-17T10:33:12.167Z to 2023-05-18T00:05:01.024Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-17T10:33:12.167Z",
+                    "end": "2023-05-18T00:05:01.024Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "게스트 하우스",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7313739,
+                        36.3792967,
+                        0
+                    ],
+                    [
+                        139.7313739,
+                        36.3792967,
+                        0
+                    ],
+                    [
+                        139.7311254,
+                        36.3786694,
+                        0
+                    ],
+                    [
+                        139.7313386,
+                        36.3793188,
+                        0
+                    ],
+                    [
+                        139.7302518,
+                        36.3745656,
+                        0
+                    ],
+                    [
+                        139.7304021,
+                        36.3772243,
+                        0
+                    ],
+                    [
+                        139.7301123,
+                        36.3764011,
+                        0
+                    ],
+                    [
+                        139.7302518,
+                        36.3745656,
+                        0
+                    ],
+                    [
+                        139.731028,
+                        36.3736162,
+                        0
+                    ],
+                    [
+                        139.7302542,
+                        36.3745496,
+                        0
+                    ],
+                    [
+                        139.7307327,
+                        36.3734621,
+                        0
+                    ],
+                    [
+                        139.7308011,
+                        36.3734839,
+                        0
+                    ],
+                    [
+                        139.7308011,
+                        36.3734839,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T00:05:01.024Z to 2023-05-18T00:14:46.023Z. Distance 1666m ",
+                "timespan": {
+                    "begin": "2023-05-18T00:05:01.024Z",
+                    "end": "2023-05-18T00:14:46.023Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "1666"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7308011,
+                    36.3734839,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Sukiya",
+                "address": "10-4 Sakaicho, Tochigi, 328-0043",
+                "description": " 쇠고기덮밥 전문점 from 2023-05-18T00:14:46.023Z to 2023-05-18T00:28:18.973Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T00:14:46.023Z",
+                    "end": "2023-05-18T00:28:18.973Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "쇠고기덮밥 전문점",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.73142959999998,
+                    36.3716588,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "도치기 역",
+                "address": "1 Numawadachō, Tochigi, 328-0042",
+                "description": " 기차역 from 2023-05-18T00:28:18.973Z to 2023-05-18T00:40:07.999Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T00:28:18.973Z",
+                    "end": "2023-05-18T00:40:07.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "기차역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.73117204921667,
+                        36.37170821796789,
+                        0
+                    ],
+                    [
+                        139.7307933,
+                        36.3727466,
+                        0
+                    ],
+                    [
+                        139.7254041,
+                        36.3698431,
+                        0
+                    ],
+                    [
+                        139.7132215,
+                        36.3613406,
+                        0
+                    ],
+                    [
+                        139.7028438,
+                        36.3479095,
+                        0
+                    ],
+                    [
+                        139.6829506,
+                        36.3393177,
+                        0
+                    ],
+                    [
+                        139.6677591,
+                        36.3305962,
+                        0
+                    ],
+                    [
+                        139.6576109,
+                        36.326542,
+                        0
+                    ],
+                    [
+                        139.628956,
+                        36.3253002,
+                        0
+                    ],
+                    [
+                        139.6113585,
+                        36.3213641,
+                        0
+                    ],
+                    [
+                        139.5923441,
+                        36.3170939,
+                        0
+                    ],
+                    [
+                        139.580098,
+                        36.3166554,
+                        0
+                    ],
+                    [
+                        139.5779814,
+                        36.3167978,
+                        0
+                    ],
+                    [
+                        139.576554,
+                        36.3165355,
+                        0
+                    ],
+                    [
+                        139.5647195,
+                        36.316184,
+                        0
+                    ],
+                    [
+                        139.5445088,
+                        36.3159944,
+                        0
+                    ],
+                    [
+                        139.5274497,
+                        36.3162021,
+                        0
+                    ],
+                    [
+                        139.5252499,
+                        36.3160932,
+                        0
+                    ],
+                    [
+                        139.5210061,
+                        36.3152421,
+                        0
+                    ],
+                    [
+                        139.5181504,
+                        36.3150749,
+                        0
+                    ],
+                    [
+                        139.5182916,
+                        36.3151027,
+                        0
+                    ],
+                    [
+                        139.5182916,
+                        36.3151027,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-18T00:40:07.999Z to 2023-05-18T01:06:23.999Z. Distance 21265m ",
+                "timespan": {
+                    "begin": "2023-05-18T00:40:07.999Z",
+                    "end": "2023-05-18T01:06:23.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "21265"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.5182916,
+                        36.3151027,
+                        0
+                    ],
+                    [
+                        139.5182916,
+                        36.3151027,
+                        0
+                    ],
+                    [
+                        139.5203784,
+                        36.3151168,
+                        0
+                    ],
+                    [
+                        139.52089297903237,
+                        36.314594681319086,
+                        0
+                    ],
+                    [
+                        139.52089297903237,
+                        36.314594681319086,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T01:06:23.999Z to 2023-05-18T01:10:38.256Z. Distance 261m ",
+                "timespan": {
+                    "begin": "2023-05-18T01:06:23.999Z",
+                    "end": "2023-05-18T01:10:38.256Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "261"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.5200222,
+                    36.3141561,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "아시카가 플라워 파크",
+                "address": "607 Hasamacho, Ashikaga, Tochigi 329-4216",
+                "description": " 묘목상 from 2023-05-18T01:10:38.256Z to 2023-05-18T02:41:17.001Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T01:10:38.256Z",
+                    "end": "2023-05-18T02:41:17.001Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "묘목상",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.52089297903237,
+                        36.314594681319086,
+                        0
+                    ],
+                    [
+                        139.52089297903237,
+                        36.314594681319086,
+                        0
+                    ],
+                    [
+                        139.5201681,
+                        36.3150966,
+                        0
+                    ],
+                    [
+                        139.5185615,
+                        36.3149423,
+                        0
+                    ],
+                    [
+                        139.5183822,
+                        36.3152592,
+                        0
+                    ],
+                    [
+                        139.5183822,
+                        36.3152592,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T02:41:17.001Z to 2023-05-18T02:48:09.857Z. Distance 269m ",
+                "timespan": {
+                    "begin": "2023-05-18T02:41:17.001Z",
+                    "end": "2023-05-18T02:48:09.857Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "269"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.5183822,
+                        36.3152592,
+                        0
+                    ],
+                    [
+                        139.5183822,
+                        36.3152592,
+                        0
+                    ],
+                    [
+                        139.5198321,
+                        36.3146044,
+                        0
+                    ],
+                    [
+                        139.524723,
+                        36.3159764,
+                        0
+                    ],
+                    [
+                        139.535129,
+                        36.3161048,
+                        0
+                    ],
+                    [
+                        139.5486651,
+                        36.3159366,
+                        0
+                    ],
+                    [
+                        139.5678448,
+                        36.3162874,
+                        0
+                    ],
+                    [
+                        139.5810301,
+                        36.3196365,
+                        0
+                    ],
+                    [
+                        139.57883999999999,
+                        36.3168661,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-18T02:48:09.857Z to 2023-05-18T02:56:21.000Z. Distance 6081m ",
+                "timespan": {
+                    "begin": "2023-05-18T02:48:09.857Z",
+                    "end": "2023-05-18T02:56:21.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "6081"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.57883999999999,
+                    36.3168661,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "사노 역",
+                "address": "539 Wakamatsucho, Sano, Tochigi 327-0846",
+                "description": " 기차역 from 2023-05-18T02:56:21.000Z to 2023-05-18T03:02:24.176Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T02:56:21.000Z",
+                    "end": "2023-05-18T03:02:24.176Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "기차역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.57883999999999,
+                        36.3168661,
+                        0
+                    ],
+                    [
+                        139.5807468,
+                        36.3183648,
+                        0
+                    ],
+                    [
+                        139.5810402,
+                        36.3191946,
+                        0
+                    ],
+                    [
+                        139.5810301,
+                        36.3196365,
+                        0
+                    ],
+                    [
+                        139.5808229,
+                        36.3199095,
+                        0
+                    ],
+                    [
+                        139.5802752,
+                        36.3206528,
+                        0
+                    ],
+                    [
+                        139.5791731,
+                        36.3204637,
+                        0
+                    ],
+                    [
+                        139.5788762,
+                        36.3211153,
+                        0
+                    ],
+                    [
+                        139.578964,
+                        36.3217285,
+                        0
+                    ],
+                    [
+                        139.5770317,
+                        36.3221302,
+                        0
+                    ],
+                    [
+                        139.5770288,
+                        36.3220171,
+                        0
+                    ],
+                    [
+                        139.5770288,
+                        36.3220171,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T03:02:24.176Z to 2023-05-18T03:10:23.002Z. Distance 953m ",
+                "timespan": {
+                    "begin": "2023-05-18T03:02:24.176Z",
+                    "end": "2023-05-18T03:10:23.002Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "953"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.5770288,
+                    36.3220171,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Sarashina",
+                "address": "605 Tenjincho, Sano, Tochigi 327-0847",
+                "description": " 소바 전문점 from 2023-05-18T03:10:23.002Z to 2023-05-18T03:50:06.046Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T03:10:23.002Z",
+                    "end": "2023-05-18T03:50:06.046Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "소바 전문점",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.5770288,
+                        36.3220171,
+                        0
+                    ],
+                    [
+                        139.5770288,
+                        36.3220171,
+                        0
+                    ],
+                    [
+                        139.575826,
+                        36.3218225,
+                        0
+                    ],
+                    [
+                        139.5735117,
+                        36.320477,
+                        0
+                    ],
+                    [
+                        139.573791,
+                        36.321094599999995,
+                        0
+                    ],
+                    [
+                        139.573791,
+                        36.321094599999995,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T03:50:06.046Z to 2023-05-18T03:51:21.001Z. Distance 438m ",
+                "timespan": {
+                    "begin": "2023-05-18T03:50:06.046Z",
+                    "end": "2023-05-18T03:51:21.001Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "438"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.573791,
+                    36.321094599999995,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Asahimoritenmangu",
+                "address": "807 Tenjincho, Sano, Tochigi 327-0847",
+                "description": " 신사 from 2023-05-18T03:51:21.001Z to 2023-05-18T04:03:51.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T03:51:21.001Z",
+                    "end": "2023-05-18T04:03:51.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "신사",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.573791,
+                        36.321094599999995,
+                        0
+                    ],
+                    [
+                        139.573791,
+                        36.321094599999995,
+                        0
+                    ],
+                    [
+                        139.5737012,
+                        36.320735,
+                        0
+                    ],
+                    [
+                        139.573704,
+                        36.3184682,
+                        0
+                    ],
+                    [
+                        139.574701,
+                        36.3174987,
+                        0
+                    ],
+                    [
+                        139.5760975,
+                        36.31562,
+                        0
+                    ],
+                    [
+                        139.5762516,
+                        36.315678399999996,
+                        0
+                    ],
+                    [
+                        139.5762516,
+                        36.315678399999996,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T04:03:51.000Z to 2023-05-18T04:09:46.135Z. Distance 691m ",
+                "timespan": {
+                    "begin": "2023-05-18T04:03:51.000Z",
+                    "end": "2023-05-18T04:09:46.135Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "691"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.5762516,
+                    36.315678399999996,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "COFFEE&DONUTS 5",
+                "address": "707 Igacho, Sano, Tochigi 327-0021",
+                "description": " 카페 from 2023-05-18T04:09:46.135Z to 2023-05-18T04:45:39.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T04:09:46.135Z",
+                    "end": "2023-05-18T04:45:39.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "카페",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.5762516,
+                        36.315678399999996,
+                        0
+                    ],
+                    [
+                        139.5762516,
+                        36.315678399999996,
+                        0
+                    ],
+                    [
+                        139.5777428,
+                        36.3158387,
+                        0
+                    ],
+                    [
+                        139.5764463,
+                        36.3156871,
+                        0
+                    ],
+                    [
+                        139.5789842,
+                        36.3166363,
+                        0
+                    ],
+                    [
+                        139.5786869,
+                        36.3159578,
+                        0
+                    ],
+                    [
+                        139.57907950678936,
+                        36.31661935470544,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T04:45:39.000Z to 2023-05-18T04:46:49.171Z. Distance 664m ",
+                "timespan": {
+                    "begin": "2023-05-18T04:45:39.000Z",
+                    "end": "2023-05-18T04:46:49.171Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "664"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.57883999999999,
+                    36.3168661,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "사노 역",
+                "address": "539 Wakamatsucho, Sano, Tochigi 327-0846",
+                "description": " 기차역 from 2023-05-18T04:46:49.171Z to 2023-05-18T04:56:47.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T04:46:49.171Z",
+                    "end": "2023-05-18T04:56:47.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "기차역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.57907950678936,
+                        36.31661935470544,
+                        0
+                    ],
+                    [
+                        139.5789842,
+                        36.3166363,
+                        0
+                    ],
+                    [
+                        139.5870663,
+                        36.3169064,
+                        0
+                    ],
+                    [
+                        139.6030058,
+                        36.3195626,
+                        0
+                    ],
+                    [
+                        139.6261812,
+                        36.3248104,
+                        0
+                    ],
+                    [
+                        139.6434613,
+                        36.3267537,
+                        0
+                    ],
+                    [
+                        139.6577995,
+                        36.3266709,
+                        0
+                    ],
+                    [
+                        139.6619831,
+                        36.3270519,
+                        0
+                    ],
+                    [
+                        139.6763545,
+                        36.3358254,
+                        0
+                    ],
+                    [
+                        139.6925831,
+                        36.3426584,
+                        0
+                    ],
+                    [
+                        139.697478,
+                        36.3443465,
+                        0
+                    ],
+                    [
+                        139.7043369,
+                        36.349264,
+                        0
+                    ],
+                    [
+                        139.7184546,
+                        36.3650892,
+                        0
+                    ],
+                    [
+                        139.7304807,
+                        36.3721552,
+                        0
+                    ],
+                    [
+                        139.7312523,
+                        36.371767999999996,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-18T04:56:47.000Z to 2023-05-18T05:11:24.998Z. Distance 15709m ",
+                "timespan": {
+                    "begin": "2023-05-18T04:56:47.000Z",
+                    "end": "2023-05-18T05:11:24.998Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "15709"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.73142959999998,
+                    36.3716588,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "도치기 역",
+                "address": "1 Numawadachō, Tochigi, 328-0042",
+                "description": " 기차역 from 2023-05-18T05:11:24.998Z to 2023-05-18T05:16:51.001Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T05:11:24.998Z",
+                    "end": "2023-05-18T05:16:51.001Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "기차역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7312523,
+                        36.371767999999996,
+                        0
+                    ],
+                    [
+                        139.7303073,
+                        36.372955,
+                        0
+                    ],
+                    [
+                        139.7301075,
+                        36.3736012,
+                        0
+                    ],
+                    [
+                        139.7298463,
+                        36.3741668,
+                        0
+                    ],
+                    [
+                        139.7296934,
+                        36.3743852,
+                        0
+                    ],
+                    [
+                        139.72966,
+                        36.3745575,
+                        0
+                    ],
+                    [
+                        139.7298042,
+                        36.3755401,
+                        0
+                    ],
+                    [
+                        139.729569,
+                        36.3760703,
+                        0
+                    ],
+                    [
+                        139.729914,
+                        36.3770268,
+                        0
+                    ],
+                    [
+                        139.7313622,
+                        36.379326,
+                        0
+                    ],
+                    [
+                        139.7313739,
+                        36.3792967,
+                        0
+                    ],
+                    [
+                        139.7313739,
+                        36.3792967,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T05:16:51.001Z to 2023-05-18T05:24:20.000Z. Distance 918m ",
+                "timespan": {
+                    "begin": "2023-05-18T05:16:51.001Z",
+                    "end": "2023-05-18T05:24:20.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "918"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7313739,
+                    36.3792967,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Kuranomachi Kitchen",
+                "address": "12-20-1 Minatocho, Tochigi, 328-0045",
+                "description": " 게스트 하우스 from 2023-05-18T05:24:20.000Z to 2023-05-18T06:14:02.553Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T05:24:20.000Z",
+                    "end": "2023-05-18T06:14:02.553Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "게스트 하우스",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7313739,
+                        36.3792967,
+                        0
+                    ],
+                    [
+                        139.7313739,
+                        36.3792967,
+                        0
+                    ],
+                    [
+                        139.7312685,
+                        36.3790858,
+                        0
+                    ],
+                    [
+                        139.7329573,
+                        36.3785982,
+                        0
+                    ],
+                    [
+                        139.7331645,
+                        36.3784151,
+                        0
+                    ],
+                    [
+                        139.7331645,
+                        36.3784151,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T06:14:02.553Z to 2023-05-18T06:16:14.151Z. Distance 213m ",
+                "timespan": {
+                    "begin": "2023-05-18T06:14:02.553Z",
+                    "end": "2023-05-18T06:16:14.151Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "213"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7331645,
+                    36.3784151,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Starbucks Coffee - Tochigi Yamato-cho",
+                "address": "〒328-0037 Tochigi, Yamatocho, 7−1 TS-TOWN",
+                "description": " 커피숍/커피 전문점 from 2023-05-18T06:16:14.151Z to 2023-05-18T08:50:15.742Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T06:16:14.151Z",
+                    "end": "2023-05-18T08:50:15.742Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "커피숍/커피 전문점",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7331645,
+                        36.3784151,
+                        0
+                    ],
+                    [
+                        139.7331645,
+                        36.3784151,
+                        0
+                    ],
+                    [
+                        139.7332514,
+                        36.3784523,
+                        0
+                    ],
+                    [
+                        139.7331088,
+                        36.3770889,
+                        0
+                    ],
+                    [
+                        139.732582,
+                        36.3786858,
+                        0
+                    ],
+                    [
+                        139.7320078,
+                        36.3764119,
+                        0
+                    ],
+                    [
+                        139.73126410000003,
+                        36.376309299999996,
+                        0
+                    ],
+                    [
+                        139.73126410000003,
+                        36.376309299999996,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T08:50:15.742Z to 2023-05-18T08:53:00.001Z. Distance 670m ",
+                "timespan": {
+                    "begin": "2023-05-18T08:50:15.742Z",
+                    "end": "2023-05-18T08:53:00.001Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "670"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7312641,
+                    36.376309299999996,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "New TOKITA",
+                "address": "2-36 Muromachi, Tochigi, 328-0036",
+                "description": " 일식당 및 일정식집 from 2023-05-18T08:53:00.001Z to 2023-05-18T09:16:39.291Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T08:53:00.001Z",
+                    "end": "2023-05-18T09:16:39.291Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "일식당 및 일정식집",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.73126410000003,
+                        36.376309299999996,
+                        0
+                    ],
+                    [
+                        139.73126410000003,
+                        36.376309299999996,
+                        0
+                    ],
+                    [
+                        139.7320299,
+                        36.3764292,
+                        0
+                    ],
+                    [
+                        139.7333333,
+                        36.3773946,
+                        0
+                    ],
+                    [
+                        139.7335083,
+                        36.3778946,
+                        0
+                    ],
+                    [
+                        139.732336,
+                        36.3766322,
+                        0
+                    ],
+                    [
+                        139.7313387,
+                        36.3789184,
+                        0
+                    ],
+                    [
+                        139.7334614,
+                        36.3786287,
+                        0
+                    ],
+                    [
+                        139.7313132,
+                        36.3789445,
+                        0
+                    ],
+                    [
+                        139.7313739,
+                        36.3792967,
+                        0
+                    ],
+                    [
+                        139.7313739,
+                        36.3792967,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-18T09:16:39.291Z to 2023-05-18T09:29:12.189Z. Distance 1158m ",
+                "timespan": {
+                    "begin": "2023-05-18T09:16:39.291Z",
+                    "end": "2023-05-18T09:29:12.189Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "1158"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7313739,
+                    36.3792967,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Kuranomachi Kitchen",
+                "address": "12-20-1 Minatocho, Tochigi, 328-0045",
+                "description": " 게스트 하우스 from 2023-05-18T09:29:12.189Z to 2023-05-18T23:47:04.799Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-18T09:29:12.189Z",
+                    "end": "2023-05-18T23:47:04.799Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "게스트 하우스",
+                "Distance": "0"
+            }
+        }
+    ]
+}

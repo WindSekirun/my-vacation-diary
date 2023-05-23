@@ -1,0 +1,44 @@
+{
+    "date": "20230506",
+    "geojson": "contents/20230506/history.json",
+    "movement": {
+        "walking": 7.8,
+        "bus": 0,
+        "train": 0,
+        "airplane": 0,
+        "subway": 0,
+        "taxi": 0
+    },
+    "medias": [
+        {
+            "original": "contents/20230506/original/IMG_2056.avif",
+            "thumbnail": "contents/20230506/thumbnail/IMG_2056.avif",
+            "desc": "점심",
+            "latitude": 43.053733333333334,
+            "longitude": 141.44024722222224,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-06T12:09:02.000Z"
+        },
+        {
+            "original": "contents/20230506/original/IMG_2058.avif",
+            "thumbnail": "contents/20230506/thumbnail/IMG_2058.avif",
+            "desc": "집 근처 공원",
+            "latitude": 43.064636111111106,
+            "longitude": 141.4478,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-06T12:52:55.000Z"
+        },
+        {
+            "original": "contents/20230506/original/IMG_2059.avif",
+            "thumbnail": "contents/20230506/thumbnail/IMG_2059.avif",
+            "desc": "저녁",
+            "latitude": 43.049213888888886,
+            "longitude": 141.44116111111111,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-06T17:32:34.000Z"
+        }
+    ]
+}

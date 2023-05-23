@@ -1,0 +1,114 @@
+{
+    "date": "20230509",
+    "geojson": "contents/20230509/history.json",
+    "movement": {
+        "walking": 5.2,
+        "bus": 0,
+        "train": 122,
+        "airplane": 863,
+        "subway": 0,
+        "taxi": 0
+    },
+    "medias": [
+        {
+            "original": "contents/20230509/original/IMG_2124.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2124.avif",
+            "desc": "신치토세 공항으로 이동중..",
+            "latitude": 43.047016666666664,
+            "longitude": 141.4383388888889,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T08:41:14.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2126.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2126.avif",
+            "desc": "수속 다 마치고 탑승구 대기중. 기내수화물 7KG 제한 덕분에 위탁수화물 더 보내서 1850엔 뜯김ㅠㅠ",
+            "latitude": 42.789313888888884,
+            "longitude": 141.68057222222222,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T11:38:55.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2127.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2127.avif",
+            "desc": "그리고 역시 비상구",
+            "latitude": 42.789833333333334,
+            "longitude": 141.68000833333332,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T11:49:55.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2128.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2128.avif",
+            "desc": "neo가 아닌 A320ceo",
+            "latitude": 42.78978055555555,
+            "longitude": 141.68103055555554,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T11:50:20.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2129.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2129.avif",
+            "desc": "A320ceo, A320neo 의 차이는 윙렛에서 잘 보임. 저 멀리 윙렛이 긴거가 A320neo, 짧은게 ceo. ceo에서는 긴 윙렛이 옵션이었으나 neo부터는 기본 탑재라 더더욱 차이가 보임",
+            "latitude": 42.789855555555555,
+            "longitude": 141.6811222222222,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T11:59:22.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2130.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2130.avif",
+            "desc": "Taxing...",
+            "latitude": 42.78835,
+            "longitude": 141.68809444444446,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T12:12:42.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2131.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2131.avif",
+            "desc": "",
+            "latitude": 36.52055277777778,
+            "longitude": 140.61528055555556,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T13:14:22.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2132.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2132.avif",
+            "desc": "보딩 브릿지가 아닌 주기장에서 하차. 실제 착륙했던 활주로보다 엄청 멀리 와서 ANA가 있는 곳까지 오다보니 시간이... 그리고 옆에는 이제는 단종된 ANA의 A380",
+            "latitude": 35.75902222222222,
+            "longitude": 140.3892222222222,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T13:46:34.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2136.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2136.avif",
+            "desc": "다른 도장의 A380 (역시 ANA)",
+            "latitude": 35.76231666666666,
+            "longitude": 140.38992222222222,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-09T13:57:25.000Z"
+        },
+        {
+            "original": "contents/20230509/original/IMG_2143.avif",
+            "thumbnail": "contents/20230509/thumbnail/IMG_2143.avif",
+            "desc": "저녁",
+            "latitude": 35.52958611111111,
+            "longitude": 139.69827222222222,
+            "model": "iPhone 14 Pro Max back triple camera 2.22mm f/2.2",
+            "make": "Apple",
+            "time": "2023-05-09T18:56:01.000Z"
+        }
+    ]
+}

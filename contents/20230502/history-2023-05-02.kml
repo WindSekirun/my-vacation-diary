@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+	<Document>
+		<name>
+			Location history from 2023-05-02 to 2023-05-02
+		</name>
+		<open>
+			1
+		</open>
+		<description>
+		</description>
+		<StyleMap id="multiTrack">
+			<Pair>
+				<key>
+					normal
+				</key>
+				<styleUrl>
+					#multiTrack_n
+				</styleUrl>
+			</Pair>
+			<Pair>
+				<key>
+					highlight
+				</key>
+				<styleUrl>
+					#multiTrack_h
+				</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="multiTrack_n">
+			<IconStyle>
+				<Icon>
+					<href>
+						https://earth.google.com/images/kml-icons/track-directional/track-0.png
+					</href>
+				</Icon>
+			</IconStyle>
+			<LineStyle>
+				<color>
+					99ffac59
+				</color>
+				<width>
+					6
+				</width>
+			</LineStyle>
+		</Style>
+		<Style id="multiTrack_h">
+			<IconStyle>
+				<scale>
+					1.2
+				</scale>
+				<Icon>
+					<href>
+						https://earth.google.com/images/kml-icons/track-directional/track-0.png
+					</href>
+				</Icon>
+			</IconStyle>
+			<LineStyle>
+				<color>
+					99ffac59
+				</color>
+				<width>
+					8
+				</width>
+			</LineStyle>
+		</Style>
+		<Placemark>
+			<name>
+				太田グループ 民泊太田 除雪部スノーダスト
+			</name>
+			<address>
+				1 Chome-7-3 Midori, Otaru, Hokkaido 047-0034
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						호텔
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				호텔 from 2023-05-01T10:59:05.000Z to 2023-05-02T02:46:06.182Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					140.9912431,43.190872,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-01T10:59:05.000Z
+				</begin>
+				<end>
+					2023-05-02T02:46:06.182Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Walking
+			</name>
+			<address>
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						Walking
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						158
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				Walking from 2023-05-02T02:46:06.182Z to 2023-05-02T02:48:20.999Z. Distance 158m
+			</description>
+			<LineString>
+				<altitudeMode>
+					clampToGround
+				</altitudeMode>
+				<extrude>
+					1
+				</extrude>
+				<tesselate>
+					1
+				</tesselate>
+				<coordinates>
+					140.9912431,43.190872,0 140.9912431,43.190872,0 140.9914607,43.1907616,0 140.9911862,43.1912855,0 140.9910064,43.1916435,0 140.9912944,43.191839099999996,0
+				</coordinates>
+			</LineString>
+			<TimeSpan>
+				<begin>
+					2023-05-02T02:46:06.182Z
+				</begin>
+				<end>
+					2023-05-02T02:48:20.999Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				미도리잇초메
+			</name>
+			<address>
+				1-chōme-4 Midori, Otaru, Hokkaido 047-0034
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						버스 정류장
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				버스 정류장 from 2023-05-02T02:48:20.999Z to 2023-05-02T03:00:47.999Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					140.9912944,43.191839099999996,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T02:48:20.999Z
+				</begin>
+				<end>
+					2023-05-02T03:00:47.999Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				On a bus
+			</name>
+			<address>
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						On a bus
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						3406
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				On a bus from 2023-05-02T03:00:47.999Z to 2023-05-02T03:12:01.001Z. Distance 3406m
+			</description>
+			<LineString>
+				<altitudeMode>
+					clampToGround
+				</altitudeMode>
+				<extrude>
+					1
+				</extrude>
+				<tesselate>
+					1
+				</tesselate>
+				<coordinates>
+					140.9912944,43.191839099999996,0 140.9912008,43.1918489,0 140.9910756,43.1910801,0 140.9899843,43.1895632,0 140.9874766,43.1851415,0 140.9871566,43.183897,0 140.988434,43.180286,0 140.9890804,43.1792427,0 140.9904198,43.179473,0 140.9967862,43.179849,0 140.999286,43.1830389,0 141.0046781,43.186305,0 141.0036267,43.1849994,0 141.00526,43.1849295,0 141.00526,43.1849295,0
+				</coordinates>
+			</LineString>
+			<TimeSpan>
+				<begin>
+					2023-05-02T03:00:47.999Z
+				</begin>
+				<end>
+					2023-05-02T03:12:01.001Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Walking
+			</name>
+			<address>
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						Walking
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						255
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				Walking from 2023-05-02T03:12:01.001Z to 2023-05-02T03:14:39.000Z. Distance 255m
+			</description>
+			<LineString>
+				<altitudeMode>
+					clampToGround
+				</altitudeMode>
+				<extrude>
+					1
+				</extrude>
+				<tesselate>
+					1
+				</tesselate>
+				<coordinates>
+					141.00526,43.1849295,0 141.00526,43.1849295,0 141.005365,43.1851432,0 141.0045985,43.1864604,0 141.0047183,43.187097,0 141.0047183,43.187097,0
+				</coordinates>
+			</LineString>
+			<TimeSpan>
+				<begin>
+					2023-05-02T03:12:01.001Z
+				</begin>
+				<end>
+					2023-05-02T03:14:39.000Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				そば処 月
+			</name>
+			<address>
+				1 Chome-1-15 Suminoe, Otaru, Hokkaido 047-0014
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						소바 전문점
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				소바 전문점 from 2023-05-02T03:14:39.000Z to 2023-05-02T03:43:13.425Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					141.0047183,43.187097,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T03:14:39.000Z
+				</begin>
+				<end>
+					2023-05-02T03:43:13.425Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				오타루 오르골당
+			</name>
+			<address>
+				4-1 Sumiyoshicho, Otaru, Hokkaido 047-0015
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						주크박스 판매점
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				주크박스 판매점 from 2023-05-02T03:44:08.431Z to 2023-05-02T04:40:07.999Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					141.00783769999998,43.1905754,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T03:44:08.431Z
+				</begin>
+				<end>
+					2023-05-02T04:40:07.999Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Walking
+			</name>
+			<address>
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						Walking
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						927
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				Walking from 2023-05-02T04:40:07.999Z to 2023-05-02T04:49:28.637Z. Distance 927m
+			</description>
+			<LineString>
+				<altitudeMode>
+					clampToGround
+				</altitudeMode>
+				<extrude>
+					1
+				</extrude>
+				<tesselate>
+					1
+				</tesselate>
+				<coordinates>
+					141.00783769999998,43.1905754,0 141.00783769999998,43.1905754,0 141.0074098,43.1907706,0 141.0064655,43.1937061,0 141.0053233,43.1948461,0 141.0037191,43.1956339,0 141.0019823,43.1969846,0 141.0023459,43.1970834,0 141.0023459,43.1970834,0
+				</coordinates>
+			</LineString>
+			<TimeSpan>
+				<begin>
+					2023-05-02T04:40:07.999Z
+				</begin>
+				<end>
+					2023-05-02T04:49:28.637Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Otaru Canal Terminal
+			</name>
+			<address>
+				〒047-0031 Hokkaido, Otaru, Ironai, 1 Chome−1−12 小樽運河ターミナル 1F
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						음식점
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				음식점 from 2023-05-02T04:49:28.637Z to 2023-05-02T05:11:38.999Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					141.0023459,43.1970834,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T04:49:28.637Z
+				</begin>
+				<end>
+					2023-05-02T05:11:38.999Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Walking
+			</name>
+			<address>
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						Walking
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						711
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				Walking from 2023-05-02T05:11:38.999Z to 2023-05-02T05:19:23.992Z. Distance 711m
+			</description>
+			<LineString>
+				<altitudeMode>
+					clampToGround
+				</altitudeMode>
+				<extrude>
+					1
+				</extrude>
+				<tesselate>
+					1
+				</tesselate>
+				<coordinates>
+					141.0023459,43.1970834,0 141.0023459,43.1970834,0 141.0022032,43.1969013,0 141.0004437,43.198695,0 140.997792,43.19877,0 140.9955181,43.1981155,0 140.995589,43.197849999999995,0 140.995589,43.197849999999995,0
+				</coordinates>
+			</LineString>
+			<TimeSpan>
+				<begin>
+					2023-05-02T05:11:38.999Z
+				</begin>
+				<end>
+					2023-05-02T05:19:23.992Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Karaokemasshu Otaruekimaeten
+			</name>
+			<address>
+				2 Chome-10-8 Inaho, Otaru, Hokkaido 047-0032
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						노래방
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				노래방 from 2023-05-02T05:19:23.992Z to 2023-05-02T07:20:50.610Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					140.995589,43.197849999999995,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T05:19:23.992Z
+				</begin>
+				<end>
+					2023-05-02T07:20:50.610Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Walking
+			</name>
+			<address>
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						Walking
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						723
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				Walking from 2023-05-02T07:20:50.610Z to 2023-05-02T07:33:29.494Z. Distance 723m
+			</description>
+			<LineString>
+				<altitudeMode>
+					clampToGround
+				</altitudeMode>
+				<extrude>
+					1
+				</extrude>
+				<tesselate>
+					1
+				</tesselate>
+				<coordinates>
+					140.995589,43.197849999999995,0 140.995589,43.197849999999995,0 140.995502,43.1980917,0 140.9940148,43.2013762,0 140.9944063,43.2025582,0 140.996379,43.2027026,0 140.9962473,43.202602299999995,0 140.9962473,43.202602299999995,0
+				</coordinates>
+			</LineString>
+			<TimeSpan>
+				<begin>
+					2023-05-02T07:20:50.610Z
+				</begin>
+				<end>
+					2023-05-02T07:33:29.494Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Victoria Station
+			</name>
+			<address>
+				4 Chome-2-20 Inaho, Otaru, Hokkaido 047-0032
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						스테이크
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				스테이크 from 2023-05-02T07:33:29.494Z to 2023-05-02T07:57:53.178Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					140.9962473,43.202602299999995,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T07:33:29.494Z
+				</begin>
+				<end>
+					2023-05-02T07:57:53.178Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				2-chōme-10 Inaho
+			</name>
+			<address>
+				〒047-0032 홋카이도 오타루시 이나호 2 조메
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				from 2023-05-02T07:58:41.593Z to 2023-05-02T08:13:14.999Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					140.9958335,43.1979901,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T07:58:41.593Z
+				</begin>
+				<end>
+					2023-05-02T08:13:14.999Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				On a bus
+			</name>
+			<address>
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						On a bus
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						1640
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				On a bus from 2023-05-02T08:13:14.999Z to 2023-05-02T08:22:37.208Z. Distance 1640m
+			</description>
+			<LineString>
+				<altitudeMode>
+					clampToGround
+				</altitudeMode>
+				<extrude>
+					1
+				</extrude>
+				<tesselate>
+					1
+				</tesselate>
+				<coordinates>
+					140.99720036050218,43.19890143432377,0 140.99720036050218,43.19890143432377,0 140.9972008,43.1990466,0 141.0003947,43.19874,0 140.9996841,43.1962988,0 140.9950396,43.1947723,0 140.9920718,43.1893375,0 140.99183260384683,43.18942763181492,0 140.99183260384683,43.18942763181492,0
+				</coordinates>
+			</LineString>
+			<TimeSpan>
+				<begin>
+					2023-05-02T08:13:14.999Z
+				</begin>
+				<end>
+					2023-05-02T08:22:37.208Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				오타루 공원
+			</name>
+			<address>
+				5 Chome-3 Hanazono, Otaru, Hokkaido 047-0024
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						공원
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				공원 from 2023-05-02T08:22:37.208Z to 2023-05-02T08:32:53.221Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					140.9928535,43.1874463,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T08:22:37.208Z
+				</begin>
+				<end>
+					2023-05-02T08:32:53.221Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				Walking
+			</name>
+			<address>
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						Walking
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						1119
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				Walking from 2023-05-02T08:32:53.221Z to 2023-05-02T08:42:54.000Z. Distance 1119m
+			</description>
+			<LineString>
+				<altitudeMode>
+					clampToGround
+				</altitudeMode>
+				<extrude>
+					1
+				</extrude>
+				<tesselate>
+					1
+				</tesselate>
+				<coordinates>
+					140.99183260384683,43.18942763181492,0 140.99183260384683,43.18942763181492,0 140.9919357,43.1886549,0 140.9937965,43.1896599,0 140.9939772,43.1897493,0 140.9938796,43.190408,0 140.9920045,43.1893213,0 140.9938453,43.1911777,0 140.9937186,43.1913544,0 140.9924682,43.1919622,0 140.9912851,43.1908473,0 140.9912431,43.190872,0 140.9912431,43.190872,0
+				</coordinates>
+			</LineString>
+			<TimeSpan>
+				<begin>
+					2023-05-02T08:32:53.221Z
+				</begin>
+				<end>
+					2023-05-02T08:42:54.000Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+		<Placemark>
+			<name>
+				太田グループ 民泊太田 除雪部スノーダスト
+			</name>
+			<address>
+				1 Chome-7-3 Midori, Otaru, Hokkaido 047-0034
+			</address>
+			<ExtendedData>
+				<Data name="Email">
+					<value>
+						h.mina.moe@gmail.com
+					</value>
+				</Data>
+				<Data name="Category">
+					<value>
+						호텔
+					</value>
+				</Data>
+				<Data name="Distance">
+					<value>
+						0
+					</value>
+				</Data>
+			</ExtendedData>
+			<description>
+				호텔 from 2023-05-02T08:42:54.000Z to 2023-05-03T02:26:54.459Z. Distance 0m
+			</description>
+			<Point>
+				<coordinates>
+					140.9912431,43.190872,0
+				</coordinates>
+			</Point>
+			<TimeSpan>
+				<begin>
+					2023-05-02T08:42:54.000Z
+				</begin>
+				<end>
+					2023-05-03T02:26:54.459Z
+				</end>
+			</TimeSpan>
+		</Placemark>
+	</Document>
+</kml>

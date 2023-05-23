@@ -1,0 +1,294 @@
+{
+    "date": "20230510",
+    "geojson": "contents/20230510/history.json",
+    "movement": {
+        "walking": 7.4,
+        "bus": 1.5,
+        "train": 81.7,
+        "airplane": 0,
+        "subway": 0,
+        "taxi": 0
+    },
+    "medias": [
+        {
+            "original": "contents/20230510/original/IMG_2144.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2144.avif",
+            "desc": "",
+            "latitude": 35.52596388888889,
+            "longitude": 139.6941527777778,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T10:14:18.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2146.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2146.avif",
+            "desc": "가마쿠라역 가는중..",
+            "latitude": 35.466055555555556,
+            "longitude": 139.62217777777778,
+            "model": "iPhone 14 Pro Max back triple camera 9mm f/2.8",
+            "make": "Apple",
+            "time": "2023-05-10T10:48:48.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2148.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2148.avif",
+            "desc": "에노덴 1일 승차권 발급 완료",
+            "latitude": 35.31813888888889,
+            "longitude": 139.55009444444445,
+            "model": "iPhone 14 Pro Max back triple camera 2.22mm f/2.2",
+            "make": "Apple",
+            "time": "2023-05-10T11:32:41.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2149.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2149.avif",
+            "desc": "들어오는중",
+            "latitude": 35.31816388888889,
+            "longitude": 139.55008055555555,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T11:35:50.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2151.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2151.avif",
+            "desc": "3개 연결 편성이라 비어있지만 운전석은 이렇게 생김",
+            "latitude": 35.31810277777778,
+            "longitude": 139.55011111111114,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T11:37:03.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2152.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2152.avif",
+            "desc": "",
+            "latitude": 35.31139722222222,
+            "longitude": 139.5365,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T11:44:35.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2153.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2153.avif",
+            "desc": "전체 루트 맵",
+            "latitude": 35.310966666666666,
+            "longitude": 139.53413333333333,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T11:46:11.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2154.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2154.avif",
+            "desc": "이정도 간격.. 지금 숙소도 그렇지만 이렇게 철도와 가까우면 소음 괜찮나..",
+            "latitude": 35.304566666666666,
+            "longitude": 139.52401666666668,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T11:49:45.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2155.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2155.avif",
+            "desc": "시치리가하마 역에서 하차, 여기서부터 고시고에역까지는 도보 이동",
+            "latitude": 35.30622222222222,
+            "longitude": 139.51060555555554,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T11:57:14.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2156.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2156.avif",
+            "desc": "바다다",
+            "latitude": 35.30490555555555,
+            "longitude": 139.51051388888888,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:01:49.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2157.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2157.avif",
+            "desc": "",
+            "latitude": 35.30609166666667,
+            "longitude": 139.50613333333334,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:09:10.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2158.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2158.avif",
+            "desc": "",
+            "latitude": 35.30608055555555,
+            "longitude": 139.50613333333334,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:09:14.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2159.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2159.avif",
+            "desc": "앞에도 찍는 사람이 있음",
+            "latitude": 35.306308333333334,
+            "longitude": 139.5047,
+            "model": "iPhone 14 Pro Max back camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:12:06.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2161.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2161.avif",
+            "desc": "",
+            "latitude": 35.306275,
+            "longitude": 139.50473055555557,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:12:36.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2162.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2162.avif",
+            "desc": "",
+            "latitude": 35.30628055555555,
+            "longitude": 139.5047,
+            "model": "iPhone 14 Pro Max back camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:13:13.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2164.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2164.avif",
+            "desc": "고등학교역에 있는 신기한 보행로. 횡단보도 신호등이 저기있음",
+            "latitude": 35.30672777777777,
+            "longitude": 139.50024444444443,
+            "model": "iPhone 14 Pro Max back triple camera 2.22mm f/2.2",
+            "make": "Apple",
+            "time": "2023-05-10T12:21:37.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2165.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2165.avif",
+            "desc": "",
+            "latitude": 35.30672777777777,
+            "longitude": 139.50024444444443,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:21:39.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2166.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2166.avif",
+            "desc": "",
+            "latitude": 35.30675833333333,
+            "longitude": 139.49792499999998,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:24:50.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2168.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2168.avif",
+            "desc": "",
+            "latitude": 35.30659444444444,
+            "longitude": 139.49781666666667,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:27:24.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2169.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2169.avif",
+            "desc": "고시고에역의 도로겸용구간",
+            "latitude": 35.3084,
+            "longitude": 139.49310277777778,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:40:18.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2170.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2170.avif",
+            "desc": "",
+            "latitude": 35.30843055555555,
+            "longitude": 139.49302777777777,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:40:34.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2171.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2171.avif",
+            "desc": "",
+            "latitude": 35.30842222222222,
+            "longitude": 139.49318055555554,
+            "model": "iPhone 14 Pro Max back camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:44:57.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2173.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2173.avif",
+            "desc": "",
+            "latitude": 35.30832777777778,
+            "longitude": 139.49325555555555,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T12:51:01.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2174.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2174.avif",
+            "desc": "",
+            "latitude": 35.31118333333333,
+            "longitude": 139.4874583333333,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T13:02:21.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2175.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2175.avif",
+            "desc": "점심",
+            "latitude": 35.31152222222222,
+            "longitude": 139.4874111111111,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T13:15:52.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2178.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2178.avif",
+            "desc": "에노시마에서 본 바다",
+            "latitude": 35.30245277777777,
+            "longitude": 139.48110833333334,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T13:57:09.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2180.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2180.avif",
+            "desc": "",
+            "latitude": 35.300438888888884,
+            "longitude": 139.48004166666666,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T14:03:39.000Z"
+        },
+        {
+            "original": "contents/20230510/original/IMG_2181.avif",
+            "thumbnail": "contents/20230510/thumbnail/IMG_2181.avif",
+            "desc": "",
+            "latitude": 35.30105555555555,
+            "longitude": 139.48054444444443,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-10T14:19:24.000Z"
+        }
+    ]
+}

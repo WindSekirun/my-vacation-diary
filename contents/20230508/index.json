@@ -1,0 +1,54 @@
+{
+    "date": "20230508",
+    "geojson": "contents/20230508/history.json",
+    "movement": {
+        "walking": 4.8,
+        "bus": 1.8,
+        "train": 0,
+        "airplane": 0,
+        "subway": 0,
+        "taxi": 0
+    },
+    "medias": [
+        {
+            "original": "contents/20230508/original/IMG_2117.avif",
+            "thumbnail": "contents/20230508/thumbnail/IMG_2117.avif",
+            "desc": "점심",
+            "latitude": 43.05014166666666,
+            "longitude": 141.4343861111111,
+            "model": "iPhone 14 Pro Max back triple camera 2.22mm f/2.2",
+            "make": "Apple",
+            "time": "2023-05-08T11:26:51.000Z"
+        },
+        {
+            "original": "contents/20230508/original/IMG_2119.avif",
+            "thumbnail": "contents/20230508/thumbnail/IMG_2119.avif",
+            "desc": "",
+            "latitude": 43.03636111111111,
+            "longitude": 141.43266388888887,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-08T13:25:11.000Z"
+        },
+        {
+            "original": "contents/20230508/original/IMG_2121.avif",
+            "thumbnail": "contents/20230508/thumbnail/IMG_2121.avif",
+            "desc": "13렙도 할만해짐. (특정 곡 한정)",
+            "latitude": 43.03637222222222,
+            "longitude": 141.43264722222222,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-08T13:33:59.000Z"
+        },
+        {
+            "original": "contents/20230508/original/IMG_2122.avif",
+            "thumbnail": "contents/20230508/thumbnail/IMG_2122.avif",
+            "desc": "쉬는 겸 노래방 프리타임 4시간",
+            "latitude": 43.03671666666666,
+            "longitude": 141.43212777777777,
+            "model": "iPhone 14 Pro Max back triple camera 2.22mm f/2.2",
+            "make": "Apple",
+            "time": "2023-05-08T17:49:52.000Z"
+        }
+    ]
+}

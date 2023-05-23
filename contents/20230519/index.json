@@ -1,0 +1,74 @@
+{
+    "date": "20230519",
+    "geojson": "contents/20230519/history.json",
+    "movement": {
+        "walking": 7.6,
+        "bus": 0,
+        "train": 110.0,
+        "airplane": 0,
+        "subway": 0,
+        "taxi": 0
+    },
+    "medias": [
+        {
+            "original": "contents/20230519/original/IMG_2685.avif",
+            "thumbnail": "contents/20230519/thumbnail/IMG_2685.avif",
+            "desc": "",
+            "latitude": 36.82244444444445,
+            "longitude": 139.71662777777777,
+            "model": "iPhone 14 Pro Max back triple camera 9mm f/2.8",
+            "make": "Apple",
+            "time": "2023-05-19T11:10:49.000Z"
+        },
+        {
+            "original": "contents/20230519/original/IMG_2686.avif",
+            "thumbnail": "contents/20230519/thumbnail/IMG_2686.avif",
+            "desc": "",
+            "latitude": 36.8404,
+            "longitude": 139.72390833333333,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-19T11:23:28.000Z"
+        },
+        {
+            "original": "contents/20230519/original/IMG_2687.avif",
+            "thumbnail": "contents/20230519/thumbnail/IMG_2687.avif",
+            "desc": "",
+            "latitude": 36.824897222222226,
+            "longitude": 139.71754444444446,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-19T12:58:19.000Z"
+        },
+        {
+            "original": "contents/20230519/original/IMG_2689.avif",
+            "thumbnail": "contents/20230519/thumbnail/IMG_2689.avif",
+            "desc": "",
+            "latitude": 36.82291388888889,
+            "longitude": 139.7168111111111,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-19T14:07:17.000Z"
+        },
+        {
+            "original": "contents/20230519/original/IMG_2692.avif",
+            "thumbnail": "contents/20230519/thumbnail/IMG_2692.avif",
+            "desc": "",
+            "latitude": 36.37654166666667,
+            "longitude": 139.73301666666666,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-19T17:48:29.000Z"
+        },
+        {
+            "original": "contents/20230519/original/IMG_2693.avif",
+            "thumbnail": "contents/20230519/thumbnail/IMG_2693.avif",
+            "desc": "",
+            "latitude": 36.37654444444445,
+            "longitude": 139.73301666666666,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-19T18:03:59.000Z"
+        }
+    ]
+}
