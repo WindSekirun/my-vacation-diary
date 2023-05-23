@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <v-card>
     <v-responsive :aspect-ratio="17 / 9" max-height="500">
       <l-map ref="map" :zoom="14" :options="leafletMapOptions" @ready="readyLeaflet">
@@ -114,4 +114,4 @@ watch(selectPlace, (value) => {
   color: #2e3440;
   text-shadow: #555;
 }
-</style>
+</style> -->

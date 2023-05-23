@@ -12,7 +12,8 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "convert": "ts-node --esm src/convert.ts"
+    "convert": "ts-node --esm src/convert.ts",
+    "stat": "ts-node --esm src/stat.ts"
   },
   "dependencies": {
     "async-shelljs": "^0.1.4",

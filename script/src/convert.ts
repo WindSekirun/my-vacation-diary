@@ -72,7 +72,6 @@ const picturesPromises = originalPictures.sort().map(async (item) => {
     const data = {
         original: `contents/${date}/original/${fileName}`,
         thumbnail: `contents/${date}/thumbnail/${fileName}`,
-        type: "image",
         desc: "",
         latitude: 0,
         longitude: 0,
@@ -94,9 +93,13 @@ const picturesPromises = originalPictures.sort().map(async (item) => {
 const images = await Promise.all(picturesPromises);
 
 // 썸네일은 여기에서 한번 압축
-const thumbnailCommand = `mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${workingDir}/original/*.avif`;
-console.log(thumbnailCommand);
-await asyncExec(thumbnailCommand);
+try {
+    const thumbnailCommand = `mogrify -resize 10% -quality 60 -path ${thumbnailDir} ${workingDir}/original/*.avif`;
+    console.log(thumbnailCommand);
+    await asyncExec(thumbnailCommand);
+} catch (e) {
+
+}
 
 const medias = sortBy([...images], (a, b) => a.original.localeCompare(b.original));
 console.log(medias);
@@ -117,7 +120,6 @@ await Promise.all(kmlPromises);
 
 const data: Data = {
     date: date.toString(),
-    location: "",
     geojson: `contents/${date}/history.json`,
     movement: {
         walking: 0,
@@ -125,7 +127,8 @@ const data: Data = {
         train: 0,
         airplane: 0,
         subway: 0,
-        taxi: 0
+        taxi: 0,
+        drive: 0,
     },
     medias: medias
 }

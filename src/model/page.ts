@@ -11,6 +11,9 @@ export class Movement {
     bus?: number;
     train?: number;
     airplane?: number;
+    subway?: number;
+    taxi?: number;
+    drive?: number;
 }
 
 export class Media {

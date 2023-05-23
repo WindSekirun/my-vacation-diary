@@ -2,7 +2,6 @@ import { Media } from "./media";
 
 export class Data {
     date?: string;
-    location?: string;
     geojson?: string;
     movement?: Movement;
     medias: Media[];
@@ -15,4 +14,5 @@ export class Movement {
     airplane?: number;
     subway?: number;
     taxi?: number;
+    drive?: number;
 }
