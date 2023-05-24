@@ -75,6 +75,10 @@ const placeList = await Promise.all(placePromises);
 const placeFlatten = distinctBy(placeList.flat(), (a) => a);
 
 const coordinatePromises = geoJsonList.map(async item => {
+    if (item.includes('20230429/') || item.includes('20230530/')) {
+        return [];
+    }
+    
     const geojson: GeoJsonRoot = JSON.parse((await fs.promises.readFile(item)).toString());
     const coordinates: number[][][] = geojson.features
         .filter((item) => item.geometry.type == "LineString")

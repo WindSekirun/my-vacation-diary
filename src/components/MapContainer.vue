@@ -23,6 +23,8 @@
                 </v-list-item>
             </l-popup>
         </l-marker>
+        <l-polyline v-for="(item, index) in coordinateStatList" :key="index" :lat-lngs="item"
+            :visible="visibleIndexMarker" />
 
         <!-- page -->
         <l-geo-json v-if="geojson" :geojson="geojson" :options="geoJsonLayerOptions"></l-geo-json>
@@ -31,14 +33,15 @@
 
 <script setup lang="ts">
 import "leaflet/dist/leaflet.css";
-import { LMap, LTileLayer, LControlZoom, LControlAttribution, LMarker, LPopup, LGeoJson } from "@vue-leaflet/vue-leaflet";
+import { LMap, LTileLayer, LControlZoom, LControlAttribution, LMarker, LPopup, LGeoJson, LPolyline } from "@vue-leaflet/vue-leaflet";
 import { MapOptions, Map, LatLng, LatLngBounds, GeoJSONOptions, marker } from 'leaflet';
-import { PropType, computed, watch } from "vue";
+import { computed, watch } from "vue";
 import { formatDate } from "@/utils/date";
 import { ListIndex } from "@/model/listindex";
 import { useAppStore } from "@/store/app";
 import { storeToRefs } from "pinia";
 import { bbox } from "@turf/turf";
+import { getCenterOfIndexList } from "@/utils/geo";
 
 let map: Map | null = null;
 const leafletMapOptions: MapOptions = {
@@ -57,23 +60,24 @@ const geoJsonLayerOptions: GeoJSONOptions = {
 const prefixAttribution = '<a href="https://github.com/WindSekirun/my-vacation-diary">WindSekirun/my-vacation-diary</a>'
 const attribution = '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="https://leafletjs.com/">Leaflet</a>'
 
-const props = defineProps({
-    center: {
-        type: Object as PropType<LatLng>
-    }
-})
 const emit = defineEmits<{
-    (e: 'clickIndex', date: string): void
+    (e: 'clickIndex', date: string): void,
+    (e: 'ready'): void
 }>()
 
 const store = useAppStore();
-const { indexList, page, geojson } = storeToRefs(store);
+const { indexList, page, geojson, stat } = storeToRefs(store);
 const visibleIndexMarker = computed(() => !page.value);
+const coordinateStatList = computed(() => stat.value!.coordinates!.map(item => {
+    return item.map(item => new LatLng(item[0], item[1]));
+}));
+const initialCenterPoint = computed(() => getCenterOfIndexList(indexList.value));
 watch(geojson, () => fitToPage());
 
 function readyLeaflet(mapObject: Map) {
     map = mapObject;
     fitToInitial()
+    emit('ready')
 }
 
 function clickMarker(item: ListIndex) {
@@ -81,9 +85,9 @@ function clickMarker(item: ListIndex) {
 }
 
 function fitToInitial() {
-    if (props.center) {
+    if (initialCenterPoint.value) {
         map?.setZoom(6)
-        map?.panTo(props.center)
+        map?.panTo(initialCenterPoint.value)
     }
 }
 
