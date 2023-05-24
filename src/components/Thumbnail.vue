@@ -2,7 +2,7 @@
     <div>
         <vue-horizontal class="horizontal" snap="center">
             <div class="item" v-for="(item, index) in page?.medias" :key="index">
-                <div class="content" :style="{ background: `url(${makeUrl(item.thumbnail)})`}">
+                <div class="content" :style="{ background: `url(${makeUrl(item.thumbnail)})`}" @click="clickItem(item)">
                     <div class="aspect-ratio" />
                 </div>
             </div>
@@ -11,6 +11,7 @@
 </template>
 
 <script setup lang="ts">
+import { Media } from '@/model/page';
 import { makeUrl } from '@/store/api';
 import { useAppStore } from '@/store/app';
 import { storeToRefs } from 'pinia';
@@ -19,8 +20,16 @@ import { storeToRefs } from 'pinia';
 // @ts-ignore
 import VueHorizontal from "vue-horizontal";
 
+const emit = defineEmits<{
+    (e: 'clickItem', media: Media): void,
+}>()
+
 const store = useAppStore();
 const { page } = storeToRefs(store);
+
+function clickItem(item: Media) {
+  emit('clickItem', item);
+}
 </script>
 
 <!-- from https://vue-horizontal.fuxing.dev/recipes/banner#responsive-banner-1-to-5 -->

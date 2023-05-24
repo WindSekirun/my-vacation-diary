@@ -16,12 +16,23 @@ export class Movement {
 }
 
 export class Media {
-    thumbnail?: string;
-    original?: string;
-    desc?: string;
-    latitude?: number;
-    longtitude?: number;
-    model?: number;
-    make?: number;
-    time?: number;
+    thumbnail: string;
+    original: string;
+    desc: string;
+    latitude: number;
+    longitude: number;
+    model: string;
+    make: string;
+    time: string;
+
+    constructor(thumbnail: string, original: string, desc: string, latitude: number, longitude: number, model: string, make: string, time: string) {
+        this.thumbnail = thumbnail;
+        this.original = original;
+        this.desc = desc;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.model = model;
+        this.make = make;
+        this.time = time;
+    }
 }

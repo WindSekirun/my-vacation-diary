@@ -4,11 +4,12 @@
     <div class="menu">
       <v-card class="pa-5 rounded-shaped" min-width="300">
         <home-menu v-if="!page" ref="homeMenu" @selectIndex="loadPage" />
-        <page-menu v-if="page" ref="pageMenu" @mapFly="mapFly" @mapFitToPage="mapFitToPage" @focusToInitial="focusToInitial" />
+        <page-menu v-if="page" ref="pageMenu" @mapFly="mapFly" @mapFitToPage="mapFitToPage"
+          @focusToInitial="focusToInitial" />
       </v-card>
     </div>
     <v-slide-y-reverse-transition>
-      <thumbnail class="thumbnail" v-if="page" />
+      <thumbnail v-if="page" class="thumbnail" @click-item="clickThumbnailItem" />
     </v-slide-y-reverse-transition>
   </v-container>
 </template>
@@ -24,6 +25,7 @@ import { LatLng } from 'leaflet';
 import { useRoute } from 'vue-router';
 import { onMounted } from 'vue';
 import Thumbnail from '@/components/Thumbnail.vue';
+import { Media } from '@/model/page';
 
 const store = useAppStore();
 const route = useRoute();
@@ -65,6 +67,10 @@ function readyMap() {
       homeMenu.value?.setSelectedIndex(findItem)
     }
   }
+}
+
+function clickThumbnailItem(item: Media) {
+  container.value?.focusToMediaMarker(item);
 }
 </script>
 

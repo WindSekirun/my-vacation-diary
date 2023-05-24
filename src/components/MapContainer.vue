@@ -29,6 +29,19 @@
 
         <!-- page -->
         <l-geo-json v-if="geojson" :geojson="geojson" :options="geoJsonLayerOptions"></l-geo-json>
+
+        <l-marker v-for="(item, index) in page?.medias" :key="index" :lat-lng="[item.latitude, item.longitude]"
+            ref="mediaMarkers">
+            <l-popup :options="{ minWidth: 200 }">
+                <v-list-item class="pa-0">
+                    <v-img :src="makeUrl(item.thumbnail)" cover width="200" height="112.5" :aspect-ratio="16 / 9"></v-img>
+                    <v-divider />
+                    <v-list-item-action>
+                        <v-btn class="pa-0" variant="text" @click="clickMediaMarker(item)" block>바로가기</v-btn>
+                    </v-list-item-action>
+                </v-list-item>
+            </l-popup>
+        </l-marker>
     </l-map>
 </template>
 
@@ -36,13 +49,15 @@
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LControlZoom, LControlAttribution, LMarker, LPopup, LGeoJson, LPolyline, LControlScale } from "@vue-leaflet/vue-leaflet";
 import { MapOptions, Map, LatLng, LatLngBounds, GeoJSONOptions, marker } from 'leaflet';
-import { computed, watch } from "vue";
+import { Ref, computed, ref, watch } from "vue";
 import { formatDate } from "@/utils/date";
 import { ListIndex } from "@/model/listindex";
+import { Media } from "@/model/page";
 import { useAppStore } from "@/store/app";
 import { storeToRefs } from "pinia";
 import { bbox } from "@turf/turf";
 import { getCenterOfIndexList } from "@/utils/geo";
+import { makeUrl } from "@/store/api";
 
 let map: Map | null = null;
 const leafletMapOptions: MapOptions = {
@@ -68,6 +83,7 @@ const emit = defineEmits<{
 
 const store = useAppStore();
 const { indexList, page, geojson, stat } = storeToRefs(store);
+const mediaMarkers: Ref<typeof LMarker | undefined> = ref(undefined)
 const visibleIndexMarker = computed(() => !page.value);
 const coordinateStatList = computed(() => stat.value!.coordinates!.map(item => {
     return item.map(item => new LatLng(item[0], item[1]));
@@ -83,6 +99,10 @@ function readyLeaflet(mapObject: Map) {
 
 function clickMarker(item: ListIndex) {
     emit('clickIndex', item.date);
+}
+
+function clickMediaMarker(item: Media) {
+    // TODO: Open media viewer
 }
 
 function fitToInitial() {
@@ -110,8 +130,18 @@ function flyTo(latLng: LatLng) {
     })
 }
 
+function focusToMediaMarker(media: Media) {
+    const index = page.value?.medias?.indexOf(media);
+    const list = mediaMarkers.value
+    if (index && list) {
+        list[index].leafletObject.openPopup();
+        map?.setZoom(18);
+        map?.panTo(new LatLng(media.latitude, media.longitude));
+    }
+}
+
 defineExpose({
-    fitToInitial, flyTo, fitToPage
+    fitToInitial, flyTo, fitToPage, focusToMediaMarker
 })
 </script>
 
