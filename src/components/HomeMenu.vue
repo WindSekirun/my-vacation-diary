@@ -1,7 +1,7 @@
 <template>
     <div>
         <span class="text-h5 font-weight-bold">My Vacation Diary</span>
-        <v-select v-model='selectedIndex' :items='indexList' item-title="date" solo flat density="comfortable"
+        <v-select v-model='selectedIndex' :items='indexList' item-title="date" solo density="comfortable"
             placeholder="날짜 선택" clearable return-object item-value="date" class="mt-5">
             <template #item="{ item, props }">
                 <v-list-item v-bind="props">
