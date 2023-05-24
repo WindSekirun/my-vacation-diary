@@ -62,7 +62,7 @@ totalMovement.drive = round(totalMovement.drive)
 
 // 방문한 장소 통계
 const geoJsonList = await glob([path.join(workingDir, './*/history.json')]);
-const geoJsonPromises = geoJsonList.map(async item => {
+const placePromises = geoJsonList.map(async item => {
     const geojson: GeoJsonRoot = JSON.parse((await fs.promises.readFile(item)).toString());
     const originalGeoPointList = geojson.features
         .filter((item) => item.geometry.type == "Point");
@@ -71,13 +71,23 @@ const geoJsonPromises = geoJsonList.map(async item => {
     const placeList = geoPointList.map((item) => item.properties.name);
     return placeList;
 })
-const placeList = await Promise.all(geoJsonPromises);
-const flatten = distinctBy(placeList.flat(), (a) => a);
+const placeList = await Promise.all(placePromises);
+const placeFlatten = distinctBy(placeList.flat(), (a) => a);
+
+const coordinatePromises = geoJsonList.map(async item => {
+    const geojson: GeoJsonRoot = JSON.parse((await fs.promises.readFile(item)).toString());
+    const coordinates: number[][][] = geojson.features
+        .filter((item) => item.geometry.type == "LineString")
+        .map(item => item.geometry.coordinates.map(item => [item[1], item[0]]))
+    return coordinates
+});
+const coordinateList: number[][][][] = await Promise.all(coordinatePromises)
+const coordinateFlatten: number[][][] = coordinateList.flat();
 
 const data = {
     movement: totalMovement,
-    sum: flatten.length,
-    average: round(flatten.length / geoJsonList.length),
+    sum: placeFlatten.length,
+    average: round(placeFlatten.length / geoJsonList.length),
+    coordinates: coordinateFlatten
 }
-console.log(data);
-await fs.promises.writeFile(path.join(workingDir, "stat.json"), JSON.stringify(data, null, 4))
+await fs.promises.writeFile(path.join(workingDir, "stat.json"), JSON.stringify(data))
