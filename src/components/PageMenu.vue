@@ -20,7 +20,7 @@
 
         <div class="mt-5" />
         <span class="text-h6">장소 바로가기</span>
-        <v-select v-model='selectPlace' :items='placeList' item-title="name" solo flat density="compact"
+        <v-select v-model='selectPlace' :items='placeList' item-title="name" solo flat density="comfortable"
           placeholder="장소 선택" clearable return-object item-value="name" class="mt-2" v-if="geojson">
           <template #item="{ item, props }">
             <v-list-item v-bind="props">
