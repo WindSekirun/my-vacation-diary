@@ -31,8 +31,11 @@
           </template>
         </v-select>
 
-        <div class="mt-2" />
-        <v-btn append-icon="mdi-link-variant" block color="info" class="copyButton" :data-clipboard-text="copyUrl ">링크 복사</v-btn>
+        <div class="mt-1" />
+        <v-btn append-icon="mdi-link-variant" block color="info" class="copyButton" :data-clipboard-text="copyUrl">링크 복사</v-btn>
+
+        <div class="mt-1" />
+        <v-btn append-icon="mdi-home" block color="primary" @click="clickHome">메인 이동</v-btn>
     </div>
 </template>
 
@@ -49,7 +52,8 @@ import ClipboardJS from 'clipboard';
 
 const emit = defineEmits<{
     (e: 'mapFly', latLng: LatLng): void,
-    (e: 'mapFitToPage'): void
+    (e: 'mapFitToPage'): void,
+    (e: 'focusToInitial'): void,
 }>()
 
 
@@ -87,6 +91,10 @@ async function clickLeft() {
 
 async function clickRight() {
     await store.nextPage();
+}
+
+function clickHome() {
+  emit('focusToInitial');
 }
 
 const clipboard = new ClipboardJS('.copyButton');

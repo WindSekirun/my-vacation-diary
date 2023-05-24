@@ -24,7 +24,8 @@ export async function getPage(date: string): Promise<Page> {
     return response.data
 }
 
-export function makeUrl(imageUrl: string) {
+export function makeUrl(imageUrl: string | undefined) {
+    if (!imageUrl) return ''
     return `${baseUrl}/${imageUrl}`
 }
 

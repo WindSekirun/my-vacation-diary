@@ -1,12 +1,15 @@
 <template>
   <v-container fluid class="primary fill-height pa-0">
     <map-container ref="container" @click-index="onClickIndex" @ready="readyMap" />
-    <div class="floated">
+    <div class="menu">
       <v-card class="pa-5 rounded-shaped" min-width="300">
         <home-menu v-if="!page" ref="homeMenu" @selectIndex="loadPage" />
-        <page-menu v-if="page" ref="pageMenu" @mapFly="mapFly" @mapFitToPage="mapFitToPage" />
+        <page-menu v-if="page" ref="pageMenu" @mapFly="mapFly" @mapFitToPage="mapFitToPage" @focusToInitial="focusToInitial" />
       </v-card>
     </div>
+    <v-slide-y-reverse-transition>
+      <thumbnail class="thumbnail" v-if="page" />
+    </v-slide-y-reverse-transition>
   </v-container>
 </template>
 
@@ -20,6 +23,7 @@ import PageMenu from '@/components/PageMenu.vue';
 import { LatLng } from 'leaflet';
 import { useRoute } from 'vue-router';
 import { onMounted } from 'vue';
+import Thumbnail from '@/components/Thumbnail.vue';
 
 const store = useAppStore();
 const route = useRoute();
@@ -33,13 +37,13 @@ await store.getListIndex();
 
 async function loadPage(date: string) {
   if (!date) {
-    revertToInitial();
+    focusToInitial();
     return;
   }
   await store.loadPage(date);
 }
 
-function revertToInitial() {
+function focusToInitial() {
   homeMenu.value?.removeSelectedIndex()
   store.removePage();
   container.value?.fitToInitial();
@@ -65,10 +69,18 @@ function readyMap() {
 </script>
 
 <style>
-.floated {
+.menu {
   position: absolute;
   top: 1em;
   left: 1em;
+  z-index: 1001;
+}
+
+.thumbnail {
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+  right: 2em;
   z-index: 1001;
 }
 </style>
