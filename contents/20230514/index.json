@@ -7,7 +7,7 @@
         "train": 45.6,
         "airplane": 0,
         "subway": 0,
-        "taxi": 0
+        "taxi": 1.5
     },
     "medias": [
         {
