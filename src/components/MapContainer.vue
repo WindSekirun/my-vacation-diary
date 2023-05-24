@@ -102,8 +102,15 @@ function fitToPage() {
     map?.fitBounds(bounds)
 }
 
+function flyTo(latLng: LatLng) {
+    map?.flyTo(latLng, 16, {
+        animate: true,
+        duration: 0.3
+    })
+}
+
 defineExpose({
-    fitToInitial
+    fitToInitial, flyTo, fitToPage
 })
 </script>
 

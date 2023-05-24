@@ -4,7 +4,7 @@
     <div class="floated">
       <v-card class="pa-5 rounded-shaped" min-width="300">
         <home-menu v-if="!page" ref="homeMenu" @selectIndex="loadPage" />
-        <page-menu v-if="page" ref="pageMenu" />
+        <page-menu v-if="page" ref="pageMenu" @mapFly="mapFly" @mapFitToPage="mapFitToPage" />
       </v-card>
     </div>
   </v-container>
@@ -17,6 +17,7 @@ import { Ref, ref } from 'vue';
 import MapContainer from '@/components/MapContainer.vue';
 import HomeMenu from '@/components/HomeMenu.vue';
 import PageMenu from '@/components/PageMenu.vue';
+import { LatLng } from 'leaflet';
 
 const store = useAppStore();
 const { indexList, page } = storeToRefs(store);
@@ -39,6 +40,14 @@ function revertToInitial() {
   homeMenu.value?.removeSelectedIndex()
   store.removePage();
   container.value?.fitToInitial();
+}
+
+function mapFly(latLng: LatLng) {
+  container.value?.flyTo(latLng);
+}
+
+function mapFitToPage() {
+  container.value?.fitToPage();
 }
 
 function readyMap() {

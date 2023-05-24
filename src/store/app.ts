@@ -4,6 +4,7 @@ import { Page } from '@/model/page'
 import { defineStore } from 'pinia'
 import { getGeoJson, getListIndex, getPage, getStat } from './api'
 import { Stat } from '@/model/stat'
+import dayjs from 'dayjs'
 
 interface State {
   date: string,
@@ -38,6 +39,20 @@ export const useAppStore = defineStore('app', {
       this.date = "";
       this.page = undefined;
       this.geojson = undefined;
+    },
+
+    async previousPage() {
+      const newDate = dayjs(this.date, "YYYYMMDD").add(-1, 'day').format("YYYYMMDD");
+      if (newDate != '20230428') {
+        this.loadPage(newDate)
+      }
+    },
+
+    async nextPage() {
+      const newDate = dayjs(this.date, "YYYYMMDD").add(1, 'day').format("YYYYMMDD");
+      if (newDate != '20230531') {
+        this.loadPage(newDate)
+      }
     }
   }
 })
