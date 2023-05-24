@@ -4,6 +4,7 @@
             :attribution="attribution" />
         <l-control-zoom position="topright" />
         <l-control-attribution position="bottomright" :prefix="prefixAttribution"></l-control-attribution>
+        <l-control-scale position="bottomleft" :imperial="true" :metric="false"></l-control-scale>
 
         <!-- initial marker -->
         <l-marker v-for="(item, index) in indexList" :key="index" :lat-lng="[item.latitude, item.longitude]"
@@ -33,7 +34,7 @@
 
 <script setup lang="ts">
 import "leaflet/dist/leaflet.css";
-import { LMap, LTileLayer, LControlZoom, LControlAttribution, LMarker, LPopup, LGeoJson, LPolyline } from "@vue-leaflet/vue-leaflet";
+import { LMap, LTileLayer, LControlZoom, LControlAttribution, LMarker, LPopup, LGeoJson, LPolyline, LControlScale } from "@vue-leaflet/vue-leaflet";
 import { MapOptions, Map, LatLng, LatLngBounds, GeoJSONOptions, marker } from 'leaflet';
 import { computed, watch } from "vue";
 import { formatDate } from "@/utils/date";

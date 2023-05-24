@@ -18,8 +18,11 @@ import MapContainer from '@/components/MapContainer.vue';
 import HomeMenu from '@/components/HomeMenu.vue';
 import PageMenu from '@/components/PageMenu.vue';
 import { LatLng } from 'leaflet';
+import { useRoute } from 'vue-router';
+import { onMounted } from 'vue';
 
 const store = useAppStore();
+const route = useRoute();
 const { indexList, page } = storeToRefs(store);
 const container: Ref<typeof MapContainer | undefined> = ref(undefined);
 const homeMenu: Ref<typeof HomeMenu | undefined> = ref(undefined);
@@ -51,8 +54,13 @@ function mapFitToPage() {
 }
 
 function readyMap() {
-  // 테스트용 코드
-  homeMenu.value?.setSelectedIndex(indexList.value.find(item => item.date == '20230522'))
+  const date = route.query.date;
+  if (date) {
+    const findItem = indexList.value.find(item => item.date == date);
+    if (findItem) {
+      homeMenu.value?.setSelectedIndex(findItem)
+    }
+  }
 }
 </script>
 
