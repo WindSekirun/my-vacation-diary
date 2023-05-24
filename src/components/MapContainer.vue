@@ -31,7 +31,7 @@
         <l-geo-json v-if="geojson" :geojson="geojson" :options="geoJsonLayerOptions"></l-geo-json>
 
         <l-marker v-for="(item, index) in page?.medias" :key="index" :lat-lng="[item.latitude, item.longitude]"
-            ref="mediaMarkers">
+            ref="mediaMarkers" :icon="mediaMarkerIcon" :name="item.original">
             <l-popup :options="{ minWidth: 200 }">
                 <v-list-item class="pa-0">
                     <v-img :src="makeUrl(item.thumbnail)" cover width="200" height="112.5" :aspect-ratio="16 / 9"></v-img>
@@ -48,7 +48,7 @@
 <script setup lang="ts">
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LControlZoom, LControlAttribution, LMarker, LPopup, LGeoJson, LPolyline, LControlScale } from "@vue-leaflet/vue-leaflet";
-import { MapOptions, Map, LatLng, LatLngBounds, GeoJSONOptions, marker } from 'leaflet';
+import { MapOptions, Map, LatLng, LatLngBounds, GeoJSONOptions, marker, Icon } from 'leaflet';
 import { Ref, computed, ref, watch } from "vue";
 import { formatDate } from "@/utils/date";
 import { ListIndex } from "@/model/listindex";
@@ -89,6 +89,9 @@ const coordinateStatList = computed(() => stat.value!.coordinates!.map(item => {
     return item.map(item => new LatLng(item[0], item[1]));
 }));
 const initialCenterPoint = computed(() => getCenterOfIndexList(indexList.value));
+const mediaMarkerIcon = new Icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"
+})
 watch(geojson, () => fitToPage());
 
 function readyLeaflet(mapObject: Map) {
@@ -131,12 +134,12 @@ function flyTo(latLng: LatLng) {
 }
 
 function focusToMediaMarker(media: Media) {
-    const index = page.value?.medias?.indexOf(media);
-    const list = mediaMarkers.value
-    if (index && list) {
-        list[index].leafletObject.openPopup();
+    const index = page.value?.medias?.indexOf(media) ?? -1;
+    const list = mediaMarkers.value;
+    if (index != -1 && list) {
         map?.setZoom(18);
         map?.panTo(new LatLng(media.latitude, media.longitude));
+        list[index].leafletObject.openPopup();
     }
 }
 
