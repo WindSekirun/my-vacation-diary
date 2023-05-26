@@ -1,5 +1,6 @@
 import { ListIndex } from "@/model/listindex";
 import { Page } from "@/model/page";
+import { Spot } from "@/model/spot";
 import { Stat } from "@/model/stat";
 import axios from "axios";
 
@@ -16,6 +17,11 @@ export async function getListIndex(): Promise<ListIndex[]> {
 
 export async function getStat(): Promise<Stat> {
     const response = await api.get("/contents/stat.json")
+    return response.data
+}
+
+export async function getSpot(): Promise<Spot[]> {
+    const response = await api.get("/contents/spot.json")
     return response.data
 }
 

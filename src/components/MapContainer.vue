@@ -26,6 +26,25 @@
         </l-marker>
         <l-polyline v-for="(item, index) in coordinateStatList" :key="index" :lat-lngs="item"
             :visible="visibleIndexMarker" />
+        <l-marker v-for="(item, index) in spot" :key="index" :lat-lng="[item.latitude, item.longitude]"
+            :visible="visibleIndexMarker" :icon="spotMarkerIcon">
+            <l-popup :options="{ minWidth: 400 }">
+                <v-list-item class="pa-0">
+                    <v-list-item-title>
+                        {{ item.title }}
+                    </v-list-item-title>
+                    <v-list-item-subtitle class="mb-2">
+                        {{ formatDate(item.date) }}
+                    </v-list-item-subtitle>
+                    <span class="text-caption">{{ item.desc }}</span>
+                    <v-img :src="makeUrl(item.thumb)" class="mt-2" cover :aspect-ratio="16 / 10" height="200" />
+                    <v-divider />
+                    <v-list-item-action>
+                        <v-btn class="pa-0" block variant="text" @click="clickSpotLink(item)">링크 열기</v-btn>
+                    </v-list-item-action>
+                </v-list-item>
+            </l-popup>
+        </l-marker>
 
         <!-- page -->
         <l-geo-json v-if="geojson" :geojson="geojson" :options="geoJsonLayerOptions"></l-geo-json>
@@ -58,6 +77,7 @@ import { storeToRefs } from "pinia";
 import { bbox } from "@turf/turf";
 import { getCenterOfIndexList } from "@/utils/geo";
 import { makeUrl } from "@/store/api";
+import { Spot } from "@/model/spot";
 
 let map: Map | null = null;
 const leafletMapOptions: MapOptions = {
@@ -83,7 +103,7 @@ const emit = defineEmits<{
 }>()
 
 const store = useAppStore();
-const { indexList, page, geojson, stat } = storeToRefs(store);
+const { indexList, page, geojson, stat, spot } = storeToRefs(store);
 const mediaMarkers: Ref<typeof LMarker | undefined> = ref(undefined)
 const visibleIndexMarker = computed(() => !page.value);
 const coordinateStatList = computed(() => stat.value!.coordinates!.map(item => {
@@ -92,7 +112,10 @@ const coordinateStatList = computed(() => stat.value!.coordinates!.map(item => {
 const initialCenterPoint = computed(() => getCenterOfIndexList(indexList.value));
 const mediaMarkerIcon = new Icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"
-})
+});
+const spotMarkerIcon = new Icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png"
+});
 watch(geojson, () => fitToPage());
 
 function readyLeaflet(mapObject: Map) {
@@ -132,6 +155,10 @@ function flyTo(latLng: LatLng) {
         animate: true,
         duration: 0.3
     })
+}
+
+function clickSpotLink(item: Spot) {
+    window.open(item.link, '_blank', 'noreferrer');
 }
 
 defineExpose({
