@@ -3,7 +3,7 @@
         <vue-horizontal class="horizontal" snap="center">
             <div class="item" v-for="(item, index) in page?.medias" :key="index">
                 <div class="content" :style="{ background: `url(${makeUrl(item.thumbnail)})`}" @click="clickItem(item)">
-                    <div class="aspect-ratio" />
+                    <div :style="`padding-top: ${props.paddingTop ?? 55}%`" />
                 </div>
             </div>
         </vue-horizontal>
@@ -19,6 +19,13 @@ import { storeToRefs } from 'pinia';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import VueHorizontal from "vue-horizontal";
+
+const props = defineProps({
+  paddingTop: {
+    type: Number,
+    def: 55,
+  }
+})
 
 const emit = defineEmits<{
     (e: 'clickItem', media: Media): void,
@@ -42,11 +49,6 @@ function clickItem(item: Media) {
   border-radius: 5px;
   overflow: hidden;
 }
-
-.aspect-ratio {
-  padding-top: 55%;
-}
-
 </style>
 
 <!-- Responsive Breakpoints -->

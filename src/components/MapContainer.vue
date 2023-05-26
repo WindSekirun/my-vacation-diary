@@ -78,7 +78,8 @@ const attribution = '&copy; <a target="_blank" href="http://osm.org/copyright">O
 
 const emit = defineEmits<{
     (e: 'clickIndex', date: string): void,
-    (e: 'ready'): void
+    (e: 'ready'): void,
+    (e: 'showImageViewer', media: Media): void,
 }>()
 
 const store = useAppStore();
@@ -105,7 +106,7 @@ function clickMarker(item: ListIndex) {
 }
 
 function clickMediaMarker(item: Media) {
-    // TODO: Open media viewer
+    emit('showImageViewer', item);
 }
 
 function fitToInitial() {
