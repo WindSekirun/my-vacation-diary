@@ -22,6 +22,7 @@
     "vue": "^3.2.0",
     "vue-horizontal": "^1.0.2",
     "vue-router": "^4.0.0",
+    "vue3-keypress": "^4.0.1",
     "vuetify": "^3.2.0",
     "webfontloader": "^1.0.0"
   },

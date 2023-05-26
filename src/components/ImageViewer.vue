@@ -14,7 +14,7 @@
                 <v-divider class="mt-2 mb-2"></v-divider>
                 <span class="text-caption" v-if="media?.desc"> {{ media?.desc }}</span>
                 <v-divider class="mt-2 mb-2" v-if="media?.desc"></v-divider>
-                <small-map :media="media" style="height: 100px"/>
+                <small-map :media="media" style="height: 100px" />
             </v-responsive>
             <thumbnail class="thumbnail" :padding-top="40" @click-item="clickThumbnailItem" />
         </v-container>
@@ -31,6 +31,9 @@ import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import { useAppStore } from '@/store/app';
 import { storeToRefs } from 'pinia';
+import { useKeypress } from "vue3-keypress";
+import { dir } from 'console';
+import { directive } from '@babel/types';
 
 const props = defineProps({
     media: {
@@ -52,6 +55,20 @@ const title = computed(() => {
 const mediaIndex = computed(() => `${(page.value?.medias?.indexOf(props.media!) ?? 0) + 1} / ${page.value?.medias?.length}`)
 dayjs.extend(utc);
 
+useKeypress({
+    keyEvent: "keydown",
+    keyBinds: [
+        {
+            keyCode: "left",
+            success: () => keyDown(-1),
+        },
+        {
+            keyCode: "right",
+            success: () => keyDown(1),
+        },
+    ]
+});
+
 function clickThumbnailItem(item: Media) {
     emit('changeMedia', item)
 }
@@ -59,6 +76,20 @@ function clickThumbnailItem(item: Media) {
 function formatDateTime(date: string | undefined) {
     return dayjs.utc(date).format("YYYY년 MM월 DD일 HH시 mm분")
 }
+
+function keyDown(direction: number) {
+    const list = page.value?.medias;
+    if (!list) return;
+
+    const index = list.indexOf(props.media!);
+    const item = list.at(index + direction);
+    if (item) {
+        emit('changeMedia', item);
+    } else if (direction == 1) {
+        emit('changeMedia', list[0]);
+    }
+}
+
 </script>
 
 <style>
