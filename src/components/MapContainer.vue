@@ -37,7 +37,7 @@
                     <v-img :src="makeUrl(item.thumbnail)" cover width="200" height="112.5" :aspect-ratio="16 / 9"></v-img>
                     <v-divider />
                     <v-list-item-action>
-                        <v-btn class="pa-0" variant="text" @click="clickMediaMarker(item)" block>바로가기</v-btn>
+                        <v-btn class="pa-0" variant="text" @click="clickMediaMarker(item)" block>확대보기</v-btn>
                     </v-list-item-action>
                 </v-list-item>
             </l-popup>
@@ -134,18 +134,8 @@ function flyTo(latLng: LatLng) {
     })
 }
 
-function focusToMediaMarker(media: Media) {
-    const index = page.value?.medias?.indexOf(media) ?? -1;
-    const list = mediaMarkers.value;
-    if (index != -1 && list) {
-        map?.setZoom(18);
-        map?.panTo(new LatLng(media.latitude, media.longitude));
-        list[index].leafletObject.openPopup();
-    }
-}
-
 defineExpose({
-    fitToInitial, flyTo, fitToPage, focusToMediaMarker
+    fitToInitial, flyTo, fitToPage
 })
 </script>
 

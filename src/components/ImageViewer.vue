@@ -13,7 +13,7 @@
                 <span class="text-body-2">{{ media?.model }}</span> <br />
                 <v-divider class="mt-2 mb-2"></v-divider>
                 <span class="text-caption" v-if="media?.desc"> {{ media?.desc }}</span>
-                <v-divider class="mt-2 mb-2" v-if="media?.desc"></v-divider>
+                <v-divider class="mt-2 mb-5" v-if="media?.desc"></v-divider>
                 <small-map :media="media" style="height: 100px" />
             </v-responsive>
             <thumbnail class="thumbnail" :padding-top="40" @click-item="clickThumbnailItem" />
@@ -32,8 +32,6 @@ import utc from 'dayjs/plugin/utc';
 import { useAppStore } from '@/store/app';
 import { storeToRefs } from 'pinia';
 import { useKeypress } from "vue3-keypress";
-import { dir } from 'console';
-import { directive } from '@babel/types';
 
 const props = defineProps({
     media: {
@@ -74,7 +72,7 @@ function clickThumbnailItem(item: Media) {
 }
 
 function formatDateTime(date: string | undefined) {
-    return dayjs.utc(date).format("YYYY년 MM월 DD일 HH시 mm분")
+    return dayjs.utc(date).format("YYYY. MM. DD. HH:mm:ss")
 }
 
 function keyDown(direction: number) {
@@ -89,7 +87,6 @@ function keyDown(direction: number) {
         emit('changeMedia', list[0]);
     }
 }
-
 </script>
 
 <style>

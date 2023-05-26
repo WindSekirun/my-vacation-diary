@@ -1,5 +1,6 @@
 <template>
-    <l-map ref="map" class="map" :zoom="12" :options="leafletMapOptions" @ready="readyLeaflet">
+    <l-map ref="map" class="map" :zoom="16" :center="[props.media!.latitude, props.media!.longitude]"
+        :max-bounds="findCenterBound(centerLatLng)" :options="leafletMapOptions" @ready="readyLeaflet">
         <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base" />
         <l-marker :lat-lng="centerLatLng" />
     </l-map>
@@ -24,14 +25,14 @@ const leafletMapOptions: MapOptions = {
     attributionControl: false,
     scrollWheelZoom: false,
     dragging: false,
+
 }
 
+let map: Map | null = null;
 const centerLatLng = computed(() => new LatLng(props.media!.latitude, props.media!.longitude))
 
 function readyLeaflet(mapObject: Map) {
-    mapObject.setZoom(12);
-    mapObject.fitBounds(findCenterBound(centerLatLng.value));
-    mapObject.panTo(centerLatLng.value, { animate: true })
+    map = mapObject;
+    setTimeout(() => map?.invalidateSize(), 200);
 }
-
 </script>

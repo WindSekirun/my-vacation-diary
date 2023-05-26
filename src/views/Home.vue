@@ -9,7 +9,7 @@
       </v-card>
     </div>
     <v-slide-y-reverse-transition>
-      <thumbnail v-if="page" class="thumbnail" @click-item="clickThumbnailItem" />
+      <thumbnail v-if="page" class="thumbnail" @click-item="showImageViewer" />
     </v-slide-y-reverse-transition>
     <image-viewer v-if="detailImage" :media="detailImage" @close-event="detailImage = undefined"
       @change-media="showImageViewer" />
@@ -19,7 +19,7 @@
 <script lang="ts" setup>
 import { useAppStore } from '@/store/app';
 import { storeToRefs } from 'pinia';
-import { Ref, ref, watch } from 'vue';
+import { Ref, ref } from 'vue';
 import MapContainer from '@/components/MapContainer.vue';
 import HomeMenu from '@/components/HomeMenu.vue';
 import PageMenu from '@/components/PageMenu.vue';
@@ -70,10 +70,6 @@ function readyMap() {
       homeMenu.value?.setSelectedIndex(findItem);
     }
   }
-}
-
-function clickThumbnailItem(item: Media) {
-  container.value?.focusToMediaMarker(item);
 }
 
 function showImageViewer(item: Media) {
