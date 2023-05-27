@@ -13,7 +13,7 @@
         {
             "original": "contents/20230512/original/IMG_2201.avif",
             "thumbnail": "contents/20230512/thumbnail/IMG_2201.avif",
-            "desc": "",
+            "desc": "아침 소바",
             "latitude": 35.704994444444445,
             "longitude": 139.77606111111112,
             "model": "iPhone 14 Pro Max back triple camera 2.22mm f/2.2",
@@ -23,7 +23,7 @@
         {
             "original": "contents/20230512/original/IMG_2202.avif",
             "thumbnail": "contents/20230512/thumbnail/IMG_2202.avif",
-            "desc": "",
+            "desc": "날씨는 흐리지만 숙소 근처 공원",
             "latitude": 35.706316666666666,
             "longitude": 139.77729722222224,
             "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
@@ -43,7 +43,7 @@
         {
             "original": "contents/20230512/original/IMG_2205.avif",
             "thumbnail": "contents/20230512/thumbnail/IMG_2205.avif",
-            "desc": "",
+            "desc": "teamlab planets TOKYO",
             "latitude": 35.64919166666667,
             "longitude": 139.78999444444443,
             "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
@@ -71,19 +71,9 @@
             "time": "2023-05-12T14:46:20.000Z"
         },
         {
-            "original": "contents/20230512/original/IMG_2209.avif",
-            "thumbnail": "contents/20230512/thumbnail/IMG_2209.avif",
-            "desc": "",
-            "latitude": 0,
-            "longitude": 0,
-            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
-            "make": "Apple",
-            "time": "2023-05-12T14:53:05.000Z"
-        },
-        {
             "original": "contents/20230512/original/IMG_2210.avif",
             "thumbnail": "contents/20230512/thumbnail/IMG_2210.avif",
-            "desc": "",
+            "desc": "잠깐 들른 komeda의 비건 가게. 일반 코메다보다 많이 비싸긴 했음",
             "latitude": 35.66791666666666,
             "longitude": 139.76925555555556,
             "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
@@ -93,7 +83,7 @@
         {
             "original": "contents/20230512/original/IMG_2211.avif",
             "thumbnail": "contents/20230512/thumbnail/IMG_2211.avif",
-            "desc": "",
+            "desc": "도쿄역",
             "latitude": 35.68028333333333,
             "longitude": 139.76463333333334,
             "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
@@ -103,7 +93,7 @@
         {
             "original": "contents/20230512/original/IMG_2212.avif",
             "thumbnail": "contents/20230512/thumbnail/IMG_2212.avif",
-            "desc": "",
+            "desc": "아사히맥주빌딩의 맥주 거품 모양 조형물",
             "latitude": 35.710575000000006,
             "longitude": 139.79821666666666,
             "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",

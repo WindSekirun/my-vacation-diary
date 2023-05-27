@@ -1,0 +1,47 @@
+[
+    {
+        "title": "県道17号 口野橋 - 三津三差路交差点",
+        "date": "20230524",
+        "desc": "오세 해수욕장으로 넘어가는 길. 바다다!",
+        "link": "https://youtu.be/MXzKZVjuD4o",
+        "thumb": "contents/spot/IMG_2769.avif",
+        "latitude": 35.0484716,
+        "longitude": 138.905056
+    },
+    {
+        "title": "静岡県道411号西天城高原線 西天城高原 ー 船原峠",
+        "date": "20230524",
+        "desc": "니시이즈 스카이라인의 확장 도로인 니시아마기고원부터 시작. 해발 830m까지 오르는 데에도 많이 힘듦",
+        "link": "https://youtu.be/84xVfyfpuQI",
+        "thumb": "contents/spot/IMG_2818.avif",
+        "latitude": 34.8568498,
+        "longitude": 138.8399344
+    },
+    {
+        "title": "稲取細野高原 下り坂",
+        "date": "20230525",
+        "desc": "호소노고원에서 내려오는 길. 어째 매일마다 1차선 산길은 한번씩 거쳐가는듯..",
+        "thumb": "contents/spot/IMG_2883.avif",
+        "link": "https://youtu.be/WvPj95i1uIs",
+        "latitude": 34.7959251,
+        "longitude": 139.0106007
+    },
+    {
+        "title": "河津七滝ループ橋 上り坂",
+        "date": "20230525",
+        "thumb": "contents/spot/IMG_2886.avif",
+        "desc": "카와즈 나나다루 대회전 다리",
+        "link": "https://youtu.be/O26Fl2Z1Rfw",
+        "latitude": 34.7918329,
+        "longitude": 138.9362857
+    },
+    {
+        "title": "伊豆スカイライン 天城高原IC - 冷川IC",
+        "date": "20230526",
+        "thumb": "contents/spot/IMG_2913.avif",
+        "desc": "오무로산에서 돌아가는 길의 이즈스카이라인 아마기고원부터 히이카와까지 도로.",
+        "link": "https://youtu.be/rQ2Fbbxlf7Y",
+        "latitude": 34.9054563,
+        "longitude": 139.037576
+    }
+]
