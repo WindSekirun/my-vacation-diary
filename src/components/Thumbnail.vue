@@ -1,6 +1,6 @@
 <template>
     <div>
-        <vue-horizontal class="horizontal" snap="center">
+        <vue-horizontal class="horizontal" snap="center" ref="horizontal">
             <div class="item" v-for="(item, index) in page?.medias" :key="index">
                 <div class="content" :style="{ background: `url(${makeUrl(item.thumbnail)})`}" @click="clickItem(item)">
                     <div :style="`padding-top: ${props.paddingTop ?? 55}%`" />
@@ -15,6 +15,7 @@ import { Media } from '@/model/page';
 import { makeUrl } from '@/store/api';
 import { useAppStore } from '@/store/app';
 import { storeToRefs } from 'pinia';
+import { Ref, ref } from 'vue';
 // currently, vue-horizontal doesn't support typescript typings
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -32,11 +33,20 @@ const emit = defineEmits<{
 }>()
 
 const store = useAppStore();
+const horizontal: Ref<typeof VueHorizontal | undefined> = ref(undefined);
 const { page } = storeToRefs(store);
 
 function clickItem(item: Media) {
   emit('clickItem', item);
 }
+
+function focusIndex(index: number) {
+  horizontal.value.scrollToIndex(index);
+}
+
+defineExpose({
+  focusIndex
+})
 </script>
 
 <!-- from https://vue-horizontal.fuxing.dev/recipes/banner#responsive-banner-1-to-5 -->

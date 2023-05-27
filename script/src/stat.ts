@@ -88,10 +88,15 @@ const coordinatePromises = geoJsonList.map(async item => {
 const coordinateList: number[][][][] = await Promise.all(coordinatePromises)
 const coordinateFlatten: number[][][] = coordinateList.flat();
 
+// 이미지 갯수
+const imageCount = (await glob([path.join(workingDir, './*/original/*.avif')])).length
+
 const data = {
     movement: totalMovement,
     sum: placeFlatten.length,
     average: round(placeFlatten.length / geoJsonList.length),
-    coordinates: coordinateFlatten
+    coordinates: coordinateFlatten,
+    imageCount: imageCount,
+    imageCountAverage: round(imageCount / geoJsonList.length)
 }
 await fs.promises.writeFile(path.join(workingDir, "stat.json"), JSON.stringify(data))

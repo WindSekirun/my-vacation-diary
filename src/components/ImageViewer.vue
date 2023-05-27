@@ -16,7 +16,7 @@
                 <v-divider class="mt-2 mb-5" v-if="media?.desc"></v-divider>
                 <small-map :media="media" style="height: 100px" />
             </v-responsive>
-            <thumbnail class="thumbnail" :padding-top="40" @click-item="clickThumbnailItem" />
+            <thumbnail class="thumbnail" :padding-top="40" @click-item="clickThumbnailItem" ref="thumbnail" />
         </v-container>
     </v-overlay>
 </template>
@@ -24,7 +24,7 @@
 <script setup lang="ts">
 import { Media } from '@/model/page';
 import { makeUrl } from '@/store/api';
-import { PropType, computed, ref } from 'vue'
+import { PropType, Ref, computed, ref, watch } from 'vue'
 import Thumbnail from './Thumbnail.vue';
 import SmallMap from './SmallMap.vue';
 import dayjs from 'dayjs';
@@ -45,6 +45,7 @@ const emit = defineEmits<{
 
 const store = useAppStore();
 const { page } = storeToRefs(store);
+const thumbnail: Ref<typeof Thumbnail | undefined> = ref(undefined);
 const visible = ref(true);
 const title = computed(() => {
     const fileName = props.media?.original.split("/").at(-1);
@@ -52,6 +53,9 @@ const title = computed(() => {
 });
 const mediaIndex = computed(() => `${(page.value?.medias?.indexOf(props.media!) ?? 0) + 1} / ${page.value?.medias?.length}`)
 dayjs.extend(utc);
+watch(() => props.media, (media) => {
+    thumbnail.value?.focusIndex(page.value?.medias?.indexOf(media!));
+})
 
 useKeypress({
     keyEvent: "keydown",

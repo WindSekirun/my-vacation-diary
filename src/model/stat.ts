@@ -5,4 +5,6 @@ export class Stat {
     sum?: number;
     average?: number;
     coordinates?: number[][][];
+    imageCountAverage?: number;
+    imageCount?: number;
 }

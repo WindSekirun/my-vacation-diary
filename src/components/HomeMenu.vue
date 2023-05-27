@@ -1,6 +1,7 @@
 <template>
     <div>
-        <span class="text-h5 font-weight-bold">My Vacation Diary</span>
+        <span class="text-h5 font-weight-bold">My Vacation Diary</span> <br />
+        <span class="text-caption">2023. 04. 29 - 2023. 05. 30</span>
         <v-select v-model='selectedIndex' :items='indexList' item-title="date" solo density="comfortable"
             placeholder="날짜 선택" clearable return-object item-value="date" class="mt-5">
             <template #item="{ item, props }">
@@ -16,7 +17,14 @@
         </v-select>
         <span class="text-h5">통계</span>
         <movements :movement="stat?.movement" class="mb-2" />
-        방문한 장소: 총 {{ stat?.sum }}개 (평균 {{ stat?.average }}개)
+        <ul class="ms-5">
+            <li>
+                방문한 장소: 총 {{ stat?.sum }}개 ({{ stat?.average }}/D)
+            </li>
+            <li>
+                촬영한 이미지: 총 {{ stat?.imageCount }}개 ({{ stat?.imageCountAverage }}/D)
+            </li>
+        </ul>
     </div>
 </template>
 
