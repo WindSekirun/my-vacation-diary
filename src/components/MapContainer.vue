@@ -27,7 +27,7 @@
         <l-polyline v-for="(item, index) in coordinateStatList" :key="index" :lat-lngs="item"
             :visible="visibleIndexMarker" />
         <l-marker v-for="(item, index) in spot" :key="index" :lat-lng="[item.latitude, item.longitude]"
-            :visible="visibleIndexMarker" :icon="spotMarkerIcon">
+            :visible="visibleIndexMarker || item.date == page?.date" :icon="spotMarkerIcon">
             <l-popup :options="{ minWidth: 400 }">
                 <v-list-item class="pa-0">
                     <v-list-item-title>
