@@ -1,0 +1,1336 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.8564453,
+                    35.1090247,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "1-33 Hontamachi",
+                "address": "1-33 Hontamachi, Numazu, Shizuoka 410-0004",
+                "description": " 건축물 from 2023-05-28T12:56:34.999Z to 2023-05-28T23:11:40.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-28T12:56:34.999Z",
+                    "end": "2023-05-28T23:11:40.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "건축물",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        138.8564453,
+                        35.1090247,
+                        0
+                    ],
+                    [
+                        138.8564453,
+                        35.1090247,
+                        0
+                    ],
+                    [
+                        138.856439,
+                        35.1091152,
+                        0
+                    ],
+                    [
+                        138.8564477,
+                        35.109133,
+                        0
+                    ],
+                    [
+                        138.8612913,
+                        35.1087104,
+                        0
+                    ],
+                    [
+                        138.8613607,
+                        35.108844999999995,
+                        0
+                    ],
+                    [
+                        138.8613607,
+                        35.108844999999995,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Driving",
+                "description": " Driving from 2023-05-28T23:11:40.000Z to 2023-05-28T23:13:12.999Z. Distance 471m ",
+                "timespan": {
+                    "begin": "2023-05-28T23:11:40.000Z",
+                    "end": "2023-05-28T23:13:12.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Driving",
+                "Distance": "471"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.8613607,
+                    35.108844999999995,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "コインランドリー",
+                "address": "7-15 Shoeicho, Numazu, Shizuoka 410-0047",
+                "description": " 빨래방 from 2023-05-28T23:13:12.999Z to 2023-05-29T00:29:32.999Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-28T23:13:12.999Z",
+                    "end": "2023-05-29T00:29:32.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "빨래방",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        138.8613607,
+                        35.108844999999995,
+                        0
+                    ],
+                    [
+                        138.8613607,
+                        35.108844999999995,
+                        0
+                    ],
+                    [
+                        138.8610415,
+                        35.1088695,
+                        0
+                    ],
+                    [
+                        138.8585598,
+                        35.105855,
+                        0
+                    ],
+                    [
+                        138.8525738,
+                        35.1059241,
+                        0
+                    ],
+                    [
+                        138.8475153,
+                        35.1007021,
+                        0
+                    ],
+                    [
+                        138.835143,
+                        35.1062349,
+                        0
+                    ],
+                    [
+                        138.835075,
+                        35.1061246,
+                        0
+                    ],
+                    [
+                        138.835075,
+                        35.1061246,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Driving",
+                "description": " Driving from 2023-05-29T00:29:32.999Z to 2023-05-29T00:40:57.999Z. Distance 3015m ",
+                "timespan": {
+                    "begin": "2023-05-29T00:29:32.999Z",
+                    "end": "2023-05-29T00:40:57.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Driving",
+                "Distance": "3015"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.835075,
+                    35.1061246,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Sukiya",
+                "address": "574-8 Kozuwa, Numazu, Shizuoka 410-0872",
+                "description": " 쇠고기덮밥 전문점 from 2023-05-29T00:40:57.999Z to 2023-05-29T00:58:12.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T00:40:57.999Z",
+                    "end": "2023-05-29T00:58:12.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "쇠고기덮밥 전문점",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        138.835075,
+                        35.1061246,
+                        0
+                    ],
+                    [
+                        138.835075,
+                        35.1061246,
+                        0
+                    ],
+                    [
+                        138.8350701,
+                        35.106125,
+                        0
+                    ],
+                    [
+                        138.842456,
+                        35.1014955,
+                        0
+                    ],
+                    [
+                        138.847953,
+                        35.1006974,
+                        0
+                    ],
+                    [
+                        138.8492761,
+                        35.1006479,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Driving",
+                "description": " Driving from 2023-05-29T00:58:12.000Z to 2023-05-29T01:01:31.000Z. Distance 1475m ",
+                "timespan": {
+                    "begin": "2023-05-29T00:58:12.000Z",
+                    "end": "2023-05-29T01:01:31.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Driving",
+                "Distance": "1475"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.8492761,
+                    35.1006479,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "ENEOS ニユー沼津 SS (植松燃料)",
+                "address": "1-6 Marukocho, Numazu, Shizuoka 410-0806",
+                "description": " 주유소 from 2023-05-29T01:01:31.000Z to 2023-05-29T01:09:50.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T01:01:31.000Z",
+                    "end": "2023-05-29T01:09:50.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "주유소",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        138.8492761,
+                        35.1006479,
+                        0
+                    ],
+                    [
+                        138.8499431,
+                        35.1011643,
+                        0
+                    ],
+                    [
+                        138.8499502,
+                        35.1007151,
+                        0
+                    ],
+                    [
+                        138.8547998,
+                        35.0996233,
+                        0
+                    ],
+                    [
+                        138.8549102,
+                        35.0997412,
+                        0
+                    ],
+                    [
+                        138.8549102,
+                        35.0997412,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Driving",
+                "description": " Driving from 2023-05-29T01:09:50.000Z to 2023-05-29T01:11:22.000Z. Distance 607m ",
+                "timespan": {
+                    "begin": "2023-05-29T01:09:50.000Z",
+                    "end": "2023-05-29T01:11:22.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Driving",
+                "Distance": "607"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.8549102,
+                    35.0997412,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Orix Rent-a-car",
+                "address": "162 Saijocho, Numazu, Shizuoka 410-0804",
+                "description": " 렌터카 업체 from 2023-05-29T01:11:22.000Z to 2023-05-29T01:22:39.001Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T01:11:22.000Z",
+                    "end": "2023-05-29T01:22:39.001Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "렌터카 업체",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.8598006,
+                    35.1026494,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "누마즈",
+                "address": "1 Chome-1 Otemachi, Numazu, Shizuoka 410-0801",
+                "description": " 기차역 from 2023-05-29T01:23:22.000Z to 2023-05-29T01:43:34.001Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T01:23:22.000Z",
+                    "end": "2023-05-29T01:43:34.001Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "기차역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        138.859456760047,
+                        35.10327941284763,
+                        0
+                    ],
+                    [
+                        138.859456760047,
+                        35.10327941284763,
+                        0
+                    ],
+                    [
+                        138.8592188,
+                        35.1030889,
+                        0
+                    ],
+                    [
+                        138.8844778,
+                        35.1135036,
+                        0
+                    ],
+                    [
+                        138.9119746,
+                        35.1260332,
+                        0
+                    ],
+                    [
+                        138.9115862,
+                        35.1261461,
+                        0
+                    ],
+                    [
+                        138.9120825,
+                        35.126015599999995,
+                        0
+                    ],
+                    [
+                        138.9120825,
+                        35.126015599999995,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-29T01:43:34.001Z to 2023-05-29T01:50:00.000Z. Distance 5551m ",
+                "timespan": {
+                    "begin": "2023-05-29T01:43:34.001Z",
+                    "end": "2023-05-29T01:50:00.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "5551"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.9120825,
+                    35.126015599999995,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Starbucks",
+                "address": "16-1 Ichibancho, Mishima, Shizuoka 411-0036",
+                "description": " 커피숍/커피 전문점 from 2023-05-29T01:50:00.000Z to 2023-05-29T02:32:01.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T01:50:00.000Z",
+                    "end": "2023-05-29T02:32:01.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "커피숍/커피 전문점",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.9111261,
+                    35.1262994,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "미시마 역",
+                "address": "16-1 Ichibancho, Mishima, Shizuoka 411-0036",
+                "description": " 기차역 from 2023-05-29T02:32:01.000Z to 2023-05-29T03:00:08.999Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T02:32:01.000Z",
+                    "end": "2023-05-29T03:00:08.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "기차역",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        138.91188817568795,
+                        35.125834096465695,
+                        0
+                    ],
+                    [
+                        138.91188817568795,
+                        35.125834096465695,
+                        0
+                    ],
+                    [
+                        138.9095523,
+                        35.1269179,
+                        0
+                    ],
+                    [
+                        138.9579839,
+                        35.1135182,
+                        0
+                    ],
+                    [
+                        139.0812763,
+                        35.1059864,
+                        0
+                    ],
+                    [
+                        139.1481704,
+                        35.2478773,
+                        0
+                    ],
+                    [
+                        139.3605529,
+                        35.3846654,
+                        0
+                    ],
+                    [
+                        139.4468647,
+                        35.4240294,
+                        0
+                    ],
+                    [
+                        139.5464356,
+                        35.4673443,
+                        0
+                    ],
+                    [
+                        139.6057531,
+                        35.4977748,
+                        0
+                    ],
+                    [
+                        139.6241118,
+                        35.5125747,
+                        0
+                    ],
+                    [
+                        139.6623409,
+                        35.5634615,
+                        0
+                    ],
+                    [
+                        139.6909264,
+                        35.5874714,
+                        0
+                    ],
+                    [
+                        139.7251557,
+                        35.6086522,
+                        0
+                    ],
+                    [
+                        139.7395723,
+                        35.6273064,
+                        0
+                    ],
+                    [
+                        139.7419705,
+                        35.6351871,
+                        0
+                    ],
+                    [
+                        139.758632,
+                        35.6608263,
+                        0
+                    ],
+                    [
+                        139.7663694,
+                        35.6807467,
+                        0
+                    ],
+                    [
+                        139.76710850306216,
+                        35.68055198961103,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-29T03:00:08.999Z to 2023-05-29T03:41:38.001Z. Distance 108681m ",
+                "timespan": {
+                    "begin": "2023-05-29T03:00:08.999Z",
+                    "end": "2023-05-29T03:41:38.001Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "108681"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7671248,
+                    35.6812362,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "도쿄",
+                "address": "1 Chome Marunouchi, Chiyoda City, Tokyo 100-0005",
+                "description": " 대중교통 이용장소 from 2023-05-29T03:41:38.001Z to 2023-05-29T03:49:22.710Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T03:41:38.001Z",
+                    "end": "2023-05-29T03:49:22.710Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "대중교통 이용장소",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.76710850306216,
+                        35.68055198961103,
+                        0
+                    ],
+                    [
+                        139.7663694,
+                        35.6807467,
+                        0
+                    ],
+                    [
+                        139.7715444,
+                        35.6933111,
+                        0
+                    ],
+                    [
+                        139.7745202,
+                        35.7062759,
+                        0
+                    ],
+                    [
+                        139.7771593,
+                        35.7144845,
+                        0
+                    ],
+                    [
+                        139.7732247,
+                        35.7259109,
+                        0
+                    ],
+                    [
+                        139.7714135,
+                        35.7273038,
+                        0
+                    ],
+                    [
+                        139.7714135,
+                        35.7273038,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-29T03:49:22.710Z to 2023-05-29T04:02:26.944Z. Distance 5497m ",
+                "timespan": {
+                    "begin": "2023-05-29T03:49:22.710Z",
+                    "end": "2023-05-29T04:02:26.944Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "5497"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7714135,
+                        35.7273038,
+                        0
+                    ],
+                    [
+                        139.7714135,
+                        35.7273038,
+                        0
+                    ],
+                    [
+                        139.770606,
+                        35.7282412,
+                        0
+                    ],
+                    [
+                        139.7713313,
+                        35.7287054,
+                        0
+                    ],
+                    [
+                        139.7730987,
+                        35.7297302,
+                        0
+                    ],
+                    [
+                        139.7752585,
+                        35.7316097,
+                        0
+                    ],
+                    [
+                        139.7741966,
+                        35.7309175,
+                        0
+                    ],
+                    [
+                        139.7756244,
+                        35.7316285,
+                        0
+                    ],
+                    [
+                        139.7757406,
+                        35.7317736,
+                        0
+                    ],
+                    [
+                        139.7757406,
+                        35.7317736,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-29T04:02:26.944Z to 2023-05-29T04:15:30.999Z. Distance 985m ",
+                "timespan": {
+                    "begin": "2023-05-29T04:02:26.944Z",
+                    "end": "2023-05-29T04:15:30.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "985"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7757406,
+                    35.7317736,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "WAGOKORO",
+                "address": "6 Chome-34-9 Higashinippori, Arakawa City, Tokyo 116-0014",
+                "description": " 호텔 from 2023-05-29T04:15:30.999Z to 2023-05-29T05:35:27.964Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T04:15:30.999Z",
+                    "end": "2023-05-29T05:35:27.964Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "호텔",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7757406,
+                        35.7317736,
+                        0
+                    ],
+                    [
+                        139.7757406,
+                        35.7317736,
+                        0
+                    ],
+                    [
+                        139.7751617,
+                        35.7315597,
+                        0
+                    ],
+                    [
+                        139.7736782,
+                        35.7317334,
+                        0
+                    ],
+                    [
+                        139.7733976,
+                        35.7319456,
+                        0
+                    ],
+                    [
+                        139.7752585,
+                        35.7316097,
+                        0
+                    ],
+                    [
+                        139.7720983,
+                        35.7293686,
+                        0
+                    ],
+                    [
+                        139.7725773,
+                        35.7308455,
+                        0
+                    ],
+                    [
+                        139.7719595,
+                        35.7296212,
+                        0
+                    ],
+                    [
+                        139.7728269,
+                        35.7286771,
+                        0
+                    ],
+                    [
+                        139.7725926,
+                        35.7283287,
+                        0
+                    ],
+                    [
+                        139.7725926,
+                        35.7283287,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-29T05:35:27.964Z to 2023-05-29T05:47:49.000Z. Distance 1270m ",
+                "timespan": {
+                    "begin": "2023-05-29T05:35:27.964Z",
+                    "end": "2023-05-29T05:47:49.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "1270"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7725926,
+                    35.7283287,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "First Cut Nipporiten",
+                "address": "〒116-0014 Tokyo, Arakawa City, Higashinippori, 5 Chome−51−13 2F",
+                "description": " 미용실 from 2023-05-29T05:47:49.000Z to 2023-05-29T06:13:31.900Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T05:47:49.000Z",
+                    "end": "2023-05-29T06:13:31.900Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "미용실",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7725926,
+                        35.7283287,
+                        0
+                    ],
+                    [
+                        139.7725926,
+                        35.7283287,
+                        0
+                    ],
+                    [
+                        139.7720777,
+                        35.7291935,
+                        0
+                    ],
+                    [
+                        139.7762435,
+                        35.7134662,
+                        0
+                    ],
+                    [
+                        139.7748473,
+                        35.7079122,
+                        0
+                    ],
+                    [
+                        139.7717579,
+                        35.6990815,
+                        0
+                    ],
+                    [
+                        139.7723389032304,
+                        35.69860321847577,
+                        0
+                    ],
+                    [
+                        139.7723389032304,
+                        35.69860321847577,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-29T06:13:31.900Z to 2023-05-29T06:20:06.999Z. Distance 3621m ",
+                "timespan": {
+                    "begin": "2023-05-29T06:13:31.900Z",
+                    "end": "2023-05-29T06:20:06.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "3621"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7730717,
+                    35.698383,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "아키하바라",
+                "address": "1 Chome Sotokanda, Chiyoda City, Tokyo",
+                "description": " 대중교통 이용장소 from 2023-05-29T06:20:06.999Z to 2023-05-29T07:55:08.999Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T06:20:06.999Z",
+                    "end": "2023-05-29T07:55:08.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "대중교통 이용장소",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7723389032304,
+                        35.69860321847577,
+                        0
+                    ],
+                    [
+                        139.7723389032304,
+                        35.69860321847577,
+                        0
+                    ],
+                    [
+                        139.7717579,
+                        35.6990815,
+                        0
+                    ],
+                    [
+                        139.7801538,
+                        35.7193758,
+                        0
+                    ],
+                    [
+                        139.7714907,
+                        35.7287684,
+                        0
+                    ],
+                    [
+                        139.773033,
+                        35.729335,
+                        0
+                    ],
+                    [
+                        139.773033,
+                        35.729335,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "On a train",
+                "description": " On a train from 2023-05-29T07:55:08.999Z to 2023-05-29T08:02:58.830Z. Distance 3912m ",
+                "timespan": {
+                    "begin": "2023-05-29T07:55:08.999Z",
+                    "end": "2023-05-29T08:02:58.830Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "On a train",
+                "Distance": "3912"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.773033,
+                    35.729335,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Saitō Yu",
+                "address": "6 Chome-59-2 Higashinippori, Arakawa City, Tokyo 116-0014",
+                "description": " 공중목욕탕 from 2023-05-29T08:02:58.830Z to 2023-05-29T08:40:11.999Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T08:02:58.830Z",
+                    "end": "2023-05-29T08:40:11.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "공중목욕탕",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.773033,
+                        35.729335,
+                        0
+                    ],
+                    [
+                        139.773033,
+                        35.729335,
+                        0
+                    ],
+                    [
+                        139.7734418,
+                        35.7292347,
+                        0
+                    ],
+                    [
+                        139.7734167,
+                        35.7283782,
+                        0
+                    ],
+                    [
+                        139.7738469,
+                        35.7274963,
+                        0
+                    ],
+                    [
+                        139.7738469,
+                        35.7274963,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-29T08:40:11.999Z to 2023-05-29T08:42:23.999Z. Distance 239m ",
+                "timespan": {
+                    "begin": "2023-05-29T08:40:11.999Z",
+                    "end": "2023-05-29T08:42:23.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "239"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7738469,
+                    35.7274963,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Wagaya Shokudo",
+                "address": "5 Chome-41-23 Higashinippori, Arakawa City, Tokyo 116-0014",
+                "description": " 일식당 및 일정식집 from 2023-05-29T08:42:23.999Z to 2023-05-29T09:13:39.999Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T08:42:23.999Z",
+                    "end": "2023-05-29T09:13:39.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "일식당 및 일정식집",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7738469,
+                        35.7274963,
+                        0
+                    ],
+                    [
+                        139.7738469,
+                        35.7274963,
+                        0
+                    ],
+                    [
+                        139.7735778,
+                        35.7282527,
+                        0
+                    ],
+                    [
+                        139.7783676,
+                        35.7271832,
+                        0
+                    ],
+                    [
+                        139.7788325,
+                        35.7258435,
+                        0
+                    ],
+                    [
+                        139.7790693601061,
+                        35.72523109068693,
+                        0
+                    ],
+                    [
+                        139.7790693601061,
+                        35.72523109068693,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-29T09:13:39.999Z to 2023-05-29T09:19:18.000Z. Distance 762m ",
+                "timespan": {
+                    "begin": "2023-05-29T09:13:39.999Z",
+                    "end": "2023-05-29T09:19:18.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "762"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7795217,
+                    35.725190399999995,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "라이프 히가시닛포리점",
+                "address": "4 Chome-36-20 Higashinippori, Arakawa City, Tokyo 116-0014",
+                "description": " 식료품점 from 2023-05-29T09:19:18.000Z to 2023-05-29T09:26:20.000Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T09:19:18.000Z",
+                    "end": "2023-05-29T09:26:20.000Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "식료품점",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.7790693601061,
+                        35.72523109068693,
+                        0
+                    ],
+                    [
+                        139.7790693601061,
+                        35.72523109068693,
+                        0
+                    ],
+                    [
+                        139.7795887,
+                        35.7248035,
+                        0
+                    ],
+                    [
+                        139.7812951,
+                        35.72532,
+                        0
+                    ],
+                    [
+                        139.781096,
+                        35.7267846,
+                        0
+                    ],
+                    [
+                        139.7796114,
+                        35.7298238,
+                        0
+                    ],
+                    [
+                        139.7801673,
+                        35.7278659,
+                        0
+                    ],
+                    [
+                        139.7801646,
+                        35.7290458,
+                        0
+                    ],
+                    [
+                        139.780136,
+                        35.730581,
+                        0
+                    ],
+                    [
+                        139.7787708,
+                        35.7304315,
+                        0
+                    ],
+                    [
+                        139.77859809999998,
+                        35.7313161,
+                        0
+                    ],
+                    [
+                        139.77859809999998,
+                        35.7313161,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-29T09:26:20.000Z to 2023-05-29T09:40:39.999Z. Distance 1507m ",
+                "timespan": {
+                    "begin": "2023-05-29T09:26:20.000Z",
+                    "end": "2023-05-29T09:40:39.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "1507"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.77859809999998,
+                    35.7313161,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "びすとり",
+                "address": "6 Chome-6-2 Higashinippori, Arakawa City, Tokyo 116-0014",
+                "description": " 야키토리 from 2023-05-29T09:40:39.999Z to 2023-05-29T10:05:15.253Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T09:40:39.999Z",
+                    "end": "2023-05-29T10:05:15.253Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "야키토리",
+                "Distance": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        139.77859809999998,
+                        35.7313161,
+                        0
+                    ],
+                    [
+                        139.77859809999998,
+                        35.7313161,
+                        0
+                    ],
+                    [
+                        139.777975,
+                        35.7304707,
+                        0
+                    ],
+                    [
+                        139.7745477,
+                        35.7313483,
+                        0
+                    ],
+                    [
+                        139.7757406,
+                        35.7317736,
+                        0
+                    ],
+                    [
+                        139.7757406,
+                        35.7317736,
+                        0
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Walking",
+                "description": " Walking from 2023-05-29T10:05:15.253Z to 2023-05-29T10:07:20.999Z. Distance 551m ",
+                "timespan": {
+                    "begin": "2023-05-29T10:05:15.253Z",
+                    "end": "2023-05-29T10:07:20.999Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "Walking",
+                "Distance": "551"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7757406,
+                    35.7317736,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "WAGOKORO",
+                "address": "6 Chome-34-9 Higashinippori, Arakawa City, Tokyo 116-0014",
+                "description": " 호텔 from 2023-05-29T10:07:20.999Z to 2023-05-29T14:22:16.391Z. Distance 0m ",
+                "timespan": {
+                    "begin": "2023-05-29T10:07:20.999Z",
+                    "end": "2023-05-29T14:22:16.391Z"
+                },
+                "Email": "h.mina.moe@gmail.com",
+                "Category": "호텔",
+                "Distance": "0"
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "date": "20230529",
+    "geojson": "contents/20230529/history.json",
+    "movement": {
+        "walking": 5.3,
+        "bus": 0,
+        "train": 127,
+        "airplane": 0,
+        "subway": 0,
+        "taxi": 0,
+        "drive": 5.6
+    },
+    "medias": [
+        {
+            "original": "contents/20230529/original/IMG_3006.avif",
+            "thumbnail": "contents/20230529/thumbnail/IMG_3006.avif",
+            "desc": "반납하니 918km. 많이 달린듯",
+            "latitude": 35.09965555555556,
+            "longitude": 138.85498055555556,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-29T10:12:16.000Z"
+        },
+        {
+            "original": "contents/20230529/original/IMG_3034.avif",
+            "thumbnail": "contents/20230529/thumbnail/IMG_3034.avif",
+            "desc": "11월 라이브에 필요한 앨범들 주문 완료.",
+            "latitude": 35.12593888888889,
+            "longitude": 138.9121388888889,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-29T11:21:07.000Z"
+        },
+        {
+            "original": "contents/20230529/original/IMG_3036.avif",
+            "thumbnail": "contents/20230529/thumbnail/IMG_3036.avif",
+            "desc": "",
+            "latitude": 35.1269,
+            "longitude": 138.9095,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-29T11:57:43.000Z"
+        },
+        {
+            "original": "contents/20230529/original/IMG_3037.avif",
+            "thumbnail": "contents/20230529/thumbnail/IMG_3037.avif",
+            "desc": "저녁. 뭔가 일본은 이렇게 반찬들을 골라서 먹을 수 있는 곳들이 있어서 좋은 것 같음 (삿포로에도 비슷한 데를 갔었고)",
+            "latitude": 35.727650000000004,
+            "longitude": 139.77397222222223,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-29T17:48:30.000Z"
+        }
+    ]
+}
