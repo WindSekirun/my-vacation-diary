@@ -1,42 +1,45 @@
 <template>
-    <div>
-        <v-row align="center" justify="center">
-            <v-col cols="auto">
-                <v-btn density="comfortable" variant="text" icon="mdi-chevron-left" @click="clickLeft" :disabled="page?.date == '20230429'"/>
-            </v-col>
+  <div>
+    <v-row align="center" justify="center">
+      <v-col cols="auto">
+        <v-btn density="comfortable" variant="text" icon="mdi-chevron-left" @click="clickLeft"
+          :disabled="page?.date == '20230429'" />
+      </v-col>
 
-            <v-col cols="auto">
-                <span class="text-h5 font-weight-bold">{{ formatDate(page?.date) }}</span>
-            </v-col>
+      <v-col cols="auto">
+        <span class="text-h5 font-weight-bold">{{ formatDate(page?.date) }}</span>
+      </v-col>
 
-            <v-col cols="auto">
-                <v-btn density="comfortable" variant="text" icon="mdi-chevron-right" @click="clickRight" :disabled="page?.date == '20230530'" />
-            </v-col>
-        </v-row>
+      <v-col cols="auto">
+        <v-btn density="comfortable" variant="text" icon="mdi-chevron-right" @click="clickRight"
+          :disabled="page?.date == '20230530'" />
+      </v-col>
+    </v-row>
 
-        <div class="mt-5" />
-        <span class="text-h6">이동 거리</span>
-        <movements :movement="page?.movement" />
+    <div class="mt-5" />
+    <span class="text-h6">이동 거리</span>
+    <movements :movement="page?.movement" />
 
-        <div class="mt-5" />
-        <span class="text-h6">장소 바로가기</span>
-        <v-select v-model='selectPlace' :items='placeList' item-title="name" solo density="comfortable"
-          placeholder="장소 선택" clearable return-object item-value="name" class="mt-2" v-if="geojson">
-          <template #item="{ item, props }">
-            <v-list-item v-bind="props">
-              <v-list-item-subtitle>
-                {{ item.value.address }}
-              </v-list-item-subtitle>
-            </v-list-item>
-          </template>
-        </v-select>
+    <div class="mt-5" />
+    <span class="text-h6">장소 바로가기</span>
+    <v-select v-model='selectPlace' :items='placeList' item-title="name" solo density="comfortable" placeholder="장소 선택"
+      clearable return-object item-value="name" class="mt-2" v-if="geojson">
+      <template #item="{ item, props }">
+        <v-list-item v-bind="props">
+          <v-list-item-subtitle>
+            {{ item.value.address }}
+          </v-list-item-subtitle>
+        </v-list-item>
+      </template>
+    </v-select>
 
-        <div class="mt-1" />
-        <v-btn append-icon="mdi-link-variant" block color="info" class="copyButton" :data-clipboard-text="copyUrl">링크 복사</v-btn>
+    <div class="mt-1" />
+    <v-btn append-icon="mdi-link-variant" block color="info" class="copyButton" :data-clipboard-text="copyUrl">링크
+      복사</v-btn>
 
-        <div class="mt-1" />
-        <v-btn append-icon="mdi-home" block color="primary" @click="clickHome">메인 이동</v-btn>
-    </div>
+    <div class="mt-1" />
+    <v-btn append-icon="mdi-home" block color="primary" @click="clickHome">메인 이동</v-btn>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -49,11 +52,12 @@ import { Ref, computed, ref, watch } from 'vue';
 import { distinctByReverse } from '@/utils/array';
 import { LatLng } from 'leaflet';
 import ClipboardJS from 'clipboard';
+import { onMounted } from 'vue';
 
 const emit = defineEmits<{
-    (e: 'mapFly', latLng: LatLng): void,
-    (e: 'mapFitToPage'): void,
-    (e: 'focusToInitial'): void,
+  (e: 'mapFly', latLng: LatLng): void,
+  (e: 'mapFitToPage'): void,
+  (e: 'focusToInitial'): void,
 }>()
 
 
@@ -61,16 +65,19 @@ const store = useAppStore();
 const { page, geojson } = storeToRefs(store);
 const selectPlace: Ref<Properties | undefined> = ref(undefined);
 const geoPointList: Ref<Feature[]> = computed(() => {
-    const originalGeoPointList = (geojson.value as GeoJsonRoot).features
-        .filter((item) => item.geometry.type == "Point");
-    return distinctByReverse(originalGeoPointList, (item) => item.properties.name);
+  const originalGeoPointList = (geojson.value as GeoJsonRoot).features
+    .filter((item) => item.geometry.type == "Point");
+  return distinctByReverse(originalGeoPointList, (item) => item.properties.name);
 });
 const placeList: Ref<Properties[]> = computed(() => geoPointList.value.map((item) => item.properties));
 const copyUrl = computed(() => {
   const newUrl = new URL(window.location.origin);
-  newUrl.searchParams.append('date', page.value?.date ?? "")
+  if (page.value?.date) {
+    newUrl.searchParams.append('date', page.value?.date ?? "")
+  }
   return newUrl.toString();
 })
+watch(page, () => rewriteUrl());
 
 watch(selectPlace, (value) => {
   if (!value) {
@@ -85,16 +92,22 @@ watch(selectPlace, (value) => {
   emit('mapFly', latLng);
 })
 
+onMounted(() => rewriteUrl());
+
 async function clickLeft() {
-    await store.previousPage();
+  await store.previousPage();
 }
 
 async function clickRight() {
-    await store.nextPage();
+  await store.nextPage();
 }
 
 function clickHome() {
   emit('focusToInitial');
+}
+
+function rewriteUrl() {
+  history.pushState({}, "Rewrite", copyUrl.value);
 }
 
 const clipboard = new ClipboardJS('.copyButton');
