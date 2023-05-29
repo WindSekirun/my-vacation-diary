@@ -5,7 +5,6 @@ import { Stat } from "@/model/stat";
 import axios from "axios";
 
 const baseUrl = import.meta.env.PROD ? "https://jvd.kohaku.moe" : "http://localhost:9001"
-export const baseWebUrl = import.meta.env.PROD ? "https://jvd.kohaku.moe" : "http://localhost:3000"
 
 const api = axios.create({
     baseURL: baseUrl
