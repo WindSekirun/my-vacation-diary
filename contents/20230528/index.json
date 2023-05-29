@@ -1,0 +1,85 @@
+{
+    "date": "20230528",
+    "geojson": "contents/20230528/history.json",
+    "movement": {
+        "walking": 0,
+        "bus": 0,
+        "train": 0,
+        "airplane": 0,
+        "subway": 0,
+        "taxi": 0,
+        "drive": 104
+    },
+    "medias": [
+        {
+            "original": "contents/20230528/original/IMG_2995.avif",
+            "thumbnail": "contents/20230528/thumbnail/IMG_2995.avif",
+            "desc": "어제보다 입장시간이 2시간 늦어서 늦게 나오긴 했는데..",
+            "latitude": 35.313063888888884,
+            "longitude": 138.92668055555555,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-28T10:43:02.000Z"
+        },
+        {
+            "original": "contents/20230528/original/IMG_2997.avif",
+            "thumbnail": "contents/20230528/thumbnail/IMG_2997.avif",
+            "desc": "임시주차장에 겨우 주차. 정식 주차장이든 임시 주차장이든 3000엔을 뺏어가는 양아치들..",
+            "latitude": 35.485752777777776,
+            "longitude": 138.78239444444446,
+            "model": "iPhone 14 Pro Max back triple camera 2.22mm f/2.2",
+            "make": "Apple",
+            "time": "2023-05-28T12:21:47.000Z"
+        },
+        {
+            "original": "contents/20230528/original/IMG_2998.avif",
+            "thumbnail": "contents/20230528/thumbnail/IMG_2998.avif",
+            "desc": "사전구매 하지 않으면 한정굿즈가 품절되는데, 구매할 당시에는 티셔츠나 레이야 후드포함 타올은 이미 매진되었음. 그나마 롯카의 부채나 후드포함 타올은 구매함",
+            "latitude": 35.48079166666667,
+            "longitude": 138.776825,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-28T15:24:50.000Z"
+        },
+        {
+            "original": "contents/20230528/original/IMG_2999.avif",
+            "thumbnail": "contents/20230528/thumbnail/IMG_2999.avif",
+            "desc": "",
+            "latitude": 35.482330555555556,
+            "longitude": 138.7746277777778,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-28T15:55:06.000Z"
+        },
+        {
+            "original": "contents/20230528/original/IMG_3001.avif",
+            "thumbnail": "contents/20230528/thumbnail/IMG_3001.avif",
+            "desc": "앞자리이긴 한데 그래도 잘 안보이는 위치. 어제보단 훨씬 좋음",
+            "latitude": 35.48148611111111,
+            "longitude": 138.77505555555558,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-28T16:06:02.000Z"
+        },
+        {
+            "original": "contents/20230528/original/IMG_3003.avif",
+            "thumbnail": "contents/20230528/thumbnail/IMG_3003.avif",
+            "desc": "",
+            "latitude": 35.481433333333335,
+            "longitude": 138.77479444444447,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-28T16:43:46.000Z"
+        },
+        {
+            "original": "contents/20230528/original/IMG_3004.avif",
+            "thumbnail": "contents/20230528/thumbnail/IMG_3004.avif",
+            "desc": "역시 라스 라이브는 최고. 코로나도 다 끝나서 마스크 벗고, 콜도 넣을 수 있어서 매우 즐거웠음. 그리고 11월달 라이브 발표도..!",
+            "latitude": 35.482327777777776,
+            "longitude": 138.77459722222224,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-28T19:47:15.000Z"
+        }
+    ]
+}

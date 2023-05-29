@@ -1,0 +1,235 @@
+{
+    "date": "20230527",
+    "geojson": "contents/20230527/history.json",
+    "movement": {
+        "walking": 0,
+        "bus": 0,
+        "train": 0,
+        "airplane": 0,
+        "subway": 0,
+        "taxi": 0,
+        "drive": 107
+    },
+    "medias": [
+        {
+            "original": "contents/20230527/original/IMG_2926.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2926.avif",
+            "desc": "열심히 달려가는중..",
+            "latitude": 35.31305833333333,
+            "longitude": 138.92674166666666,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T08:19:30.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2927.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2927.avif",
+            "desc": "3000엔.. 양아치 ㅠ",
+            "latitude": 35.48286944444445,
+            "longitude": 138.77610833333335,
+            "model": "iPhone 14 Pro Max back triple camera 2.22mm f/2.2",
+            "make": "Apple",
+            "time": "2023-05-27T08:49:17.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2928.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2928.avif",
+            "desc": "일찍 도착한 덕분인지 공연장에서 가장 가까운 주차장에 댈 수 있었음",
+            "latitude": 35.48359166666667,
+            "longitude": 138.77589444444445,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T08:52:40.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2929.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2929.avif",
+            "desc": "",
+            "latitude": 35.4854,
+            "longitude": 138.77699166666667,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T08:55:59.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2931.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2931.avif",
+            "desc": "",
+            "latitude": 35.485419444444446,
+            "longitude": 138.77728333333334,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T09:01:19.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2932.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2932.avif",
+            "desc": "이번달은 후지큐 안에서 뱅드림 콜라보를 하고 있음 (매년 그랬긴 했지만)",
+            "latitude": 35.486580555555555,
+            "longitude": 138.77923611111112,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T09:21:44.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2935.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2935.avif",
+            "desc": "콜라보 캐릭터 모음. 왼쪽부터 카스미/란/아야/유키나/코코로/마시로/나나미/츠쿠시/레이야/마스킹",
+            "latitude": 35.4871,
+            "longitude": 138.77986111111113,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T09:24:06.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2940.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2940.avif",
+            "desc": "",
+            "latitude": 35.48764722222222,
+            "longitude": 138.78176944444445,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T09:43:40.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2944.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2944.avif",
+            "desc": "",
+            "latitude": 35.485911111111115,
+            "longitude": 138.77978611111112,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T10:02:26.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2947.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2947.avif",
+            "desc": "",
+            "latitude": 35.48670277777778,
+            "longitude": 138.77948055555558,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T10:04:32.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2948.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2948.avif",
+            "desc": "",
+            "latitude": 35.48632777777778,
+            "longitude": 138.78063888888892,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T10:06:38.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2949.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2949.avif",
+            "desc": "",
+            "latitude": 35.487125,
+            "longitude": 138.78033333333335,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T10:08:22.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2950.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2950.avif",
+            "desc": "",
+            "latitude": 35.48909722222222,
+            "longitude": 138.780975,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T10:15:20.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2952.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2952.avif",
+            "desc": "",
+            "latitude": 35.482150000000004,
+            "longitude": 138.77465833333335,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T12:42:04.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2953.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2953.avif",
+            "desc": "",
+            "latitude": 35.48216111111111,
+            "longitude": 138.77467222222222,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T12:42:09.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2954.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2954.avif",
+            "desc": "",
+            "latitude": 35.48216111111111,
+            "longitude": 138.77467222222222,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T12:42:12.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2959.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2959.avif",
+            "desc": "",
+            "latitude": 35.482169444444445,
+            "longitude": 138.77464166666667,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T12:42:38.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2966.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2966.avif",
+            "desc": "",
+            "latitude": 35.48222222222223,
+            "longitude": 138.77455277777779,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T12:43:14.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2967.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2967.avif",
+            "desc": "",
+            "latitude": 35.48230277777778,
+            "longitude": 138.77459722222224,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T12:44:11.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2969.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2969.avif",
+            "desc": "",
+            "latitude": 35.48227222222222,
+            "longitude": 138.77443055555557,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T12:44:47.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2970.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2970.avif",
+            "desc": "",
+            "latitude": 35.48227222222222,
+            "longitude": 138.77441388888892,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T12:44:52.000Z"
+        },
+        {
+            "original": "contents/20230527/original/IMG_2987.avif",
+            "thumbnail": "contents/20230527/thumbnail/IMG_2987.avif",
+            "desc": "일반 구매권이라고 해도 너무 안보이는 위치..ㅠ",
+            "latitude": 35.481116666666665,
+            "longitude": 138.77452222222223,
+            "model": "iPhone 14 Pro Max back triple camera 6.86mm f/1.78",
+            "make": "Apple",
+            "time": "2023-05-27T13:27:01.000Z"
+        }
+    ]
+}
