@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <vue-horizontal class="horizontal" snap="center" ref="horizontal">
-            <div class="item" v-for="(item, index) in page?.medias" :key="index">
-                <div class="content" :style="{ background: `url(${makeUrl(item.thumbnail)})`}" @click="clickItem(item)">
-                    <div :style="`padding-top: ${props.paddingTop ?? 55}%`" />
-                </div>
-            </div>
-        </vue-horizontal>
-    </div>
+  <div>
+    <vue-horizontal class="horizontal" snap="center" ref="horizontal">
+      <div class="item" v-for="(item, index) in page?.medias" :key="index">
+        <div class="content" :style="{ background: `url(${makeUrl(item.thumbnail)})` }" @click="clickItem(item)">
+          <div :style="`padding-top: ${props.paddingTop ?? 55}%`" />
+        </div>
+      </div>
+    </vue-horizontal>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -28,16 +28,12 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits<{
-    (e: 'clickItem', media: Media): void,
-}>()
-
 const store = useAppStore();
 const horizontal: Ref<typeof VueHorizontal | undefined> = ref(undefined);
 const { page } = storeToRefs(store);
 
 function clickItem(item: Media) {
-  emit('clickItem', item);
+  store.setDetailMedia(item);
 }
 
 function focusIndex(index: number) {
@@ -134,11 +130,11 @@ There are 2 set of logic:
     margin: 0 calc(var(--margin) * -1);
   }
 
-  .horizontal >>> .v-hl-container {
+  .horizontal>>>.v-hl-container {
     scroll-padding: 0 calc(var(--margin) - (var(--gap) / 2));
   }
 
-  .horizontal >>> .v-hl-btn {
+  .horizontal>>>.v-hl-btn {
     display: none;
   }
 }

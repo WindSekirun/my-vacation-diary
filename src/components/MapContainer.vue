@@ -99,7 +99,6 @@ const attribution = '&copy; <a target="_blank" href="http://osm.org/copyright">O
 const emit = defineEmits<{
     (e: 'clickIndex', date: string): void,
     (e: 'ready'): void,
-    (e: 'showImageViewer', media: Media): void,
 }>()
 
 const store = useAppStore();
@@ -129,7 +128,7 @@ function clickMarker(item: ListIndex) {
 }
 
 function clickMediaMarker(item: Media) {
-    emit('showImageViewer', item);
+    store.setDetailMedia(item);
 }
 
 function fitToInitial() {
@@ -147,7 +146,10 @@ function fitToPage() {
     const southWest = new LatLng(box[1], box[0])
     const northEast = new LatLng(box[3], box[2])
     const bounds = new LatLngBounds(southWest, northEast)
-    map?.fitBounds(bounds)
+    map?.fitBounds(bounds, {
+        paddingTopLeft: [20, 20],
+        paddingBottomRight: [20, 20]
+    })
 }
 
 function flyTo(latLng: LatLng) {

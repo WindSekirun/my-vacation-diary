@@ -1,6 +1,6 @@
 // Utilities
 import { ListIndex } from '@/model/listindex'
-import { Page } from '@/model/page'
+import { Media, Page } from '@/model/page'
 import { defineStore } from 'pinia'
 import { getGeoJson, getListIndex, getPage, getSpot, getStat } from './api'
 import { Stat } from '@/model/stat'
@@ -14,6 +14,7 @@ interface State {
   stat: Stat | undefined,
   spot: Spot[] | undefined,
   geojson: any,
+  detailMedia: Media | undefined,
 }
 
 export const useAppStore = defineStore('app', {
@@ -23,7 +24,8 @@ export const useAppStore = defineStore('app', {
     page: undefined,
     stat: undefined,
     spot: undefined,
-    geojson: undefined
+    geojson: undefined,
+    detailMedia: undefined,
   }),
 
   actions: {
@@ -57,6 +59,15 @@ export const useAppStore = defineStore('app', {
       if (newDate != '20230531') {
         this.loadPage(newDate)
       }
-    }
+    },
+
+    setDetailMedia(media: Media) {
+      this.detailMedia = media
+    },
+
+    removeDetailMedia() {
+      this.detailMedia = undefined;
+    },
+
   }
 })

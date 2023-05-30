@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="primary fill-height pa-0">
-    <map-container ref="container" @click-index="onClickIndex" @ready="readyMap" @show-image-viewer="showImageViewer" />
+    <map-container ref="container" @click-index="onClickIndex" @ready="readyMap" />
     <div class="menu">
       <v-card class="pa-5 rounded-shaped" min-width="300">
         <home-menu v-if="!page" ref="homeMenu" @selectIndex="loadPage" />
@@ -9,10 +9,9 @@
       </v-card>
     </div>
     <v-slide-y-reverse-transition>
-      <thumbnail v-if="page" class="thumbnail" @click-item="showImageViewer" />
+      <thumbnail v-if="page" class="thumbnail" />
     </v-slide-y-reverse-transition>
-    <image-viewer v-if="detailImage" :media="detailImage" @close-event="detailImage = undefined"
-      @change-media="showImageViewer" />
+    <image-viewer v-if="detailMedia" />
   </v-container>
 </template>
 
@@ -26,16 +25,14 @@ import PageMenu from '@/components/PageMenu.vue';
 import { LatLng } from 'leaflet';
 import { useRoute } from 'vue-router';
 import Thumbnail from '@/components/Thumbnail.vue';
-import { Media } from '@/model/page';
 import ImageViewer from '@/components/ImageViewer.vue';
 
 const store = useAppStore();
 const route = useRoute();
-const { indexList, page } = storeToRefs(store);
+const { indexList, page, detailMedia } = storeToRefs(store);
 const container: Ref<typeof MapContainer | undefined> = ref(undefined);
 const homeMenu: Ref<typeof HomeMenu | undefined> = ref(undefined);
 const pageMenu: Ref<typeof PageMenu | undefined> = ref(undefined);
-const detailImage: Ref<Media | undefined> = ref(undefined);
 const onClickIndex = (date?: string) => homeMenu.value?.setSelectedIndex(indexList.value.find(item => item.date == date));
 
 await store.getListIndex();
@@ -70,10 +67,6 @@ function readyMap() {
       homeMenu.value?.setSelectedIndex(findItem);
     }
   }
-}
-
-function showImageViewer(item: Media) {
-  detailImage.value = item
 }
 </script>
 

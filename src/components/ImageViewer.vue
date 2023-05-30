@@ -1,20 +1,20 @@
 <template>
     <v-overlay v-model="visible">
         <v-container fluid fill-height class="primary pa-0 background">
-            <v-img :src="makeUrl(props.media?.original)" class="image-container" />
+            <v-img :src="makeUrl(detailMedia?.original)" class="image-container" />
             <v-row class="menu-container pe-8 ps-8 pt-6 pb-3">
                 <span class="text-height-h6" style="color: #999">{{ mediaIndex }}</span>
                 <v-spacer></v-spacer>
-                <v-icon icon="mdi-close" color="#999" size="large" @click="emit('closeEvent')" />
+                <v-icon icon="mdi-close" color="#999" size="large" @click="clickCloseIcon" />
             </v-row>
             <v-responsive class="info pa-5" width="300">
                 <span class="text-h6">{{ title }}</span> <br />
-                <span class="text-body-1">{{ formatDateTime(media?.time) }}</span> <br />
-                <span class="text-body-2">{{ media?.model }}</span> <br />
+                <span class="text-body-1">{{ formatDateTime(detailMedia?.time) }}</span> <br />
+                <span class="text-body-2">{{ detailMedia?.model }}</span> <br />
                 <v-divider class="mt-2 mb-2"></v-divider>
-                <span class="text-caption" v-if="media?.desc"> {{ media?.desc }}</span>
-                <v-divider class="mt-2 mb-5" v-if="media?.desc"></v-divider>
-                <small-map :media="media" style="height: 100px" />
+                <span class="text-caption" v-if="detailMedia?.desc"> {{ detailMedia?.desc }}</span>
+                <v-divider class="mt-2 mb-5" v-if="detailMedia?.desc"></v-divider>
+                <small-map :media="detailMedia" style="height: 100px" />
             </v-responsive>
             <thumbnail class="thumbnail" :padding-top="40" @click-item="clickThumbnailItem" ref="thumbnail" />
         </v-container>
@@ -24,7 +24,7 @@
 <script setup lang="ts">
 import { Media } from '@/model/page';
 import { makeUrl } from '@/store/api';
-import { PropType, Ref, computed, ref, watch } from 'vue'
+import { Ref, computed, ref, watch } from 'vue'
 import Thumbnail from './Thumbnail.vue';
 import SmallMap from './SmallMap.vue';
 import dayjs from 'dayjs';
@@ -33,27 +33,17 @@ import { useAppStore } from '@/store/app';
 import { storeToRefs } from 'pinia';
 import { useKeypress } from "vue3-keypress";
 
-const props = defineProps({
-    media: {
-        type: Object as PropType<Media>
-    }
-});
-const emit = defineEmits<{
-    (e: 'closeEvent'): void,
-    (e: 'changeMedia', media: Media): void,
-}>()
-
 const store = useAppStore();
-const { page } = storeToRefs(store);
+const { page, detailMedia } = storeToRefs(store);
 const thumbnail: Ref<typeof Thumbnail | undefined> = ref(undefined);
 const visible = ref(true);
 const title = computed(() => {
-    const fileName = props.media?.original.split("/").at(-1);
+    const fileName = detailMedia.value?.original.split("/").at(-1);
     return fileName?.substring(0, fileName.lastIndexOf('.'));
 });
-const mediaIndex = computed(() => `${(page.value?.medias?.indexOf(props.media!) ?? 0) + 1} / ${page.value?.medias?.length}`)
+const mediaIndex = computed(() => `${(page.value?.medias?.indexOf(detailMedia.value!) ?? 0) + 1} / ${page.value?.medias?.length}`)
 dayjs.extend(utc);
-watch(() => props.media, (media) => {
+watch(detailMedia, (media) => {
     thumbnail.value?.focusIndex(page.value?.medias?.indexOf(media!));
 })
 
@@ -68,11 +58,16 @@ useKeypress({
             keyCode: "right",
             success: () => keyDown(1),
         },
-    ]
+    ],
+    isActive: detailMedia
 });
 
 function clickThumbnailItem(item: Media) {
-    emit('changeMedia', item)
+    store.setDetailMedia(item);
+}
+
+function clickCloseIcon() {
+    store.removeDetailMedia();
 }
 
 function formatDateTime(date: string | undefined) {
@@ -83,12 +78,12 @@ function keyDown(direction: number) {
     const list = page.value?.medias;
     if (!list) return;
 
-    const index = list.indexOf(props.media!);
+    const index = list.indexOf(detailMedia.value!);
     const item = list.at(index + direction);
     if (item) {
-        emit('changeMedia', item);
+        store.setDetailMedia(item);
     } else if (direction == 1) {
-        emit('changeMedia', list[0]);
+        store.setDetailMedia(list[0]);
     }
 }
 </script>
