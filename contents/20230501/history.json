@@ -545,14 +545,14 @@
                 ]
             },
             "properties": {
-                "name": "Moving",
+                "name": "Walking",
                 "description": " Moving from 2023-05-01T08:56:35.000Z to 2023-05-01T09:51:14.000Z. Distance 2442m ",
                 "timespan": {
                     "begin": "2023-05-01T08:56:35.000Z",
                     "end": "2023-05-01T09:51:14.000Z"
                 },
                 "Email": "h.mina.moe@gmail.com",
-                "Category": "Moving",
+                "Category": "Walking",
                 "Distance": "2442"
             }
         },

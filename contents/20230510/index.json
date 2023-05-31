@@ -2,7 +2,7 @@
     "date": "20230510",
     "geojson": "contents/20230510/history.json",
     "movement": {
-        "walking": 7.4,
+        "walking": 9.2,
         "bus": 1.5,
         "train": 81.7,
         "airplane": 0,

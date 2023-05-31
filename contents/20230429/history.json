@@ -872,14 +872,14 @@
                 ]
             },
             "properties": {
-                "name": "Moving",
+                "name": "Walking",
                 "address": "",
                 "description": "Moving from 2023-04-29T10:39:08.000Z to 2023-04-29T10:55:35.000Z. Distance 515m",
                 "timespan": {
                     "begin": "2023-04-29T10:39:08.000Z",
                     "end": "2023-04-29T10:55:35.000Z"
                 },
-                "Category": "Moving",
+                "Category": "Walking",
                 "Distance": "515"
             }
         },

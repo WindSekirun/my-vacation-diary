@@ -3,7 +3,7 @@
     "geojson": "contents/20230507/history.json",
     "movement": {
         "walking": 2.2,
-        "bus": 54.8,
+        "bus": 57.0,
         "train": 15.5,
         "airplane": 0,
         "subway": 0,

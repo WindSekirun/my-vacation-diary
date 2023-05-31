@@ -149,14 +149,14 @@
                 ]
             },
             "properties": {
-                "name": "Moving",
+                "name": "Walking",
                 "description": " Moving from 2023-05-22T00:10:00.000Z to 2023-05-22T00:19:35.057Z. Distance 5235m ",
                 "timespan": {
                     "begin": "2023-05-22T00:10:00.000Z",
                     "end": "2023-05-22T00:19:35.057Z"
                 },
                 "Email": "h.mina.moe@gmail.com",
-                "Category": "Moving",
+                "Category": "Walking",
                 "Distance": "5235"
             }
         },
@@ -1107,14 +1107,14 @@
                 ]
             },
             "properties": {
-                "name": "Moving",
-                "description": " Moving from 2023-05-22T07:07:17.547Z to 2023-05-22T07:15:33.676Z. Distance 874m ",
+                "name": "Walking",
+                "description": " Walking from 2023-05-22T07:07:17.547Z to 2023-05-22T07:15:33.676Z. Distance 874m ",
                 "timespan": {
                     "begin": "2023-05-22T07:07:17.547Z",
                     "end": "2023-05-22T07:15:33.676Z"
                 },
                 "Email": "h.mina.moe@gmail.com",
-                "Category": "Moving",
+                "Category": "Walking",
                 "Distance": "874"
             }
         },

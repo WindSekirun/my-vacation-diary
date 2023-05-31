@@ -442,14 +442,14 @@
                 ]
             },
             "properties": {
-                "name": "Moving",
+                "name": "On a bus",
                 "description": " Moving from 2023-05-07T02:33:00.869Z to 2023-05-07T02:37:31.000Z. Distance 2164m ",
                 "timespan": {
                     "begin": "2023-05-07T02:33:00.869Z",
                     "end": "2023-05-07T02:37:31.000Z"
                 },
                 "Email": "h.mina.moe@gmail.com",
-                "Category": "Moving",
+                "Category": "On a bus",
                 "Distance": "2164"
             }
         },
