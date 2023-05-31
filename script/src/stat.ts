@@ -2,8 +2,9 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 import { glob } from 'glob';
 import fs from "fs";
-import { Data, Movement } from './data';
+import { Coordinate, Data, Movement, Stat } from './data';
 import { GeoJsonRoot } from './geojson';
+import { LatLng } from 'leaflet';
 
 function distinctBy<T, R>(list: T[], selector: (item: T) => R): T[] {
     const result: T[] = [];
@@ -20,6 +21,45 @@ function distinctBy<T, R>(list: T[], selector: (item: T) => R): T[] {
 
 function round(number: number): number {
     return Math.round(number * 100) / 100;
+}
+
+function newCoordinate(): Coordinate {
+    return {
+        date: "",
+        walking: [],
+        bus: [],
+        train: [],
+        airplane: [],
+        subway: [],
+        taxi: [],
+        drive: [],
+    }
+}
+
+function bindCoordinate(coordinate: Coordinate, target: string, geometry: any) {
+    switch (target) {
+        case "Walking":
+            coordinate.walking.push(geometry);
+            break;
+        case "Driving":
+            coordinate.drive.push(geometry);
+            break;
+        case "On a train":
+            coordinate.train.push(geometry);
+            break;
+        case "Flying":
+            coordinate.airplane.push(geometry);
+            break;
+        case "On a bus":
+            coordinate.bus.push(geometry);
+            break;
+        case "On a subway":
+            coordinate.subway.push(geometry);
+            break;
+        case "In a taxi":
+            coordinate.taxi.push(geometry);
+            break;
+    }
 }
 
 // __dirname is not defined in ES module scope
@@ -74,29 +114,49 @@ const placePromises = geoJsonList.map(async item => {
 const placeList = await Promise.all(placePromises);
 const placeFlatten = distinctBy(placeList.flat(), (a) => a);
 
-const coordinatePromises = geoJsonList.map(async item => {
-    if (item.includes('20230429/') || item.includes('20230530/')) {
-        return [];
-    }
-    
+const totalCoordinate: Coordinate = newCoordinate();
+const coordinatePromises: Promise<Coordinate>[] = geoJsonList.map(async item => {
     const geojson: GeoJsonRoot = JSON.parse((await fs.promises.readFile(item)).toString());
-    const coordinates: number[][][] = geojson.features
+    const indexData = JSON.parse((await fs.promises.readFile(item.replace("history.json", "index.json"))).toString())
+    const result = geojson.features
         .filter((item) => item.geometry.type == "LineString")
-        .map(item => item.geometry.coordinates.map(item => [item[1], item[0]]))
-    return coordinates
+        .map((item, index) => {
+            return {
+                index: index,
+                name: item.properties.name ,
+                geometry: item.geometry.coordinates.map(item => [item[1], item[0]]) as LatLng[][]
+            }
+        });
+
+    const coordinate: Coordinate = newCoordinate();
+    coordinate.date = indexData['date'];
+    if (item.includes('20230429')) {
+        result.slice(2).forEach(item => {
+            bindCoordinate(coordinate, item.name, item.geometry);
+        })
+    } else if (item.includes('20230530')) {
+        result.slice(0, 2).forEach(item => {
+            bindCoordinate(coordinate, item.name, item.geometry);
+        })
+    } else {
+        result.forEach(item => {
+            bindCoordinate(coordinate, item.name, item.geometry);
+        })
+    }
+    return coordinate
 });
-const coordinateList: number[][][][] = await Promise.all(coordinatePromises)
-const coordinateFlatten: number[][][] = coordinateList.flat();
+
+const coordinates = await Promise.all(coordinatePromises);
 
 // 이미지 갯수
 const imageCount = (await glob([path.join(workingDir, './*/original/*.avif')])).length
 
-const data = {
+const stat: Stat = {
     movement: totalMovement,
     sum: placeFlatten.length,
     average: round(placeFlatten.length / geoJsonList.length),
-    coordinates: coordinateFlatten,
+    coordinate: coordinates,
     imageCount: imageCount,
     imageCountAverage: round(imageCount / geoJsonList.length)
 }
-await fs.promises.writeFile(path.join(workingDir, "stat.json"), JSON.stringify(data))
+await fs.promises.writeFile(path.join(workingDir, "stat.json"), JSON.stringify(stat))

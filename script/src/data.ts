@@ -16,3 +16,25 @@ export class Movement {
     taxi?: number;
     drive?: number;
 }
+
+export type LatLng = number[];
+
+export class Coordinate {
+    date: string = "";
+    walking: LatLng[][] = [];
+    bus: LatLng[][] = [];
+    train: LatLng[][] = [];
+    airplane: LatLng[][] = [];
+    subway: LatLng[][] = [];
+    taxi: LatLng[][] = [];
+    drive: LatLng[][] = [];
+}
+
+export class Stat {
+    movement?: Movement
+    sum?: number;
+    average?: number;
+    coordinate?: Coordinate[];
+    imageCount?: number;
+    imageCountAverage?: number;
+}
