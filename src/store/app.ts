@@ -7,6 +7,16 @@ import { Stat } from '@/model/stat'
 import dayjs from 'dayjs'
 import { Spot } from '@/model/spot'
 
+interface SelectInitialCoordinate {
+  walking: boolean,
+  bus: boolean,
+  train: boolean,
+  airplane: boolean,
+  subway: boolean,
+  taxi: boolean,
+  drive: boolean
+}
+
 interface State {
   date: string,
   indexList: ListIndex[]
@@ -15,6 +25,7 @@ interface State {
   spot: Spot[] | undefined,
   geojson: any,
   detailMedia: Media | undefined,
+  initialCoordinate: SelectInitialCoordinate,
 }
 
 export const useAppStore = defineStore('app', {
@@ -26,6 +37,15 @@ export const useAppStore = defineStore('app', {
     spot: undefined,
     geojson: undefined,
     detailMedia: undefined,
+    initialCoordinate: {
+      walking: true,
+      bus: true,
+      train: true,
+      airplane: true,
+      subway: true,
+      taxi: true,
+      drive: true
+    }
   }),
 
   actions: {

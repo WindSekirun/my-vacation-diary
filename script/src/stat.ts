@@ -123,7 +123,7 @@ const coordinatePromises: Promise<Coordinate>[] = geoJsonList.map(async item => 
         .map((item, index) => {
             return {
                 index: index,
-                name: item.properties.name ,
+                name: item.properties.name,
                 geometry: item.geometry.coordinates.map(item => [item[1], item[0]]) as LatLng[][]
             }
         });
@@ -146,7 +146,8 @@ const coordinatePromises: Promise<Coordinate>[] = geoJsonList.map(async item => 
     return coordinate
 });
 
-const coordinates = await Promise.all(coordinatePromises);
+const coordinates = (await Promise.all(coordinatePromises))
+    .sort((a, b) => a.date.localeCompare(b.date));
 
 // 이미지 갯수
 const imageCount = (await glob([path.join(workingDir, './*/original/*.avif')])).length
@@ -155,7 +156,7 @@ const stat: Stat = {
     movement: totalMovement,
     sum: placeFlatten.length,
     average: round(placeFlatten.length / geoJsonList.length),
-    coordinate: coordinates,
+    coordinates: coordinates,
     imageCount: imageCount,
     imageCountAverage: round(imageCount / geoJsonList.length)
 }

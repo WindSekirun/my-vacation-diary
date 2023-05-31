@@ -24,8 +24,20 @@
                 </v-list-item>
             </l-popup>
         </l-marker>
-        <l-polyline v-for="(item, index) in coordinateStatList" :key="index" :lat-lngs="item"
-            :visible="visibleIndexMarker" />
+        <l-polyline v-for="(item, index) in initialWalkingCoordinates" :key="index" :lat-lngs="item"
+            :visible="visibleIndexMarker && initialCoordinate.walking" />
+        <l-polyline v-for="(item, index) in initialBusCoordinates" :key="index" :lat-lngs="item"
+            :visible="visibleIndexMarker && initialCoordinate.bus" />
+        <l-polyline v-for="(item, index) in initialTrainCoordinates" :key="index" :lat-lngs="item"
+            :visible="visibleIndexMarker && initialCoordinate.train" />
+        <l-polyline v-for="(item, index) in initialAirplaneCoordinates" :key="index" :lat-lngs="item"
+            :visible="visibleIndexMarker && initialCoordinate.airplane" />
+        <l-polyline v-for="(item, index) in initialSubwayCoordinates" :key="index" :lat-lngs="item"
+            :visible="visibleIndexMarker && initialCoordinate.subway" />
+        <l-polyline v-for="(item, index) in initialTaxiCoordinates" :key="index" :lat-lngs="item"
+            :visible="visibleIndexMarker && initialCoordinate.taxi" />
+        <l-polyline v-for="(item, index) in initialDriveCoordinates" :key="index" :lat-lngs="item"
+            :visible="visibleIndexMarker && initialCoordinate.drive" />
         <l-marker v-for="(item, index) in spot" :key="index" :lat-lng="[item.latitude, item.longitude]"
             :visible="visibleIndexMarker || item.date == page?.date" :icon="spotMarkerIcon">
             <l-popup :options="{ minWidth: 400 }">
@@ -102,12 +114,17 @@ const emit = defineEmits<{
 }>()
 
 const store = useAppStore();
-const { indexList, page, geojson, stat, spot } = storeToRefs(store);
+const { indexList, page, geojson, stat, spot, initialCoordinate } = storeToRefs(store);
 const mediaMarkers: Ref<typeof LMarker | undefined> = ref(undefined)
 const visibleIndexMarker = computed(() => !page.value);
-const coordinateStatList = computed(() => stat.value!.coordinates!.map(item => {
-    return item.map(item => new LatLng(item[0], item[1]));
-}));
+const initialWalkingCoordinates = computed(() => stat.value?.coordinates?.map(item => item.walking).flat());
+const initialBusCoordinates = computed(() => stat.value?.coordinates?.map(item => item.bus).flat());
+const initialTrainCoordinates = computed(() => stat.value?.coordinates?.map(item => item.train).flat());
+const initialAirplaneCoordinates = computed(() => stat.value?.coordinates?.map(item => item.airplane).flat());
+const initialSubwayCoordinates = computed(() => stat.value?.coordinates?.map(item => item.subway).flat());
+const initialTaxiCoordinates = computed(() => stat.value?.coordinates?.map(item => item.taxi).flat());
+const initialDriveCoordinates = computed(() => stat.value?.coordinates?.map(item => item.drive).flat());
+
 const initialCenterPoint = computed(() => getCenterOfIndexList(indexList.value));
 const mediaMarkerIcon = new Icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"

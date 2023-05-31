@@ -34,7 +34,7 @@ export class Stat {
     movement?: Movement
     sum?: number;
     average?: number;
-    coordinate?: Coordinate[];
+    coordinates?: Coordinate[];
     imageCount?: number;
     imageCountAverage?: number;
 }

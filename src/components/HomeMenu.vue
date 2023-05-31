@@ -17,7 +17,7 @@
         </v-select>
         <span class="text-h5">통계</span>
         <movements :movement="stat?.movement" class="mb-2" />
-        <ul class="ms-5">
+        <ul class="ms-5 mb-5">
             <li>
                 방문한 장소: 총 {{ stat?.sum }}개 ({{ stat?.average }}/D)
             </li>
@@ -25,6 +25,30 @@
                 촬영한 이미지: 총 {{ stat?.imageCount }}개 ({{ stat?.imageCountAverage }}/D)
             </li>
         </ul>
+        <span class="text-h5 mt-5">경로 필터</span>
+        <v-row style="width: 300px;" class="ps-3 pb-3 mt-1">
+            <v-col cols="auto" class="pa-0 me-1">
+                <v-checkbox v-model="initialCoordinate.walking" density="compact" hide-details label="도보" />
+            </v-col>
+            <v-col cols="auto" class="pa-0 me-1">
+                <v-checkbox v-model="initialCoordinate.drive" density="compact" hide-details label="운전" />
+            </v-col>
+            <v-col cols="auto" class="pa-0 me-1">
+                <v-checkbox v-model="initialCoordinate.bus" density="compact" hide-details label="버스" />
+            </v-col>
+            <v-col cols="auto" class="pa-0 me-1">
+                <v-checkbox v-model="initialCoordinate.train" density="compact" hide-details label="전철" />
+            </v-col>
+            <v-col cols="auto" class="pa-0 me-1">
+                <v-checkbox v-model="initialCoordinate.subway" density="compact" hide-details color="#000" label="지하철" />
+            </v-col>
+            <v-col cols="auto" class="pa-0 me-1">
+                <v-checkbox v-model="initialCoordinate.airplane" density="compact" hide-details color="#000" label="비행기" />
+            </v-col>
+            <v-col cols="auto" class="pa-0 me-1">
+                <v-checkbox v-model="initialCoordinate.taxi" density="compact" hide-details color="#000" label="택시" />
+            </v-col>
+        </v-row>
     </div>
 </template>
 
@@ -37,7 +61,7 @@ import { ListIndex } from '@/model/listindex';
 import Movements from '@/components/Movements.vue';
 
 const store = useAppStore();
-const { indexList, stat } = storeToRefs(store);
+const { indexList, stat, initialCoordinate } = storeToRefs(store);
 const selectedIndex: Ref<ListIndex | undefined> = ref(undefined);
 
 const emit = defineEmits<{
