@@ -53,7 +53,7 @@ function bindCoordinate(coordinate: Coordinate, target: string, geometry: any) {
         case "On a bus":
             coordinate.bus.push(geometry);
             break;
-        case "On a subway":
+        case "On the subway":
             coordinate.subway.push(geometry);
             break;
         case "In a taxi":
