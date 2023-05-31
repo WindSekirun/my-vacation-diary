@@ -6,8 +6,8 @@
         "bus": 5.5,
         "train": 11.6,
         "airplane": 0,
-        "subway": 0,
-        "taxi": 0
+        "subway": 2.6,
+        "taxi": 2.1
     },
     "medias": [
         {

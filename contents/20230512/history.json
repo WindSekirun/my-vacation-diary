@@ -13,7 +13,7 @@
             },
             "properties": {
                 "name": "ＶＥＮＴＩ御徒町",
-                "address": "3-chōme-21-5 Taitō, Taito City, Tokyo 110-0016",
+                "address": "3-chōme-21-5 Taitō, Taito City, Tokyo 110-0016 일본",
                 "description": " 건축물 from 2023-05-11T14:27:30.796Z to 2023-05-12T02:25:13.000Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-11T14:27:30.796Z",
@@ -100,7 +100,7 @@
             },
             "properties": {
                 "name": "유라쿠초",
-                "address": "2 Chome Yurakucho, Chiyoda City, Tokyo 100-0006",
+                "address": "2 Chome Yurakucho, Chiyoda City, Tokyo 100-0006 일본",
                 "description": " 대중교통 이용장소 from 2023-05-12T02:38:06.228Z to 2023-05-12T02:45:18.737Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T02:38:06.228Z",
@@ -167,7 +167,7 @@
             },
             "properties": {
                 "name": "쓰키시마 몬자거리",
-                "address": "1 Chome-3-丁目 Tsukishima, Chuo City, Tokyo",
+                "address": "1 Chome-3-丁目 Tsukishima, Chuo City, Tokyo, 일본",
                 "description": " 관광 명소 from 2023-05-12T02:52:14.246Z to 2023-05-12T02:59:34.000Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T02:52:14.246Z",
@@ -190,7 +190,7 @@
             },
             "properties": {
                 "name": "Tsukishimamonja Okoge Tsukishima Honten",
-                "address": "3 Chome-8-9 Tsukishima, Chuo City, Tokyo 104-0052",
+                "address": "3 Chome-8-9 Tsukishima, Chuo City, Tokyo 104-0052 일본",
                 "description": " 몬자야키 전문점 from 2023-05-12T02:59:34.000Z to 2023-05-12T04:25:34.332Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T02:59:34.000Z",
@@ -254,14 +254,14 @@
                 ]
             },
             "properties": {
-                "name": "Driving",
-                "description": " Driving from 2023-05-12T04:25:34.332Z to 2023-05-12T04:35:04.000Z. Distance 2109m ",
+                "name": "In a taxi",
+                "description": " In a taxi from 2023-05-12T04:25:34.332Z to 2023-05-12T04:35:04.000Z. Distance 2109m ",
                 "timespan": {
                     "begin": "2023-05-12T04:25:34.332Z",
                     "end": "2023-05-12T04:35:04.000Z"
                 },
                 "Email": "h.mina.moe@gmail.com",
-                "Category": "Driving",
+                "Category": "In a taxi",
                 "Distance": "2109"
             }
         },
@@ -277,7 +277,7 @@
             },
             "properties": {
                 "name": "팀랩 플래닛 도쿄",
-                "address": "6 Chome-1-16 Toyosu, Koto City, Tokyo 135-0061",
+                "address": "6 Chome-1-16 Toyosu, Koto City, Tokyo 135-0061 일본",
                 "description": " 현대미술관 from 2023-05-12T04:35:04.000Z to 2023-05-12T06:13:51.195Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T04:35:04.000Z",
@@ -389,7 +389,7 @@
             },
             "properties": {
                 "name": "Ginza Shochiku Square / Tsukiji Shochiku Bldg.",
-                "address": "1 Chome-13-1 Tsukiji, Chuo City, Tokyo 104-0045",
+                "address": "1 Chome-13-1 Tsukiji, Chuo City, Tokyo 104-0045 일본",
                 "description": " 상업 지구 from 2023-05-12T06:36:16.998Z to 2023-05-12T07:49:03.000Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T06:36:16.998Z",
@@ -496,7 +496,7 @@
             },
             "properties": {
                 "name": "1-chōme-9 Marunouchi",
-                "address": "〒100-0005 도쿄도 지요다구 마루노우치 1 조메",
+                "address": "일본 〒100-0005 도쿄도 지요다구 마루노우치 1 조메",
                 "description": "  from 2023-05-12T07:57:02.000Z to 2023-05-12T08:17:19.007Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T07:57:02.000Z",
@@ -573,7 +573,7 @@
             },
             "properties": {
                 "name": "간다",
-                "address": "2 Chome Kajicho, Chiyoda City, Tokyo",
+                "address": "2 Chome Kajicho, Chiyoda City, Tokyo, 일본",
                 "description": " 대중교통 이용장소 from 2023-05-12T08:24:46.999Z to 2023-05-12T08:31:27.425Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T08:24:46.999Z",
@@ -689,7 +689,7 @@
             },
             "properties": {
                 "name": "Asakusa ROX",
-                "address": "1 Chome-25-15 Asakusa, Taito City, Tokyo 111-0032",
+                "address": "1 Chome-25-15 Asakusa, Taito City, Tokyo 111-0032 일본",
                 "description": " 쇼핑몰 from 2023-05-12T08:49:07.000Z to 2023-05-12T09:18:23.225Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T08:49:07.000Z",
@@ -766,7 +766,7 @@
             },
             "properties": {
                 "name": "아사히그룹 본사",
-                "address": "1 Chome-23-1 Azumabashi, Sumida City, Tokyo 130-8602",
+                "address": "1 Chome-23-1 Azumabashi, Sumida City, Tokyo 130-8602 일본",
                 "description": " 회사 사무실 from 2023-05-12T09:28:44.001Z to 2023-05-12T10:56:26.241Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T09:28:44.001Z",
@@ -843,7 +843,7 @@
             },
             "properties": {
                 "name": "Yakiniku Yaichi 2.0",
-                "address": "〒110-0005 Tokyo, Taito City, Ueno, 5 Chome−26−6 桂ビル B1",
+                "address": "일본 〒110-0005 Tokyo, Taito City, Ueno, 5 Chome−26−6 桂ビル B1",
                 "description": " 야키니쿠 from 2023-05-12T11:16:00.448Z to 2023-05-12T12:32:30.231Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T11:16:00.448Z",
@@ -940,7 +940,7 @@
             },
             "properties": {
                 "name": "ＶＥＮＴＩ御徒町",
-                "address": "3-chōme-21-5 Taitō, Taito City, Tokyo 110-0016",
+                "address": "3-chōme-21-5 Taitō, Taito City, Tokyo 110-0016 일본",
                 "description": " 건축물 from 2023-05-12T12:58:39.749Z to 2023-05-13T00:37:14.814Z. Distance 0m ",
                 "timespan": {
                     "begin": "2023-05-12T12:58:39.749Z",
